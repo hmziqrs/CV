@@ -1,0 +1,14 @@
+- data = [{"key": "Web Stack", "skills": [ "HTML5", "CSS3", "PUG(Jade)","SASS", "Bootstrap", "Materialize CSS", "Semantic UI", "Javascript", "JQuery", "React JS (Hooks, Contexts, HOC)", "Redux", "Redux Saga", "React SSR", "Lodash", "Moment", "Immutable", "Firebase", "Rest API", "Web Sockets", "Webpack", "Babel", "ES Lint", "Prettier"]},{"key": "React Native Stack", "skills": ["React Native","Redux", "Redux Saga", "Lodash", "Moment", "Immutable", "Firebase", "Rest API", "Web Sockets", "React Native Threads", "Pixel Perfect UI Components", "Native", "Experience", "UI Interaction Based Micro Animations", "UI Scaling (Tablet)", "Eslint", "Prettier"]}, {"key": "Flutter Stack", "skills": ["Flutter", "Bloc", "Provider", "Shared Preferences", "Firebase", "RestA API", "Web Sockets", "Pixel Perfect Widgets", "Native Experience", "High Performance Parallax Animations", "UI Interaction Based Micro Animations", "Advance UI Scaling (Mobile Landscape, Tablet & Desktop)"]}, {"key": "Server Stack", "skills": ["Node JS", "Express JS", "Adonis JS", "JWT Token Authentication", "MYSQL", "Mongo DB", "WebRTC Based Audio & Video Streaming", "SPA Server Side Rendering", "Small Scale Mirco Services"]}];
+
+#skills-card
+  .container.float-fix
+    .card.col-sm-10.push-sm-1
+      .content
+        h1.heading Skills
+        each obj in data
+          .section
+            h3.heading.sub= obj.key
+            .skills-holder
+              each skill in obj.skills
+                span.skill= skill
+

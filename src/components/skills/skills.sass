@@ -1,0 +1,38 @@
+#skills-card
+  margin-top: 32px
+  background: white
+  box-shadow: 0 3px 6px 3px rgba(0,0,0,0.14)
+  .content
+    padding: 24px 0
+    padding-bottom: 30px
+    text-align: center
+    font-size: 18px
+  .heading
+    font-weight: 600
+    margin: auto
+    margin-bottom: 16px
+    text-align: center
+    color: $gradients
+    &.sub
+      margin-bottom: 8px
+      text-align: left
+  .skills-holder
+    margin: 0 0 16px 0
+
+    .skill
+      margin: 6px
+      font-size: 14px
+      font-weight: 600
+      padding: 6px 14px
+      border-radius: 6px
+      color: white
+      color: $gradients
+      display: inline-block
+      border: 2px solid $gradients
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2)
+      @include user-select()
+      @include transition(all 400ms ease)
+      &:hover
+        box-shadow: 0 4px 10px rgba(0,0,0,0.25)
+      &:first-child
+        margin-left: 0

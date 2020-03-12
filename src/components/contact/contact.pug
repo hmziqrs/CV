@@ -1,0 +1,14 @@
+- var data = [{ "href": "mailto:hamza.iqdev@gmail.com", "icon": "mdi mdi-email", "text": "hamza.iqdev@gmail.com"}, {"href": "tel:+923148155304", "icon": "mdi mdi-phone", "text": "+92 314 8155304"}, { "href": "skype:hamza.iqbal.jawaid.iqbal?chat", "icon": "mdi mdi-skype", "text": "hamza.iqbal.jawaid.iqbal"}, { "href": "https://www.linkedin.com/in/hackerhgl", "target": "_linkedin", "icon": "mdi mdi-linkedin", "text": "linkedin.com/in/hackerhgl"}];
+
+#contact.container.float-fix
+  #contact-card.card.col-sm-10.push-sm-1.float-fix
+    .col-md-8
+      h1 Hamza Iqbal
+      h1.title Full Stack Web & App Developer
+      .contact-links
+        each obj in data
+          a.button.col-12.col-md-10.col-lg-8(href=obj.href, target=obj.target)
+            i(class=obj.icon)
+            span.text= obj.text
+    .col-md-4
+      img.profile(src='https://graph.facebook.com/100005083204093/picture?width=400', alt='Hamza Iqbal')

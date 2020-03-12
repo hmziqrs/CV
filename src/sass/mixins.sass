@@ -1,0 +1,134 @@
+@mixin animation($var)
+  -webkit-animation: $var
+  -moz-animation: $var
+  -ms-animation: $var
+  -o-animation: $var
+  animation: $var
+
+@mixin animation-play-state($var)
+  -webkit-animation-play-state: $var
+  -moz-animation-play-state: $var
+  -ms-animation-play-state: $var
+  -o-animation-play-state: $var
+  animation-play-state: $var
+
+@mixin transition($var)
+  -webkit-transition: $var
+  -moz-transition: $var
+  -ms-transition: $var
+  -o-transition: $var
+  transition: $var
+
+@mixin transition-delay($var)
+  -webkit-transition-delay: $var
+  -moz-transition-delay: $var
+  -ms-transition-delay: $var
+  -o-transition-delay: $var
+  transition-delay: $var
+
+@mixin transform ($var)
+  -webkit-transform: $var
+  -moz-transform: $var
+  -ms-transform: $var
+  -o-transform: $var
+  transform: $var
+
+@mixin transform-origin ($var)
+  -webkit-transform-origin: $var
+  -moz-transform-origin: $var
+  -ms-transform-origin: $var
+  -o-transform-origin: $var
+  transform-origin: $var
+
+@mixin position($top, $right: null, $bottom: null, $left: null)
+  @if $right != null and $bottom == null
+    top: $top
+    right: $right
+    bottom: $top
+    left: $right
+  @else if $right == null
+    top: $top
+    right: $top
+    bottom: $top
+    left: $top
+  @else
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+
+@mixin size($height, $width: null)
+  @if $width == null
+    height: $height
+    width: $height
+  @else
+    height: $height
+    width: $width
+
+@mixin linear-text($position: left)
+  background-image: -webkit-linear-gradient($position, $purple, $pink)
+  background-image: -moz-linear-gradient($position, $purple, $pink)
+  background-image: -ms-linear-gradient($position, $purple, $pink)
+  background-image: -o-linear-gradient($position, $purple, $pink)
+  background-image: linear-gradient(to $position, $purple, $pink)
+  background-size: 200%
+  color: transparent
+  -webkit-background-clip: text
+  background-clip: text
+
+@mixin linear-background($position, $colors...)
+  background-image: -webkit-linear-gradient($position, $colors)
+  background-image: -moz-linear-gradient($position, $colors)
+  background-image: -ms-linear-gradient($position, $colors)
+  background-image: -o-linear-gradient($position, $colors)
+  background-image: linear-gradient($position, $colors)
+
+@mixin radial-background($args...)
+  background-image: -webkit-radial-gradient($args)
+  background-image: -moz-radial-gradient($args)
+  background-image: -ms-radial-gradient($args)
+  background-image: -o-radial-gradient($args)
+  background-image: radial-gradient($args)
+
+@mixin linear-loader($position: left, $size: 300%)
+  background-image: -webkit-linear-gradient($position, $purple, $pink, $purple, $pink, $purple, $pink, $purple)
+  background-image: -moz-linear-gradient($position, $purple, $pink, $purple, $pink, $purple, $pink, $purple)
+  background-image: -ms-linear-gradient($position, $purple, $pink, $purple, $pink, $purple, $pink, $purple)
+  background-image: -o-linear-gradient($position, $purple, $pink, $purple, $pink, $purple, $pink, $purple)
+  background-image: linear-gradient(to $position, $purple, $pink, $purple, $pink, $purple, $pink, $purple)
+  background-size: $size
+
+@mixin linear-pattren($position)
+  background: url(/assets/bg-pattern.png), -webkit-linear-gradient($position, $purple, $pink)
+  background: url(/assets/bg-pattern.png), -moz-linear-gradient($position, $purple, $pink)
+  background: url(/assets/bg-pattern.png), -ms-linear-gradient($position, $purple, $pink)
+  background: url(/assets/bg-pattern.png), -o-linear-gradient($position, $purple, $pink)
+  background: url(/assets/bg-pattern.png), linear-gradient(to $position, $purple, $pink)
+
+@mixin keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @-o-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+@mixin background-size($var)
+  -webkit-background-size: $var
+  -moz-background-size: $var
+  -ms-background-size: $var
+  -o-background-size: $var
+  background-size: $var
+
+@mixin user-select ($var: none)
+  -webkit-touch-callout: $var
+  -webkit-user-select: $var
+  -khtml-user-select: $var
+  -moz-user-select: $var
+  -ms-user-select: $var
+  user-select: $var
+  cursor: pointer

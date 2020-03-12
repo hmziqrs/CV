@@ -1,0 +1,33 @@
+#summary-card
+  color: #fff
+  margin-top: 32px
+  // box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3)
+  @include linear-background(135deg, $gradients, $gradiente)
+  .card
+    padding: 0
+    border-radius: 6px
+    // background: white
+    .content
+      padding: 32px 0
+      text-align: center
+      font-size: 18px
+    .heading
+      font-weight: 400
+      margin: auto
+      margin-bottom: 8px
+      text-align: center
+    .points.x
+      margin: 16px 0
+      font-size: 19px
+      padding: 8px 50px
+      line-height: 1.4
+      &:first-child
+        margin-top: 0px
+      &:last-child
+        margin-bottom: 0px
+
+@media (max-width: 767px)
+  #summary-card
+    .card
+      .points.x
+        padding: 8px 30px
