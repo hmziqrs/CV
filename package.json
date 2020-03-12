@@ -1,0 +1,18 @@
+{
+  "name": "hackerhgl-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/OneMDev/hackerhgl-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/OneMDev/hackerhgl-cv/issues"
+  },
+  "homepage": "https://gitlab.com/OneMDev/hackerhgl-cv#readme"
+}
