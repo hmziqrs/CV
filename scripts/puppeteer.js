@@ -1,18 +1,22 @@
 const puppeteer = require('puppeteer');
+const args = require("args-parser")(process.argv);
 
-// const url = 'https://hackerhgl-cv.web.app';
-const url = 'http://localhost:8848/build/';
+const links = {
+  prod: 'https://hackerhgl-cv.web.app',
+  dev: 'http://localhost:8848/build/',
+};
 
 (async () => {
   const browser = await puppeteer.launch({
     headless: true,
+    args: ['--no-sandbox'],
     defaultViewport: {
       height: 1080,
       width: 1280,
     }
   });
   const page = await browser.newPage();
-  await page.goto(url, {waitUntil: 'networkidle0'});
+  await page.goto(links[args.env], {waitUntil: 'networkidle0'});
   await page.evaluate( function(){
     toggle();
   });

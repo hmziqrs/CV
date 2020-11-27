@@ -1,7 +1,7 @@
 on:
   push:
-    branches:
-      - master
+    tags:
+      - "*"
 
 jobs:
   build-and-deploy:
@@ -9,18 +9,38 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-
-      - name: Build and Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          fetch-depth: 0
+          token: ${{ secrets.TOKEN }}
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@v1.3.0
         with:
           args: deploy --only hosting
         env:
-          PROJECT_PATH: "app"
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
+      - name: Setup git configs
+        run: |
+          git config --global user.name "hackerhgl"
+          git config --global user.email "hackerhgl@gmail.com"
+
+      - name: Install puppeteer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgbm1
+          npm i
+
+      - name: Run puppeteer & commit screenshots
+        run: |
+          npm run prod
+          git add .
+          git commit -m "Automated jpg & pdf generation"
+          git push origin master
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.

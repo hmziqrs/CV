@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node scripts/puppeteer"
+    "start": "node scripts/puppeteer --env=dev",
+    "prod": "node scripts/puppeteer --env=production"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/hackerhgl/CV#readme",
   "dependencies": {
+    "args-parser": "^1.1.0",
+    "install": "^0.13.0",
+    "npm": "^6.14.9",
     "puppeteer": "^5.5.0"
   }
 }
