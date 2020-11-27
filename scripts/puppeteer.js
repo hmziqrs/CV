@@ -29,4 +29,5 @@ const links = {
   });
 
   await browser.close();
+  process.exit();
 })();
