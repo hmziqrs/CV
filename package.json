@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node scripts/puppeteer"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hackerhgl/CV.git"
@@ -13,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hackerhgl/CV/issues"
   },
-  "homepage": "https://github.com/hackerhgl/CV#readme"
+  "homepage": "https://github.com/hackerhgl/CV#readme",
+  "dependencies": {
+    "puppeteer": "^5.5.0"
+  }
 }

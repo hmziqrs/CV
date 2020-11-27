@@ -16,3 +16,11 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v1.3.0
+        with:
+          args: deploy --only hosting
+        env:
+          PROJECT_PATH: "app"
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
