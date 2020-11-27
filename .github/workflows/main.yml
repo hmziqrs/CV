@@ -43,16 +43,16 @@ jobs:
           git commit -m "Automated jpg & pdf generation"
           git push origin master
 
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
-
       - name: Windows release build for github
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/assets/hackerhgl-cv.jpg,build/assets/hackerhgl-cv.pdf"
           token: ${{ secrets.TOKEN }}
           allowUpdates: true
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
