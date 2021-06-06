@@ -35,7 +35,7 @@ export function getDimensions(params) {
 export function grid3d(c) {
   var c = canvas();
   // const amount = 1;
-  const amount = Math.floor((c.width / c.height) * 180);
+  const amount = Math.floor((c.width / c.height) * 220);
 
   return Array(amount).fill(0).map(() => particleObject(c));
 }
@@ -48,10 +48,8 @@ function particleObject(c) {
     y: 0,
     size: 0,
     z: 0,
-    r: 0,
     update: function update(c, ctx, d) {
 
-      particle.size *= 1.00011;
       particle.z -= velocity;
       if (particle.z < MIN_Z) {
         particle.init(true);
@@ -73,7 +71,6 @@ function particleObject(c) {
       particle.y = (-1 + Math.random() * 2) * c.width * 0.10;
       particle.size =  0.7 + Math.random();
       particle.z = randomZ ? Math.random() * MAX_Z() : MAX_Z();
-      particle.r = 0;
     }
   };
   if (!particle.init) {

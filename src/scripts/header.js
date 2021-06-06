@@ -4,11 +4,8 @@ import * as engine from './particles';
 (function() {
   const c = engine.canvas()
   const ctx = canvas.getContext('2d');
-
-
   // resize the canvas to fill browser window dynamically
   window.addEventListener('resize', resizeCanvas, false);
-
   function resizeCanvas() {
           c.width = window.innerWidth - getScrollbarWidth() -1;
           c.height = document.getElementById('header').offsetHeight;
@@ -23,17 +20,15 @@ import * as engine from './particles';
       const grid = engine.grid3d(c);
       console.log(c.width);
 
-      loop(grid, ctx, c, dimensions, true);
+      loop(grid, ctx, c, dimensions);
   }
 })();
 
-function loop(grid, ctx, c, d, init = false) {
+function loop(grid, ctx, c, d) {
   ctx.clearRect(-c.width / 2, -c.height / 2, c.width, c.height);
   grid.forEach((particle)  => {
     particle.update(c, ctx, d);
   })
-
-
 
   requestAnimationFrame(() => loop(grid, ctx, c, d))
 }
@@ -89,7 +84,15 @@ var checkScrollSpeed = (function(settings){
 
 // listen to "scroll" event
 window.onscroll = function(){
-  const speed = checkScrollSpeed();
-  console.log(speed);
+  var speed = checkScrollSpeed();
+  if (speed < -7) {
+    speed = -7;
+  }
+  if (speed > 7) {
+    speed = 7;
+  }
+  if (speed == 0) {
+    speed = 0.25
+  }
   engine.setVelocity(speed)
 };
