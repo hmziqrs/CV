@@ -1,8 +1,5 @@
 import * as engine from './particles';
 
-const header = document.getElementById("header");
-
-
 
 (function() {
   const c = engine.canvas()
@@ -14,7 +11,7 @@ const header = document.getElementById("header");
 
   function resizeCanvas() {
           c.width = window.innerWidth - getScrollbarWidth() -1;
-          c.height = 450;
+          c.height = document.getElementById('header').offsetHeight;
           drawStuff();
   }
   resizeCanvas();
@@ -31,12 +28,8 @@ const header = document.getElementById("header");
 })();
 
 function loop(grid, ctx, c, d, init = false) {
-  console.log('loop');
   ctx.clearRect(-c.width / 2, -c.height / 2, c.width, c.height);
   grid.forEach((particle)  => {
-    if (init) {
-      particle.init();
-    }
     particle.update(c, ctx, d);
   })
 
@@ -44,16 +37,6 @@ function loop(grid, ctx, c, d, init = false) {
 
   requestAnimationFrame(() => loop(grid, ctx, c, d))
 }
-
-// window.addEventListener('scroll', () => {
-//   console.log(canvas.clientWidth, canvas.clientHeight);
-//   const offset = document.body.scrollTop || document.documentElement.scrollTop;
-
-
-// });
-
-
-
 
 function getScrollbarWidth() {
 
@@ -77,3 +60,36 @@ function getScrollbarWidth() {
   return scrollbarWidth;
 
 }
+
+// source = https://stackoverflow.com/questions/22593286/detect-measure-scroll-speed
+var checkScrollSpeed = (function(settings){
+    settings = settings || {};
+
+    var lastPos, newPos, timer, delta,
+        delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
+
+    function clear() {
+      lastPos = null;
+      delta = 0;
+    }
+
+    clear();
+
+    return function(){
+      newPos = window.scrollY;
+      if ( lastPos != null ){ // && newPos < maxScroll
+        delta = newPos -  lastPos;
+      }
+      lastPos = newPos;
+      clearTimeout(timer);
+      timer = setTimeout(clear, delay);
+      return delta;
+    };
+})();
+
+// listen to "scroll" event
+window.onscroll = function(){
+  const speed = checkScrollSpeed();
+  console.log(speed);
+  engine.setVelocity(speed)
+};

@@ -1,10 +1,15 @@
 export function canvas() {
- return  document.getElementById('canvas');
+ return document.getElementById('canvas');
 }
 
-const SCALE_FACTOR = 1.00015;
-const MAX_Z = 400;
+const MAX_Z = () => canvas().width* 0.38;
 const MIN_Z = 1;
+
+var velocity = 0.25;
+
+export function setVelocity(raw) {
+  velocity = raw ?? 0.25;
+}
 
 export function getDimensions(params) {
   var c = canvas();
@@ -30,7 +35,7 @@ export function getDimensions(params) {
 export function grid3d(c) {
   var c = canvas();
   // const amount = 1;
-  const amount = Math.floor((c.width / c.height) * 140);
+  const amount = Math.floor((c.width / c.height) * 180);
 
   return Array(amount).fill(0).map(() => particleObject(c));
 }
@@ -46,65 +51,28 @@ function particleObject(c) {
     r: 0,
     update: function update(c, ctx, d) {
 
-
-      // particle.size *= SCALE_FACTOR;
-      // if (particle.size < 0.75) {
-      //   particle.size *= 1.009;
-      // }
-
-      // const ratio = particle.size * 0.15;
-      // if (particle.x < d.center.x && particle.y < d.center.y) {
-      //   // console.log(d.center);
-      //   // particle.x = (particle.x*TRAVEL_FACTOR) - particle.x;
-      //   // particle.y = (particle.y*TRAVEL_FACTOR) - particle.y;
-      // } else {
-      // }
-      // particle.x += ratio;
-      // particle.y += ratio;
-
-      // if (particle.x > c.width || particle.y > c.height || particle.x <0 || particle.y < 0) {
-      //   particle.init();
-      // }
-      // ctx.beginPath()
-      // ctx.arc(particle.x, particle.y, particle.size, 0, 2 * Math.PI, false);
-      // ctx.fillStyle = 'white';
-      // ctx.fill();
-      particle.z -= 1.9;
+      particle.size *= 1.00011;
+      particle.z -= velocity;
       if (particle.z < MIN_Z) {
         particle.init(true);
-      } else if (particle.z > MAX_Z) {
+      } else if (particle.z > MAX_Z()) {
         particle.z = MIN_Z;
       }
 
       var scale = .1 + map(particle.z, 0, c.width, particle.size, 0);
       var sx = map(particle.x / particle.z, 0, 1, 0, c.width);
       var sy = map(particle.y / particle.z, 0, 1, 0, c.height);
-      const xx = 0.1;
-      // const yy = 0.1;
-      // var sx = map(xx, 0, 1, 0, c.width);
-      // var sy = map(yy, 0, 1, 0, c.height);
-      // var time = DateTime.now().millisecondsSinceEpoch/200;
-      // paint.color = particle.color;
-      // var pos = Offset(sx,sy);
-      // canvas.drawCircle( pos, scale, paint,);
-
       ctx.beginPath()
-      ctx.arc(sx, sy, scale, 0, 2 * Math.PI, false);
+      ctx.arc(sx, sy, Math.abs(scale), 0, 2 * Math.PI, false);
       ctx.fillStyle = 'white';
       ctx.fill();
 
     },
     init: function init(randomZ = false) {
-      // particle.x =  rand(0, c.width * 0.14);
-      // particle.y =  rand(0, c.height * 0.14);
-      // particle.size =  rand(0, 1.5, false);
-
-      particle.x = -2;
-      particle.y = 2;
       particle.x = (-1 + Math.random() * 2) * c.height * 0.10;
       particle.y = (-1 + Math.random() * 2) * c.width * 0.10;
-      particle.size =  1;
-      particle.z = randomZ ? Math.random() * MAX_Z : MAX_Z;
+      particle.size =  0.7 + Math.random();
+      particle.z = randomZ ? Math.random() * MAX_Z() : MAX_Z();
       particle.r = 0;
     }
   };
