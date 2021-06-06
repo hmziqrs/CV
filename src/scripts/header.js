@@ -8,6 +8,7 @@ const header = document.getElementById("header");
   const c = engine.canvas()
   const ctx = canvas.getContext('2d');
 
+
   // resize the canvas to fill browser window dynamically
   window.addEventListener('resize', resizeCanvas, false);
 
@@ -19,24 +20,29 @@ const header = document.getElementById("header");
   resizeCanvas();
 
   function drawStuff() {
-      const {center} = engine.getDimensions();
-      const grid = engine.grid3d();
+  ctx.translate(c.width / 2, c.height / 2)
+
+      const dimensions = engine.getDimensions();
+      const grid = engine.grid3d(c);
       console.log(c.width);
 
-      loop(grid, ctx, c, true);
+      loop(grid, ctx, c, dimensions, true);
   }
 })();
 
-function loop(grid, ctx, c, init = false) {
-  ctx.clearRect(0, 0, c.width, c.height);
+function loop(grid, ctx, c, d, init = false) {
+  console.log('loop');
+  ctx.clearRect(-c.width / 2, -c.height / 2, c.width, c.height);
   grid.forEach((particle)  => {
     if (init) {
       particle.init();
     }
-    particle.draw(ctx);
-    particle.update(c);
+    particle.update(c, ctx, d);
   })
-  requestAnimationFrame(() => loop(grid, ctx, c))
+
+
+
+  requestAnimationFrame(() => loop(grid, ctx, c, d))
 }
 
 // window.addEventListener('scroll', () => {
