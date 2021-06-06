@@ -1,41 +1,43 @@
+import * as engine from './particles';
+
 const header = document.getElementById("header");
 
 
 
 (function() {
-    var c = document.getElementById('canvas'),
-            ctx = canvas.getContext('2d');
+  const c = engine.canvas()
+  const ctx = canvas.getContext('2d');
 
-    // resize the canvas to fill browser window dynamically
-    window.addEventListener('resize', resizeCanvas, false);
+  // resize the canvas to fill browser window dynamically
+  window.addEventListener('resize', resizeCanvas, false);
 
-    function resizeCanvas() {
-            c.width = window.innerWidth - getScrollbarWidth();
-            c.height = 450;
-            drawStuff();
-    }
-    resizeCanvas();
+  function resizeCanvas() {
+          c.width = window.innerWidth - getScrollbarWidth() -1;
+          c.height = 450;
+          drawStuff();
+  }
+  resizeCanvas();
 
-    function drawStuff() {
-      const center = {x: c.width/2, y: c.height/2};
-      const initialFrame = {
-        start: {
-          xs: center.x - (c.width * 0.14),
-          ys: center.y - (c.height * 0.14),
-          xe: center.x + (c.width * 0.14),
-          ye: center.y + (c.height * 0.14),
-        },
-        end: {
-          xs: center.x - (c.width * 0.05),
-          ys: center.y - (c.height * 0.05),
-          xe: center.x + (c.width * 0.05),
-          ye: center.y + (c.height * 0.05),
-        },
-      }
-      console.log(initialFrame);
+  function drawStuff() {
+      const {center} = engine.getDimensions();
+      const grid = engine.grid3d();
+      console.log(c.width);
 
-    }
+      loop(grid, ctx, c, true);
+  }
 })();
+
+function loop(grid, ctx, c, init = false) {
+  ctx.clearRect(0, 0, c.width, c.height);
+  grid.forEach((particle)  => {
+    if (init) {
+      particle.init();
+    }
+    particle.draw(ctx);
+    particle.update(c);
+  })
+  requestAnimationFrame(() => loop(grid, ctx, c))
+}
 
 // window.addEventListener('scroll', () => {
 //   console.log(canvas.clientWidth, canvas.clientHeight);
@@ -43,6 +45,7 @@ const header = document.getElementById("header");
 
 
 // });
+
 
 
 
