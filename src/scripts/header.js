@@ -1,6 +1,7 @@
 import * as engine from "./particles";
 
 let animationNo = undefined;
+const header = document.getElementById("header");
 
 (function () {
   const c = engine.canvas();
@@ -96,8 +97,10 @@ var checkScrollSpeed = (function (settings) {
 })();
 
 // listen to "scroll" event
-const MAX_SPEED = 2.5;
-window.onscroll = function () {
+const MAX_SPEED = 1.5;
+window.onscroll = function (x) {
+  const parallax = window.scrollY * 0.20;
+  header.style.transform = `translateY(${parallax}px)`;
   var speed = checkScrollSpeed();
   if (speed < -MAX_SPEED) {
     speed = -MAX_SPEED;
@@ -106,7 +109,7 @@ window.onscroll = function () {
     speed = MAX_SPEED;
   }
   if (speed == 0) {
-    speed = 0.25;
+    speed = 0.10;
   }
 
   engine.setVelocity(speed);
