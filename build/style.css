@@ -1486,6 +1486,11 @@ body {
 #header {
   width: 100%;
   height: 550px;
+  -webkit-transition: all 80ms;
+  -moz-transition: all 80ms;
+  -ms-transition: all 80ms;
+  -o-transition: all 80ms;
+  transition: all 80ms;
   background-image: radial-gradient(#1f001f, #190019);
 }
 

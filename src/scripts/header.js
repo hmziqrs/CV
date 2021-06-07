@@ -29,8 +29,8 @@ const header = document.getElementById("header");
     window.addEventListener("mousemove", function mouseMove(e) {
       const c = engine.canvas();
       const ctx = canvas.getContext("2d");
-      const x = c.width / 2 - e.clientX * 0.08;
-      const y = c.height / 2 - e.clientY * 0.08;
+      const x = c.width / 2 - e.clientX * 0.045;
+      const y = c.height / 2 - e.clientY * 0.045;
       ctx.setTransform(1, 0, 0, 1, x, y);
     });
   }
@@ -97,11 +97,11 @@ var checkScrollSpeed = (function (settings) {
 })();
 
 // listen to "scroll" event
-const MAX_SPEED = 1.5;
+const MAX_SPEED = 1.25;
 window.onscroll = function (x) {
-  const parallax = window.scrollY * 0.20;
+  const parallax = window.scrollY * 0.22;
   header.style.transform = `translateY(${parallax}px)`;
-  var speed = checkScrollSpeed();
+  var speed = checkScrollSpeed() * 0.33;
   if (speed < -MAX_SPEED) {
     speed = -MAX_SPEED;
   }
