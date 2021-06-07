@@ -49,7 +49,7 @@ function particleObject(c) {
     size: 0,
     z: 0,
     update: function update(c, ctx, d) {
-      particle.z -= velocity ;
+      particle.z -= velocity;
       if (particle.z < MIN_Z) {
         particle.init(true);
       } else if (particle.z > MAX_Z()) {

@@ -98,7 +98,7 @@ var checkScrollSpeed = (function (settings) {
 
 // listen to "scroll" event
 const MAX_SPEED = 1.25;
-window.onscroll = function (x) {
+window.onscroll = function () {
   const parallax = window.scrollY * 0.22;
   header.style.transform = `translateY(${parallax}px)`;
   var speed = checkScrollSpeed() * 0.33;
@@ -109,7 +109,7 @@ window.onscroll = function (x) {
     speed = MAX_SPEED;
   }
   if (speed == 0) {
-    speed = 0.10;
+    speed = 0.1;
   }
 
   engine.setVelocity(speed);
