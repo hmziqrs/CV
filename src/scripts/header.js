@@ -1,5 +1,6 @@
 import * as engine from './particles';
 
+let animationNo = undefined;
 
 (function() {
   const c = engine.canvas()
@@ -13,24 +14,37 @@ import * as engine from './particles';
   }
   resizeCanvas();
 
-  function drawStuff() {
-  ctx.translate(c.width / 2, c.height / 2)
 
+
+  function drawStuff() {
+    if (animationNo != null) {
+      cancelAnimationFrame(animationNo);
+    }
+      const c = engine.canvas()
+      const ctx = canvas.getContext('2d');
+      ctx.translate(c.width / 2, c.height / 2)
       const dimensions = engine.getDimensions();
       const grid = engine.grid3d(c);
-      console.log(c.width);
-
       loop(grid, ctx, c, dimensions);
+
+      window.addEventListener('mousemove', function mouseMove(e) {
+        const c = engine.canvas()
+        const ctx = canvas.getContext('2d');
+        const x = (c.width / 2) - (e.clientX * 0.08);
+        const y = c.height / 2 - (e.clientY * 0.08);
+        ctx.setTransform(1, 0, 0, 1, x, y)
+      })
   }
 })();
 
+
 function loop(grid, ctx, c, d) {
-  ctx.clearRect(-c.width / 2, -c.height / 2, c.width, c.height);
+  ctx.clearRect(-c.width * 0.5, -c.height * 0.5, c.width * 2, c.height * 2);
   grid.forEach((particle)  => {
     particle.update(c, ctx, d);
   })
 
-  requestAnimationFrame(() => loop(grid, ctx, c, d))
+  animationNo = requestAnimationFrame(() => loop(grid, ctx, c, d))
 }
 
 function getScrollbarWidth() {

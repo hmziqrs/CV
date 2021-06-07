@@ -2,7 +2,7 @@ export function canvas() {
  return document.getElementById('canvas');
 }
 
-const MAX_Z = () => canvas().width* 0.38;
+const MAX_Z = () => canvas().width * 0.28;
 const MIN_Z = 1;
 
 var velocity = 0.25;
@@ -35,7 +35,7 @@ export function getDimensions(params) {
 export function grid3d(c) {
   var c = canvas();
   // const amount = 1;
-  const amount = Math.floor((c.width / c.height) * 250);
+  const amount = Math.floor((c.width / c.height) * 400);
 
   return Array(amount).fill(0).map(() => particleObject(c));
 }
@@ -50,7 +50,7 @@ function particleObject(c) {
     z: 0,
     update: function update(c, ctx, d) {
 
-      particle.z -= velocity;
+      particle.z -= (velocity + particle.size * 0.01);
       if (particle.z < MIN_Z) {
         particle.init(true);
       } else if (particle.z > MAX_Z()) {
@@ -67,10 +67,10 @@ function particleObject(c) {
 
     },
     init: function init(randomZ = false) {
-      particle.x = (-1 + Math.random() * 2) * c.height * 0.10;
-      particle.y = (-1 + Math.random() * 2) * c.width * 0.05;
+      particle.x = (-1 + Math.random() * 2) * c.width * 0.05;
+      particle.y = (-1 + Math.random() * 2) * c.height * 0.1;
       particle.size =  0.7 + Math.random();
-      particle.z = randomZ ? Math.random() * MAX_Z() : MAX_Z();
+      particle.z = randomZ ? (Math.random() * 0.99) * MAX_Z() : particle.z;
     }
   };
   if (!particle.init) {
