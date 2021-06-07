@@ -1,6 +1,6 @@
 window.isToggled = false;
 
-window.toggle = function() {
+window.toggle = function () {
   const download = document.getElementById("download-card");
   const footer = document.getElementById("footer");
   const header = document.getElementById("header");
@@ -16,15 +16,15 @@ window.toggle = function() {
       element.style.display = "none";
     });
     elementsClass.forEach((element) => {
-      element.classList.add('toggled');
-    })
+      element.classList.add("toggled");
+    });
   } else {
     window.isToggled = false;
     elementsToHide.forEach((element) => {
       element.style.display = "block";
     });
     elementsClass.forEach((element) => {
-      element.classList.remove('toggled');
-    })
+      element.classList.remove("toggled");
+    });
   }
-}
+};
