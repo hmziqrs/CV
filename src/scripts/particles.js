@@ -49,11 +49,12 @@ function particleObject(c) {
     size: 0,
     z: 0,
     update: function update(c, ctx, d) {
-      particle.z -= velocity + particle.size * 0.01;
+      particle.z -= velocity ;
       if (particle.z < MIN_Z) {
         particle.init(true);
       } else if (particle.z > MAX_Z()) {
-        particle.z = MIN_Z;
+        particle.init(true);
+        // particle.z = MIN_Z;
       }
 
       var scale = 0.1 + map(particle.z, 0, c.width, particle.size, 0);
@@ -68,7 +69,11 @@ function particleObject(c) {
       particle.x = (-1 + Math.random() * 2) * c.width * 0.05;
       particle.y = (-1 + Math.random() * 2) * c.height * 0.1;
       particle.size = 0.7 + Math.random();
-      particle.z = randomZ ? Math.random() * 0.99 * MAX_Z() : particle.z;
+      if (velocity < 0) {
+        particle.z = randomZ ? rand(0.0, 0.1) * MAX_Z() : particle.z;
+      } else {
+        particle.z = randomZ ? Math.random() * MAX_Z() : particle.z;
+      }
     },
   };
   if (!particle.init) {
@@ -81,14 +86,6 @@ function map(value, from1, to1, from2, to2) {
   return ((value - from1) / (to1 - from1)) * (to2 - from2) + from2;
 }
 
-function rand(min, max, floor = true) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  const val = Math.random() * (max - min + 1);
-
-  if (!floor) {
-    return val + min;
-  }
-
-  return Math.floor(val) + min;
+function rand(min, max) {
+  return Math.random() * (max - min) + min;
 }

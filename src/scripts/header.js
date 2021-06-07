@@ -96,16 +96,18 @@ var checkScrollSpeed = (function (settings) {
 })();
 
 // listen to "scroll" event
+const MAX_SPEED = 2.5;
 window.onscroll = function () {
   var speed = checkScrollSpeed();
-  if (speed < -7) {
-    speed = -7;
+  if (speed < -MAX_SPEED) {
+    speed = -MAX_SPEED;
   }
-  if (speed > 7) {
-    speed = 7;
+  if (speed > MAX_SPEED) {
+    speed = MAX_SPEED;
   }
   if (speed == 0) {
     speed = 0.25;
   }
+
   engine.setVelocity(speed);
 };
