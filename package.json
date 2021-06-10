@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "injection-debug": "nodemon scripts/injection",
+    "injection": "node scripts/injection",
     "start": "node scripts/puppeteer --env=dev",
     "prod": "node scripts/puppeteer --env=production"
   },

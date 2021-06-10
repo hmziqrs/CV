@@ -1,0 +1,18 @@
+[
+  {
+    "href": "mailto:hamza.iqdev@gmail.com",
+    "icon": "mdi mdi-email",
+    "text": "hamza.iqdev@gmail.com"
+  },
+  {
+    "href": "tel:+923148155304",
+    "icon": "mdi mdi-phone",
+    "text": "+92 314 8155304"
+  },
+  {
+    "href": "https://www.linkedin.com/in/hackerhgl",
+    "target": "_linkedin",
+    "icon": "mdi mdi-linkedin",
+    "text": "linkedin.com/in/hackerhgl"
+  }
+]

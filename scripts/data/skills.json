@@ -1,0 +1,71 @@
+[
+  {
+    "key": "Web Stack",
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "PUG(Jade)",
+      "SASS",
+      "Bootstrap",
+      "Javascript",
+      "JQuery",
+      "React JS",
+      "React Material UI",
+      "Redux",
+      "Redux Saga",
+      "React SSR",
+      "Firebase",
+      "Rest API",
+      "Web Sockets",
+      "Webpack"
+    ]
+  },
+  {
+    "key": "React Native Stack",
+    "skills": [
+      "React Native",
+      "Redux",
+      "Redux Saga",
+      "Firebase",
+      "Rest API",
+      "Web Sockets",
+      "React Native Threads",
+      "Pixel Perfect UI Components",
+      "Native Experience",
+      "UI Interaction Based Micro Animations",
+      "UI Scaling (Tablet)"
+    ]
+  },
+  {
+    "key": "Flutter Stack",
+    "skills": [
+      "Flutter",
+      "Bloc",
+      "Provider",
+      "Firebase",
+      "Rest API",
+      "Web Sockets",
+      "Pixel Perfect Widgets",
+      "Native Experience",
+      "High Performance Parallax Animations",
+      "UI Interaction Based Micro Animations",
+      "Advance UI Scaling (Mobile Landscape, Tablet & Desktop)"
+    ]
+  },
+  {
+    "key": "Server Stack",
+    "skills": [
+      "Golang",
+      "Node JS",
+      "Express JS",
+      "Adonis JS",
+      "JWT Tokens",
+      "MYSQL",
+      "Mongo DB",
+      "WebRTC Based Audio Streaming",
+      "SPA Server Side Rendering",
+      "Small Scale Micro Services",
+      "Dart Scripting"
+    ]
+  }
+]
