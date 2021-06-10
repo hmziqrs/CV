@@ -3,12 +3,25 @@ const fs = require('fs');
 const BASE = "./src/components/";
 const components = ['contact', 'experience', 'skills', 'summary'];
 
+function getFilePath(component) {
+  return `${BASE}${component}/${component}.pug`;
+}
+
 async function run() {
   try {
     const pugs = {};
+    const jsons = {};
     for (const component of components) {
-      pugs[component] = fs.readFileSync(`${BASE}${component}/${component}.pug`, 'utf8').split('\n');
+      const json = require(`./data/${component}.json`);
+      const newFile = fs.readFileSync(getFilePath(component), 'utf8').split('\n').map((v, i) => {
+        if (i === 0) {
+          return `- var data = ${JSON.stringify(json)};`;
+        }
+        return v;
+      }).join('\n');
+      fs.writeFileSync(getFilePath(component), newFile, 'utf8');
     }
+
 
     process.exit();
   } catch (e) {
