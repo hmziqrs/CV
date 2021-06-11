@@ -9,14 +9,16 @@ const header = document.getElementById("header");
   // resize the canvas to fill browser window dynamically
   window.addEventListener("resize", resizeCanvas, false);
   function resizeCanvas() {
-    c.width = window.innerWidth - getScrollbarWidth() - 1;
+    c.width = window.outerWidth - getScrollbarWidth() - 1;
     c.height = document.getElementById("header").offsetHeight;
     drawStuff();
   }
   resizeCanvas();
 
   function drawStuff() {
+    console.log(animationNo);
     if (animationNo != null) {
+      engine.setVelocity(0.12);
       cancelAnimationFrame(animationNo);
     }
     const c = engine.canvas();
