@@ -4,18 +4,19 @@
   .container
     .card.col-lg-10.push-lg-1.float-fix
       .content
-        h1.heading Experience
+        h1.heading.ah1.afw6 Experience
         .experience-holder
           each exp in data
             .experience
               .header.float-fix
                 .circle
                   .inner
-                h3.position=  exp.position
-                .date= exp.date
+                h3.position.ah3= exp.position
+              .date.ab2= exp.date
               h2.company
-                span= exp.company
-                span.contract= exp.contract
+                span.ah3.afw6= exp.company
+                span.contract.ab1= exp.contract
               .points-holder
                 each point in exp.points
-                  .point= point
+                  .point.ab1= point
+              div.br

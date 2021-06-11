@@ -15,12 +15,8 @@
       margin-bottom: 8px
       text-align: center
     .experience
-      margin-top: 30px
-      .br
-        height: 1px
-        width: 100%
-        background: rgba(255, 255, 255, 0.1)
-        margin-top: 30px
+      padding: 0 50px
+      margin-top: 32px
       .header
         .circle
           float: left
@@ -48,23 +44,65 @@
         .contract
           margin-left: 8px
           color: $gradients
+
       .points-holder
-        padding: 0 32px
         margin-top: 8px
+        padding: 0 56px
         .point
           margin: 12px 0
           &:first-child
             margin-top: 0
           &:last-child
             margin-bottom: 0
-      &:last-child
-        .br
-          display: none
+    .technologies-holder
+      margin-top: 24px
+      padding: 0 60px
+      .technologies
+        margin-top: 16px
+        text-align: center
+      .technology
+        margin: 6px
+        padding: 6px 12px
+        border-radius: 6px
+        position: relative
+        overflow: hidden
+        display: inline-block
+        border: 2px solid white
+        box-shadow: 0 2px 4px rgba(255,255,255,0.3)
+        @include user-select()
+        .text
+          position: relative
+          z-index: 2
+        .base
+          z-index: 1
+          border-radius: 4px
+          display: block
+          opacity: 1
+          position: absolute
+          @include position(0)
+          @include transition(all 400ms ease)
+          @include linear-background(110deg, transparentize($gradients, 0.2), transparent 75%)
+        .hover
+          z-index: 1
+          border-radius: 4px
+          display: block
+          opacity: 0
+          position: absolute
+          @include position(0)
+          @include transition(all 400ms ease)
+          @include linear-background(-70deg, transparentize($gradients, 0.2), transparent 75%)
+        &:hover
+          .base
+            opacity: 0
+          .hover
+            opacity: 1
+
 @media (max-width: 767px)
   #experience-card
     .card
       // background: blue
       .experience
+        padding: 0 36px
         .header
           .circle
             margin-top: 4px
@@ -73,6 +111,7 @@
         .company
           margin-top: 4px
         .points-holder
+          padding: 0 48px
 
 // @media (max-width: 651px)
 //   #experience-card
