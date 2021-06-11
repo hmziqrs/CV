@@ -1,7 +1,6 @@
 const fs = require("fs");
 
 const BASE = "./src/components/";
-const components = ["contact", "experience", "skills", "summary"];
 
 function getFilePath(component) {
   return `${BASE}${component}/${component}.pug`;
@@ -9,6 +8,9 @@ function getFilePath(component) {
 
 async function run() {
   try {
+    const components = fs.readdirSync('scripts/data/', 'utf8').filter((file) => file.includes('.json')).map((file) => file.split('.')[0])
+
+
     for (const component of components) {
       const json = require(`./data/${component}.json`);
       const newFile = fs

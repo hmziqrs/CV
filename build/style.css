@@ -1714,12 +1714,14 @@ body {
 #summary-card {
   color: #fff;
   margin-top: 32px;
-  page-break-before: always;
   background-image: -webkit-linear-gradient(135deg, #e53935, #b62525);
   background-image: -moz-linear-gradient(135deg, #e53935, #b62525);
   background-image: -ms-linear-gradient(135deg, #e53935, #b62525);
   background-image: -o-linear-gradient(135deg, #e53935, #b62525);
   background-image: linear-gradient(135deg, #e53935, #b62525);
+}
+#summary-card.summary {
+  page-break-before: always;
 }
 #summary-card .card {
   padding: 0;
@@ -1757,6 +1759,7 @@ body {
 #experience-card {
   color: #fff;
   margin-top: 32px;
+  page-break-before: always;
   background-image: -webkit-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -moz-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -ms-linear-gradient(-60deg, #333333, #1b1b1a);
