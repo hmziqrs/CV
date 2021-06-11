@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600");
 @import url("https://cdn.materialdesignicons.com/2.2.43/css/materialdesignicons.min.css");
 @-ms-viewport {
   width: device-width;
@@ -1461,6 +1461,118 @@ a {
   margin: 0;
 }
 
+.ah1 {
+  font-size: 36px;
+}
+
+.ah2 {
+  font-size: 28px;
+}
+
+.ah3 {
+  font-size: 22px;
+}
+
+.ab1 {
+  font-size: 17px;
+}
+
+.ab2 {
+  font-size: 14px;
+}
+
+.afw4 {
+  font-weight: 400;
+}
+
+.afw6 {
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .ah1 {
+    font-size: 34px;
+  }
+
+  .ah2 {
+    font-size: 26px;
+  }
+
+  .ah3 {
+    font-size: 20px;
+  }
+
+  .ab1 {
+    font-size: 16px;
+  }
+
+  .ab2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .ah1 {
+    font-size: 32px;
+  }
+
+  .ah2 {
+    font-size: 24px;
+  }
+
+  .ah3 {
+    font-size: 19px;
+  }
+
+  .ab1 {
+    font-size: 15px;
+  }
+
+  .ab2 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 551px) {
+  .ah1 {
+    font-size: 30px;
+  }
+
+  .ah2 {
+    font-size: 22px;
+  }
+
+  .ah3 {
+    font-size: 18px;
+  }
+
+  .ab1 {
+    font-size: 14px;
+  }
+
+  .ab2 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 361px) {
+  .ah1 {
+    font-size: 28px;
+  }
+
+  .ah2 {
+    font-size: 20px;
+  }
+
+  .ah3 {
+    font-size: 16px;
+  }
+
+  .ab1 {
+    font-size: 13px;
+  }
+
+  .ab2 {
+    font-size: 10px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1515,12 +1627,9 @@ body {
   background-image: linear-gradient(40deg, #e53935, #b62525 100%);
 }
 #contact .card .name {
-  font-weight: 400;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 #contact .card .title {
-  font-size: 22px;
-  font-weight: 600;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 #contact .card .contact-links {
@@ -1551,10 +1660,7 @@ body {
 #contact .card .contact-links .button .text {
   left: 50%;
   top: 50%;
-  font-size: 16px;
-  font-weight: 600;
   position: absolute;
-  font-family: Muli, "sans-serif";
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

@@ -3,12 +3,12 @@
 #contact.container.float-fix
   #contact-card.card.col-sm-10.push-sm-1.float-fix
     .col-md-8
-      h1= data.name
-      h1.title= data.title
+      h1.ah1= data.name
+      h3.ah3.afw4= data.title
       .contact-links
         each obj in data.links
           a.button.col-12.col-md-10.col-lg-8(href=obj.href, target=obj.target)
             i(class=obj.icon)
-            span.text= obj.text
+            span.text.ab1.afw6= obj.text
     .col-md-4
       img.profile(src='https://raw.githubusercontent.com/hackerhgl/flutter-ui-designs/master/assets/user/hamza.jpg', alt='Hamza Iqbal')
