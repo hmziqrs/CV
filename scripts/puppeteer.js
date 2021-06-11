@@ -11,12 +11,15 @@ async function run() {
     const browser = await puppeteer.launch({
       headless: true,
       args: ["--no-sandbox"],
+
       defaultViewport: {
         height: 1080,
         width: 1280,
       },
     });
-    const page = await browser.newPage();
+    const context = await browser.createIncognitoBrowserContext();
+    const page = await context.newPage();
+    await page.setCacheEnabled(false);
     await page.goto(links[args.env], { waitUntil: "networkidle0" });
     await page.evaluate(function () {
       toggle();
