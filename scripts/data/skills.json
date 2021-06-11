@@ -2,55 +2,35 @@
   {
     "key": "Web Stack",
     "skills": [
-      "HTML5",
-      "CSS3",
-      "PUG(Jade)",
-      "SASS",
+      "HTML5/CSS",
+      "PUG(Jade)/SASS",
       "Bootstrap",
       "Javascript",
       "JQuery",
       "React JS",
-      "React Material UI",
-      "Redux",
-      "Redux Saga",
+      "Material UI",
       "React SSR",
       "Firebase",
-      "Rest API",
-      "Web Sockets",
+      "Socket.IO",
+      "WebRTC",
       "Webpack"
     ]
   },
   {
-    "key": "React Native Stack",
+    "key": "Mobile Stack",
     "skills": [
       "React Native",
-      "Redux",
-      "Redux Saga",
-      "Firebase",
-      "Rest API",
-      "Web Sockets",
-      "React Native Threads",
-      "Pixel Perfect UI Components",
-      "Native Experience",
-      "UI Interaction Based Micro Animations",
-      "UI Scaling (Tablet)"
-    ]
-  },
-  {
-    "key": "Flutter Stack",
-    "skills": [
       "Flutter",
-      "Flutter Desktop Apps",
-      "Bloc",
-      "Provider",
+      "Flutter Desktop/Tablet Apps",
       "Firebase",
       "Rest API",
-      "Web Sockets",
-      "Pixel Perfect Widgets",
+      "Socket.IO",
+      "WebRTC",
+      "Multi Threading Apps",
+      "Pixel Perfect UI",
       "Native Experience",
-      "High Performance Parallax Animations",
-      "UI Interaction Based Micro Animations",
-      "UI Scaling (Mobile Landscape, Tablet & Desktop)"
+      "Interaction Based Animations",
+      "Parallax Animations"
     ]
   },
   {
