@@ -3,7 +3,7 @@
   margin-top: 32px
   // box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3)
   @include linear-background(135deg, $gradients, $gradiente)
-  &.summary
+  &.development
     page-break-before: always
   .card
     padding: 0
@@ -12,16 +12,16 @@
     .content
       padding: 32px 0
       text-align: center
-      font-size: 18px
     .heading
-      font-weight: 400
       margin: auto
       margin-bottom: 8px
       text-align: center
     .points.x
-      margin: 16px 0
-      font-size: 19px
-      padding: 8px 50px
+      width: 100%
+
+      max-width: 600px
+      padding: 8px
+      margin: 8px auto
       line-height: 1.4
       &:first-child
         margin-top: 0px

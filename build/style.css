@@ -1836,7 +1836,7 @@ body {
   background-image: -o-linear-gradient(135deg, #e53935, #b62525);
   background-image: linear-gradient(135deg, #e53935, #b62525);
 }
-#summary-card.summary {
+#summary-card.development {
   page-break-before: always;
 }
 #summary-card .card {
@@ -1846,18 +1846,17 @@ body {
 #summary-card .card .content {
   padding: 32px 0;
   text-align: center;
-  font-size: 18px;
 }
 #summary-card .card .heading {
-  font-weight: 400;
   margin: auto;
   margin-bottom: 8px;
   text-align: center;
 }
 #summary-card .card .points.x {
-  margin: 16px 0;
-  font-size: 19px;
-  padding: 8px 50px;
+  width: 100%;
+  max-width: 600px;
+  padding: 8px;
+  margin: 8px auto;
   line-height: 1.4;
 }
 #summary-card .card .points.x:first-child {
@@ -1875,7 +1874,6 @@ body {
 #experience-card {
   color: #fff;
   margin-top: 32px;
-  page-break-before: always;
   background-image: -webkit-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -moz-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -ms-linear-gradient(-60deg, #333333, #1b1b1a);
