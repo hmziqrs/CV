@@ -2132,3 +2132,6 @@ body {
   background-image: -o-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
+#footer span {
+  color: #dc2430;
+}
