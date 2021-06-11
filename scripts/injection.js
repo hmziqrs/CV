@@ -9,8 +9,6 @@ function getFilePath(component) {
 
 async function run() {
   try {
-    const pugs = {};
-    const jsons = {};
     for (const component of components) {
       const json = require(`./data/${component}.json`);
       const newFile = fs.readFileSync(getFilePath(component), 'utf8').split('\n').map((v, i) => {
@@ -21,7 +19,6 @@ async function run() {
       }).join('\n');
       fs.writeFileSync(getFilePath(component), newFile, 'utf8');
     }
-
 
     process.exit();
   } catch (e) {
