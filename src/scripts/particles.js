@@ -2,13 +2,13 @@ export function canvas() {
   return document.getElementById("canvas");
 }
 
-const MAX_Z = () => canvas().width * 0.28;
+const MAX_Z = () => canvas().width * 0.20;
 const MIN_Z = 1;
 
-var velocity = 0.25;
+var velocity = 0.09;
 
 export function setVelocity(raw) {
-  velocity = raw ?? 0.25;
+  velocity = raw ?? velocity;
 }
 
 export function getDimensions(params) {
@@ -34,7 +34,7 @@ export function getDimensions(params) {
 export function grid3d(c) {
   var c = canvas();
   // const amount = 1;
-  const amount = Math.floor((c.width / c.height) * 400);
+  const amount = Math.floor((c.width / c.height) * 150);
 
   return Array(amount)
     .fill(0)
@@ -66,8 +66,8 @@ function particleObject(c) {
       ctx.fill();
     },
     init: function init(randomZ = false) {
-      particle.x = (-1 + Math.random() * 2) * c.width * 0.05;
-      particle.y = (-1 + Math.random() * 2) * c.height * 0.1;
+      particle.x = (-1 + Math.random() * 2) * c.width * 0.022;
+      particle.y = (-1 + Math.random() * 2) * c.height * 0.090;
       particle.size = 0.7 + Math.random();
       if (velocity < 0) {
         particle.z = randomZ ? rand(0.0, 0.1) * MAX_Z() : particle.z;
