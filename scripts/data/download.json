@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Download JPEG",
+    "href": "./assets/hackerhgl-cv.jpg",
+    "icon": "mdi mdi-file-image"
+  },
+  {
+    "label": "Download PDF",
+    "href": "./assets/hackerhgl-cv.pdf",
+    "icon": "mdi mdi-file-pdf"
+  }
+]
