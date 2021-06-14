@@ -5,7 +5,7 @@ export function canvas() {
 const MAX_Z = () => canvas().width * 0.20;
 const MIN_Z = 1;
 
-var velocity = 0.09;
+var velocity = 0.050;
 
 export function setVelocity(raw) {
   velocity = raw ?? velocity;
@@ -33,7 +33,7 @@ export function getDimensions(params) {
 
 export function grid3d(c) {
   var c = canvas();
-  const amount = Math.floor((c.width + c.height) *0.4);
+  const amount = Math.floor((c.width + c.height) *0.25);
 
   return Array(amount)
     .fill(0)

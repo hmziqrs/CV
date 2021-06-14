@@ -6,9 +6,14 @@
       "text": "hamza.iqdev@gmail.com"
     },
     {
-      "href": "tel:+923148155304",
-      "icon": "mdi mdi-phone",
+      "href": "https://api.whatsapp.com/send?phone=923148155304",
+      "icon": "mdi mdi-whatsapp",
       "text": "+92 314 8155304"
+    },
+    {
+      "href": "tel:+923021246124",
+      "icon": "mdi mdi-phone",
+      "text": "+92 302 1246124"
     },
     {
       "href": "https://www.linkedin.com/in/hackerhgl",
