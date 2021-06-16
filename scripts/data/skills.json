@@ -26,10 +26,9 @@
       "Rest API",
       "Socket.IO",
       "WebRTC",
-      "Multi Threading Apps",
+      "Multi Threaded Apps",
       "Pixel Perfect UI",
-      "Native Experience",
-      "Interaction Based Animations",
+      "Platform Native Experience",
       "Parallax Animations"
     ]
   },
@@ -45,7 +44,6 @@
       "Mongo DB",
       "WebRTC Based Audio Streaming",
       "SPA Server Side Rendering",
-      "Small Scale Micro Services",
       "Dart Scripting"
     ]
   }
