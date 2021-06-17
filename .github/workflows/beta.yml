@@ -1,0 +1,50 @@
+name: Beta release
+on:
+  push:
+    branches:
+      - "beta"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          path: app
+          ref: gh-pages
+          fetch-depth: 0
+          token: ${{ secrets.TOKEN }}
+
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+        with:
+          path: tmp
+          fetch-depth: 0
+          token: ${{ secrets.TOKEN }}
+
+      - name: Create beta folder
+        run: |
+          mv tmp/build app/beta
+          ls app
+
+          cp -r app tmp/build
+          # cd app
+          # git commit -m "Automated beta deployment"
+          # git push origin beta
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v1.3.0
+        with:
+          args: deploy --only hosting
+        env:
+          PROJECT_PATH: "tmp"
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: app # The folder the action should deploy.
+

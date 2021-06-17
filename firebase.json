@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/beta",
+        "destination": "beta/index.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
