@@ -1,6 +1,6 @@
 [
   {
-    "key": "Web Stack",
+    "key": "Web",
     "skills": [
       "HTML5/CSS",
       "PUG(Jade)/SASS",
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "key": "Mobile Stack",
+    "key": "Mobile",
     "skills": [
       "React Native",
       "Flutter",
@@ -33,7 +33,7 @@
     ]
   },
   {
-    "key": "Server Stack",
+    "key": "Server",
     "skills": [
       "Golang",
       "Node JS",
