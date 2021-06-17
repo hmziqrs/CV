@@ -30,6 +30,7 @@ jobs:
       - run: pwd
       - run: ls -lah
       - run: ls beta/build
+      - run: ls main
       - run: ls main/build
       - run: mkdir main/build/beta
       - name: Create beta folder
