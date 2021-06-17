@@ -1,11 +1,12 @@
 [
   {
-    "key": "Web Stack",
+    "key": "Web",
     "skills": [
       "HTML5/CSS",
       "PUG(Jade)/SASS",
       "Bootstrap",
       "Javascript",
+      "Typescript",
       "JQuery",
       "React JS",
       "Material UI",
@@ -17,7 +18,7 @@
     ]
   },
   {
-    "key": "Mobile Stack",
+    "key": "Mobile",
     "skills": [
       "React Native",
       "Flutter",
@@ -33,13 +34,13 @@
     ]
   },
   {
-    "key": "Server Stack",
+    "key": "Server",
     "skills": [
       "Golang",
       "Node JS",
       "Express JS",
-      "Adonis JS",
-      "JWT Tokens",
+      "Adonis 5",
+      "AWS (S3, SES, EC2, RDS)",
       "MYSQL",
       "Mongo DB",
       "WebRTC Based Audio Streaming",

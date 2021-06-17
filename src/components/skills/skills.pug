@@ -1,13 +1,13 @@
-- var data = [{"key":"Web Stack","skills":["HTML5/CSS","PUG(Jade)/SASS","Bootstrap","Javascript","JQuery","React JS","Material UI","React SSR","Firebase","Socket.IO","WebRTC","Webpack"]},{"key":"Mobile Stack","skills":["React Native","Flutter","Flutter Desktop/Tablet Apps","Firebase","Rest API","Socket.IO","WebRTC","Multi Threaded Apps","Pixel Perfect UI","Platform Native Experience","Parallax Animations"]},{"key":"Server Stack","skills":["Golang","Node JS","Express JS","Adonis JS","JWT Tokens","MYSQL","Mongo DB","WebRTC Based Audio Streaming","SPA Server Side Rendering","Dart Scripting"]}];
+- var data = [{"key":"Web","skills":["HTML5/CSS","PUG(Jade)/SASS","Bootstrap","Javascript","Typescript","JQuery","React JS","Material UI","React SSR","Firebase","Socket.IO","WebRTC","Webpack"]},{"key":"Mobile","skills":["React Native","Flutter","Flutter Desktop/Tablet Apps","Firebase","Rest API","Socket.IO","WebRTC","Multi Threaded Apps","Pixel Perfect UI","Platform Native Experience","Parallax Animations"]},{"key":"Server","skills":["Golang","Node JS","Express JS","Adonis 5","AWS (S3, SES, EC2, RDS)","MYSQL","Mongo DB","WebRTC Based Audio Streaming","SPA Server Side Rendering","Dart Scripting"]}];
 
-#skills
+#skills.white-card
   .container.float-fix
     .card.col-sm-10.push-sm-1
       .content
         h1.heading.ah1.afw6 Skills stack
         each obj in data
           .section
-            h3.heading.sub.ah2.afw6= obj.key
+            h3.heading.sub.ah3.afw6= obj.key
             .skills-holder
               each skill in obj.skills
                 span.skill.ab2.afw7= skill
