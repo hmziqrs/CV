@@ -26,7 +26,9 @@ jobs:
       - name: Create beta folder
         run: |
           mv tmp/build app/beta
-          cp app temp/build
+          ls app
+
+          cp -r app temp/build
           # cd app
           # git commit -m "Automated beta deployment"
           # git push origin beta
