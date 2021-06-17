@@ -2,51 +2,53 @@
   {
     "key": "Web",
     "skills": [
-      "HTML5/CSS",
-      "PUG(Jade)/SASS",
-      "Bootstrap",
-      "Javascript",
-      "Typescript",
-      "JQuery",
-      "React JS",
-      "Material UI",
-      "React SSR",
-      "Firebase",
-      "Socket.IO",
-      "WebRTC",
-      "Webpack"
+      {"label": "HTML5", "icon": "mdi-language-html5"},
+      {"label": "CSS3", "icon": "mdi-language-css3"},
+      {"label": "PUG(Jade)", "icon": "mdi-web"},
+      {"label": "SASS", "icon": "mdi-sass"},
+      {"label": "Bootstrap", "icon": "mdi-bootstrap"},
+      {"label": "Javascript", "icon": "mdi-language-javascript"},
+      {"label": "Typescript", "icon": "mdi-language-typescript"},
+      {"label": "JQuery", "icon": "mdi-jquery"},
+      {"label": "React JS", "icon": "mdi-react"},
+      {"label": "Material UI", "icon": "mdi-material-ui"},
+      {"label": "React SSR", "icon": "mdi-react"},
+      {"label": "Firebase", "icon": "mdi-firebase"},
+      {"label": "Socket.IO", "icon": "mdi-flash-circle"},
+      {"label": "WebRTC", "icon": "mdi-webrtc"},
+      {"label": "Webpack", "icon": "mdi-webpack"}
     ]
   },
   {
     "key": "Mobile",
     "skills": [
-      "React Native",
-      "Flutter",
-      "Flutter Desktop/Tablet Apps",
-      "Firebase",
-      "Rest API",
-      "Socket.IO",
-      "WebRTC",
-      "Multi Threaded Apps",
-      "Pixel Perfect UI",
-      "Platform Native Experience",
-      "Parallax Animations"
+      {"label": "React Native", "icon": "mdi-react"},
+      {"label": "Flutter", "icon": ""},
+      {"label": "Flutter Desktop/Tablet Apps", "icon": "mdi-desktop-mac-dashboard"},
+      {"label": "Firebase", "icon": "mdi-firebase"},
+      {"label": "Rest API", "icon": "mdi-api"},
+      {"label": "Socket.IO", "icon": "mdi-flash-circle"},
+      {"label": "WebRTC", "icon": "mdi-webrtc"},
+      {"label": "Multi Threaded Apps", "icon": "mdi-cogs"},
+      {"label": "Pixel Perfect UI", "icon": "mdi-monitor-cellphone-star"},
+      {"label": "Platform Native Experience", "icon": ""},
+      {"label": "Parallax Animations", "icon": ""}
     ]
   },
   {
     "key": "Server",
     "skills": [
-      "Golang",
-      "Node JS",
-      "Express JS",
-      "Adonis 5",
-      "AWS (S3, SES, EC2, RDS)",
-      "MYSQL",
-      "Mongo DB",
-      "Socket.IO",
-      "WebRTC Based Audio Streaming",
-      "SPA Server Side Rendering",
-      "Dart Scripting"
+      {"label": "Golang", "icon": "mdi-language-go"},
+      {"label": "Node JS", "icon": "mdi-nodejs"},
+      {"label": "Express JS", "icon": ""},
+      {"label": "Adonis 5", "icon": ""},
+      {"label": "AWS (S3, SES, EC2, RDS)", "icon": "mdi-aws"},
+      {"label": "MYSQL", "icon": "mdi-database"},
+      {"label": "Mongo DB", "icon": ""},
+      {"label": "Socket.IO", "icon": "mdi-flash-circle"},
+      {"label": "WebRTC Based Audio Streaming", "icon": "mdi-webrtc"},
+      {"label": "SPA Server Side Rendering", "icon": ""},
+      {"label": "Dart Scripting", "icon": "mdi-console-line"}
     ]
   }
 ]
