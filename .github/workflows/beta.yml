@@ -1,7 +1,7 @@
 name: Beta release
 on:
   push:
-    branch:
+    branches:
       - "beta"
 
 jobs:
@@ -30,7 +30,7 @@ jobs:
 
       - name: Create beta folder
         run: |
-          mv beta/build app/build/beta
+          mv ./beta/build ./app/build/beta
 
       # - name: Deploy to Firebase
       #   uses: w9jds/firebase-action@v1.3.0
@@ -39,23 +39,23 @@ jobs:
       #   env:
       #     FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
-      - name: Setup git configs
-        run: |
-          cd app
-          git checkout master
-          git config --global user.name "hackerhgl"
-          git config --global user.email "hackerhgl@gmail.com"
+      # - name: Setup git configs
+      #   run: |
+      #     cd app
+      #     git checkout master
+      #     git config --global user.name "hackerhgl"
+      #     git config --global user.email "hackerhgl@gmail.com"
 
-      - name: Deploy on gh-pages
-        run: |
-          git add .
-          git commit -m "Automated jpg & pdf generation"
-          git push origin master
+      # - name: Deploy on gh-pages
+      #   run: |
+      #     git add .
+      #     git commit -m "Automated jpg & pdf generation"
+      #     git push origin master
 
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          FOLDER: app/build # The folder the action should deploy.
 
