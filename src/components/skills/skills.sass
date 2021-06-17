@@ -14,15 +14,24 @@
     .skill
       margin: 6px
       color: black
-      padding: 8px 16px
+      padding: 8px 18px
       border-radius: 4px
       display: inline-block
       background-color: white
-      box-shadow: 0 0 6px rgba(0,0,0,0.11)
+      border: 1px solid rgba(0,0,0,0.12)
+      box-shadow: 0 0 6px rgba(0,0,0,0.01)
       @include user-select()
       @include transition(all 400ms ease)
+      .mdi
+        @include transition(all 400ms ease)
+        color: $primary2
+        margin-right: 12px
+        display: inline-block
+        transform: scale(1.2)
       &:hover
-        box-shadow: 0 0 9px rgba(0,0,0,0.15)
+        box-shadow: 0 0 6px rgba(0,0,0,0.12)
+        .mdi
+          transform: scale(1.7)
 
       // &:first-child
       //   margin-left: 0
