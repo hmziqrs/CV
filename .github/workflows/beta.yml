@@ -11,56 +11,38 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
+          path: app
           ref: gh-pages
-          path: main
           fetch-depth: 0
           token: ${{ secrets.TOKEN }}
 
       - name: Checkout 🛎️
         uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          path: beta
+          path: tmp
           fetch-depth: 0
           token: ${{ secrets.TOKEN }}
 
-      - uses: actions/setup-node@v2-beta
-        with:
-          node-version: "12.19.1"
-
-      - run: pwd
-      - run: ls -lah
-      - run: ls beta/build
-      - run: ls main
-      - run: ls main/build
-      - run: mkdir main/build/beta
       - name: Create beta folder
         run: |
-          mv beta/build main/build/beta
+          mv tmp/build app/beta
+          cp app temp/build
+          # cd app
+          # git commit -m "Automated beta deployment"
+          # git push origin beta
 
-      # - name: Deploy to Firebase
-      #   uses: w9jds/firebase-action@v1.3.0
-      #   with:
-      #     args: deploy --only hosting
-      #   env:
-      #     FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
-      # - name: Setup git configs
-      #   run: |
-      #     cd app
-      #     git checkout master
-      #     git config --global user.name "hackerhgl"
-      #     git config --global user.email "hackerhgl@gmail.com"
-
-      # - name: Deploy on gh-pages
-      #   run: |
-      #     git add .
-      #     git commit -m "Automated jpg & pdf generation"
-      #     git push origin master
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v1.3.0
+        with:
+          args: deploy --only hosting
+        env:
+          PROJECT_PATH: "tmp"
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: app/build # The folder the action should deploy.
+          FOLDER: app # The folder the action should deploy.
 
