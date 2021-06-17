@@ -1864,6 +1864,18 @@ body {
     padding: 8px 30px;
   }
 }
+#development .heading {
+  color: #E31C25;
+  margin-bottom: 16px;
+}
+#development ul {
+  padding: 0 22px;
+}
+#development ul li {
+  list-style: circle;
+  margin: 3px 0;
+}
+
 #experience-card {
   color: #fff;
   margin-top: 32px;
