@@ -43,6 +43,7 @@
       "AWS (S3, SES, EC2, RDS)",
       "MYSQL",
       "Mongo DB",
+      "Socket.IO",
       "WebRTC Based Audio Streaming",
       "SPA Server Side Rendering",
       "Dart Scripting"
