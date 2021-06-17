@@ -28,6 +28,10 @@ async function run() {
       path: "build/assets/hackerhgl-cv.jpg",
       fullPage: true,
     });
+    await page.screenshot({
+      path: "build/assets/hackerhgl-cv.png",
+      fullPage: true,
+    });
     await page.pdf({
       format: "a3",
       printBackground: true,
@@ -38,6 +42,8 @@ async function run() {
     await browser.close();
     process.exit();
   } catch (e) {
+
+    console.error("FAILED TO get snapshot");
     console.error(e);
     process.exit(1);
   }
