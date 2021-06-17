@@ -28,8 +28,12 @@ jobs:
         with:
           node-version: "12.19.1"
 
+      - run: ls beta/build
+      - run: ls app/build
+      - run: mkdir app/build/beta
       - name: Create beta folder
         run: |
+          ls ./beta/build
           mv ./beta/build ./app/build/beta
 
       # - name: Deploy to Firebase
