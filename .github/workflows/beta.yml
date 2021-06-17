@@ -28,6 +28,8 @@ jobs:
         with:
           node-version: "12.19.1"
 
+      - run: pwd
+      - run: ls -lah
       - run: ls beta/build
       - run: ls app/build
       - run: mkdir app/build/beta
