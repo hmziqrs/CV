@@ -48,7 +48,7 @@
       {"label": "Socket.IO", "icon": "mdi-flash-circle"},
       {"label": "WebRTC Based Audio Streaming", "icon": "mdi-webrtc"},
       {"label": "SPA Server Side Rendering", "icon": ""},
-      {"label": "Dart Scripting", "icon": ""}
+      {"label": "Dart Scripting", "icon": "mdi-console-line"}
     ]
   }
 ]

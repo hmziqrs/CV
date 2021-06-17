@@ -2,13 +2,6 @@
   .heading
     color: $primary1
     margin-bottom: 16px
-    &.sub
-      color: black
-      text-align: left
-      margin-bottom: 8px
-      text-decoration-style: solid
-      text-decoration-line: underline
-      text-decoration-color: $primary2
   .skills-holder
     margin-bottom: 16px
     .skill
@@ -29,12 +22,9 @@
         display: inline-block
         transform: scale(1.2)
       &:hover
-        box-shadow: 0 0 6px rgba(0,0,0,0.12)
+        box-shadow: 0 0 9px rgba(0,0,0,0.08)
         .mdi
           transform: scale(1.7)
-
-      // &:first-child
-      //   margin-left: 0
   &.toggled
     box-shadow: 0 0 0 0 rgba(0,0,0,0.14)
     border-top: 1px solid
@@ -43,3 +33,5 @@
     .skills-holder
       .skill
         box-shadow: 0 0 0 0 rgba(0,0,0,0.14)
+        .mdi
+          transform: scale(1.0)

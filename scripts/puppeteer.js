@@ -28,10 +28,6 @@ async function run() {
       path: "build/assets/hackerhgl-cv.jpg",
       fullPage: true,
     });
-    await page.screenshot({
-      path: "build/assets/hackerhgl-cv.png",
-      fullPage: true,
-    });
     await page.pdf({
       format: "a3",
       printBackground: true,
