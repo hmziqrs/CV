@@ -28,7 +28,7 @@ jobs:
           mv tmp/build app/beta
           ls app
 
-          cp -r app temp/build
+          cp -r app tmp/build
           # cd app
           # git commit -m "Automated beta deployment"
           # git push origin beta
