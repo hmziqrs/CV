@@ -2,10 +2,12 @@ export function canvas() {
   return document.getElementById("canvas");
 }
 
-const MAX_Z = () => canvas().width * 0.20;
+const MAX_Z = () => (canvas().width + canvas().height) * 0.16;
 const MIN_Z = 1;
 
-var velocity = 0.050;
+
+export const BASE_VELOCITY = 0.08;
+var velocity = BASE_VELOCITY;
 
 export function setVelocity(raw) {
   velocity = raw ?? velocity;
@@ -33,7 +35,7 @@ export function getDimensions(params) {
 
 export function grid3d(c) {
   var c = canvas();
-  const amount = Math.floor((c.width + c.height) *0.25);
+  const amount = Math.floor((c.width + c.height) * 0.26);
 
   return Array(amount)
     .fill(0)
