@@ -5,6 +5,12 @@
     .card.col-lg-10.push-lg-1.float-fix
       .content
         h1.heading.ah1.afw6 Projects
-        .projects-holder
+        .projects-holder.container.zer0.float-fix
           for project in data
-            .project-card= project.name
+            .base.col-lg-4.col-sm-6
+              .project-card
+                .header
+                  .gradient
+                  h3.ab1.afw6.title= project.name
+                .body
+                  p.ab1.desc= project.name

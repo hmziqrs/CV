@@ -1852,6 +1852,38 @@ body {
   color: #E31C25;
   margin-bottom: 8px;
 }
+#projects .projects-holder .project-card {
+  cursor: pointer;
+  margin: 10px 0;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+#projects .projects-holder .project-card .header {
+  height: 160px;
+  position: relative;
+}
+#projects .projects-holder .project-card .header .gradient {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+}
+#projects .projects-holder .project-card .header .title {
+  left: 8px;
+  bottom: 8px;
+  position: absolute;
+  color: white;
+}
+#projects .projects-holder .project-card .body {
+  padding: 8px;
+}
 
 #summary-card {
   color: #fff;
