@@ -5,20 +5,17 @@ const header = document.getElementById("header");
 
 (function () {
   const c = engine.canvas();
-  const ctx = canvas.getContext("2d");
-  // resize the canvas to fill browser window dynamically
   window.addEventListener("resize", resizeCanvas, false);
   function resizeCanvas() {
-    c.width = window.outerWidth - getScrollbarWidth() - 1;
+    c.width = window.innerWidth - getScrollbarWidth() - 1;
     c.height = document.getElementById("header").offsetHeight;
     drawStuff();
   }
   resizeCanvas();
 
   function drawStuff() {
-    console.log(animationNo);
     if (animationNo != null) {
-      engine.setVelocity(0.12);
+      engine.setVelocity(engine.BASE_VELOCITY);
       cancelAnimationFrame(animationNo);
     }
     const c = engine.canvas();
@@ -100,7 +97,7 @@ var checkScrollSpeed = (function (settings) {
 
 
 // listen to "scroll" event
-const MAX_SPEED = 0.66;
+const MAX_SPEED = engine.BASE_VELOCITY * 3;
 window.onscroll = function () {
   const parallax = window.scrollY * 0.22;
   header.style.transform = `translateY(${parallax}px)`;
@@ -112,7 +109,7 @@ window.onscroll = function () {
     speed = MAX_SPEED;
   }
   if (speed == 0) {
-    speed = MAX_SPEED * 0.33;
+    speed = engine.BASE_VELOCITY;
   }
 
   engine.setVelocity(speed);
