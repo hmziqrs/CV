@@ -1481,6 +1481,10 @@ a {
   font-size: 14px;
 }
 
+.al1 {
+  font-size: 12px;
+}
+
 .afw4 {
   font-weight: 400;
 }
@@ -1517,6 +1521,10 @@ a {
   .ab2 {
     font-size: 13px;
   }
+
+  .al1 {
+    font-size: 11px;
+  }
 }
 @media (max-width: 767px) {
   .ah1 {
@@ -1537,6 +1545,10 @@ a {
 
   .ab2 {
     font-size: 12px;
+  }
+
+  .al1 {
+    font-size: 10px;
   }
 }
 @media (max-width: 551px) {
@@ -1559,6 +1571,10 @@ a {
   .ab2 {
     font-size: 11px;
   }
+
+  .al1 {
+    font-size: 9px;
+  }
 }
 @media (max-width: 361px) {
   .ah1 {
@@ -1579,6 +1595,10 @@ a {
 
   .ab2 {
     font-size: 11px;
+  }
+
+  .al1 {
+    font-size: 9px;
   }
 }
 * {
@@ -1733,7 +1753,8 @@ body {
 #skills .skills-holder .skill {
   margin: 6px;
   color: black;
-  padding: 8px 18px;
+  line-height: 8px;
+  padding: 14px 18px;
   border-radius: 4px;
   display: inline-block;
   background-color: white;
@@ -1752,16 +1773,21 @@ body {
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
+#skills .skills-holder .skill span {
+  position: relative;
+}
 #skills .skills-holder .skill .mdi {
+  top: 1px;
+  color: #ff5345;
+  margin-right: 12px;
+  position: relative;
+  display: inline-block;
+  transform: scale(1.2);
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
-  color: #ff5345;
-  margin-right: 12px;
-  display: inline-block;
-  transform: scale(1.2);
 }
 #skills .skills-holder .skill:hover {
   box-shadow: 0 0 9px rgba(0, 0, 0, 0.08);
@@ -1770,10 +1796,10 @@ body {
   transform: scale(1.7);
 }
 #skills.toggled {
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.14);
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.14);
 }
 #skills.toggled .skills-holder .skill {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.14);
@@ -1782,6 +1808,28 @@ body {
   transform: scale(1);
 }
 
+@media (max-width: 767px) {
+  #skills .skills-holder .skill {
+    margin: 6px 5px;
+    padding: 12px 16px;
+  }
+  #skills .skills-holder .skill .mdi {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 361px) {
+  #skills .skills-holder .skill {
+    margin: 5px 3px;
+    padding: 9px 12px;
+  }
+  #skills .skills-holder .skill span {
+    top: -1px;
+  }
+  #skills .skills-holder .skill .mdi {
+    top: 0px;
+    margin-right: 8px;
+  }
+}
 #story .heading {
   color: #E31C25;
   margin-bottom: 8px;
@@ -1792,7 +1840,7 @@ body {
 }
 
 #download-card {
-  padding: 48px 0;
+  padding: 24px 0;
   margin-top: 32px;
   background: white;
   text-align: center;
@@ -1800,7 +1848,7 @@ body {
 #download-card .base {
   color: white;
   color: #161616;
-  margin: 0 16px;
+  margin: 18px 16px;
   padding: 12px 32px;
   border-radius: 6px;
   display: inline-block;
@@ -1820,6 +1868,63 @@ body {
   margin-right: 12px;
 }
 
+#projects .heading {
+  color: #E31C25;
+  margin-bottom: 8px;
+}
+#projects .projects-holder .project-card {
+  margin: 10px 0;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+#projects .projects-holder .project-card .header {
+  height: 160px;
+  position: relative;
+}
+#projects .projects-holder .project-card .header .gradient {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+}
+#projects .projects-holder .project-card .header .title {
+  left: 8px;
+  bottom: 8px;
+  position: absolute;
+  color: white;
+}
+#projects .projects-holder .project-card .body {
+  padding: 8px;
+}
+#projects .projects-holder .project-card .type {
+  top: 8px;
+  right: 8px;
+  color: white;
+  padding: 4px 9px;
+  position: absolute;
+  border-radius: 5px;
+  background: #BB000E;
+}
+
+@media (max-width: 980px) {
+  #projects .projects-holder .project-card .header {
+    height: 120px;
+  }
+}
+@media (max-width: 501px) {
+  #projects .projects-holder .project-card .header {
+    height: 140px;
+  }
+}
 #summary-card {
   color: #fff;
   margin-top: 32px;
