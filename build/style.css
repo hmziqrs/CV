@@ -1848,6 +1848,11 @@ body {
   margin-right: 12px;
 }
 
+#projects .heading {
+  color: #E31C25;
+  margin-bottom: 8px;
+}
+
 #summary-card {
   color: #fff;
   margin-top: 32px;
