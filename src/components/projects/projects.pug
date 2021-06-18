@@ -1,8 +1,10 @@
-- var data = [{"label":"Download JPEG","href":"./assets/hackerhgl-cv.jpg","icon":"mdi mdi-file-image"},{"label":"Download PDF","href":"./assets/hackerhgl-cv.pdf","icon":"mdi mdi-file-pdf"}];
+- var data = [{"name":"Flutter UI Designs","contribution":"Mobile App","type":"Open Source","skills":[]},{"name":"Flutter movie concept","contribution":"Mobile App","type":"Open Source","skills":[]},{"name":"React Native Loop","contribution":"Mobile App","type":"Open Source","skills":[]},{"name":"Golang minesweeper","contribution":"CLI App","type":"Open Source","skills":[]},{"name":"My CV","contribution":"Web App","type":"Open Source","skills":[]},{"name":"Peekaboo Guru","contribution":"Full Stack","type":"Product","skills":[]},{"name":"Sastaticket.pk","contribution":"Mobile App","type":"Product","skills":[]},{"name":"WheelBees","contribution":"Full Stack","type":"Product","skills":[]},{"name":"Grow youth ministry","contribution":"Mobile App","type":"Product","skills":[]}];
 
 #projects.white-card.float-fix
   .container
     .card.col-lg-10.push-lg-1.float-fix
       .content
         h1.heading.ah1.afw6 Projects
-        p.ab2 WOW
+        .projects-holder
+          for project in data
+            .project-card= project.name
