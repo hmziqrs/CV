@@ -23,7 +23,7 @@
     "key": "Mobile",
     "skills": [
       {"label": "React Native", "icon": "mdi-react"},
-      {"label": "Flutter", "icon": ""},
+      {"label": "Flutter", "icon": "mdi-cellphone"},
       {"label": "Flutter Desktop/Tablet Apps", "icon": "mdi-desktop-mac-dashboard"},
       {"label": "Firebase", "icon": "mdi-firebase"},
       {"label": "Rest API", "icon": "mdi-api"},
@@ -31,8 +31,8 @@
       {"label": "WebRTC", "icon": "mdi-webrtc"},
       {"label": "Multi Threaded Apps", "icon": "mdi-cogs"},
       {"label": "Pixel Perfect UI", "icon": "mdi-monitor-cellphone-star"},
-      {"label": "Platform Native Experience", "icon": ""},
-      {"label": "Parallax Animations", "icon": ""}
+      {"label": "Platform Native Experience", "icon": "mdi-cellphone"},
+      {"label": "Parallax Animations", "icon": "mdi-animation-outline"}
     ]
   },
   {
@@ -40,14 +40,14 @@
     "skills": [
       {"label": "Golang", "icon": "mdi-language-go"},
       {"label": "Node JS", "icon": "mdi-nodejs"},
-      {"label": "Express JS", "icon": ""},
-      {"label": "Adonis 5", "icon": ""},
+      {"label": "Express JS", "icon": "mdi-cloud"},
+      {"label": "Adonis 5", "icon": "mdi-cloud"},
       {"label": "AWS (S3, SES, EC2, RDS)", "icon": "mdi-aws"},
       {"label": "MYSQL", "icon": "mdi-database"},
-      {"label": "Mongo DB", "icon": ""},
+      {"label": "Mongo DB", "icon": "mdi-database"},
       {"label": "Socket.IO", "icon": "mdi-flash-circle"},
       {"label": "WebRTC Based Audio Streaming", "icon": "mdi-webrtc"},
-      {"label": "SPA Server Side Rendering", "icon": ""},
+      {"label": "SPA Server Side Rendering", "icon": "mdi-cloud"},
       {"label": "Dart Scripting", "icon": "mdi-console-line"}
     ]
   }
