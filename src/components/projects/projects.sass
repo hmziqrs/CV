@@ -4,9 +4,10 @@
     margin-bottom: 8px
   .projects-holder
     .project-card
-      cursor: pointer
       margin: 10px 0
+      cursor: pointer
       background: white
+      position: relative
       border-radius: 8px
       border: 1px solid rgba(0,0,0,0.12)
       .header
@@ -26,3 +27,25 @@
           color: white
       .body
         padding: 8px
+      .type
+        top: 8px
+        right: 8px
+        color: white
+        padding: 4px 9px
+        position: absolute
+        border-radius: 5px
+        background: $primary
+
+@media (max-width: 980px)
+  #projects
+    .projects-holder
+      .project-card
+        .header
+          height: 120px
+
+@media (max-width: 501px)
+  #projects
+    .projects-holder
+      .project-card
+        .header
+          height: 140px

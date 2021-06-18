@@ -7,10 +7,11 @@
         h1.heading.ah1.afw6 Projects
         .projects-holder.container.zer0.float-fix
           for project in data
-            .base.col-lg-4.col-sm-6
+            .base.col-md-4.col-sm-6
               .project-card
                 .header
                   .gradient
                   h3.ab1.afw6.title= project.name
                 .body
                   p.ab1.desc= project.name
+                .type.al1.afw6= project.type
