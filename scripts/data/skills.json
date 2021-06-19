@@ -13,10 +13,8 @@
       {"label": "React JS", "icon": "mdi-react"},
       {"label": "Material UI", "icon": "mdi-material-ui"},
       {"label": "React SSR", "icon": "mdi-react"},
-      {"label": "Internationalization", "icon": "mdi-translate"},
       {"label": "Firebase", "icon": "mdi-firebase"},
       {"label": "Socket.IO", "icon": "mdi-flash-circle"},
-      {"label": "WebRTC", "icon": "mdi-webrtc"},
       {"label": "Webpack", "icon": "mdi-webpack"}
     ]
   },
@@ -28,12 +26,10 @@
       {"label": "Flutter Desktop/Tablet Apps", "icon": "mdi-desktop-mac-dashboard"},
       {"label": "Firebase", "icon": "mdi-firebase"},
       {"label": "Rest API", "icon": "mdi-api"},
-      {"label": "Socket.IO", "icon": "mdi-flash-circle"},
       {"label": "WebRTC", "icon": "mdi-webrtc"},
       {"label": "Internationalization", "icon": "mdi-translate"},
       {"label": "Multi Threaded Apps", "icon": "mdi-cogs"},
       {"label": "Pixel Perfect UI", "icon": "mdi-monitor-cellphone-star"},
-      {"label": "Platform Native Experience", "icon": "mdi-cellphone"},
       {"label": "Parallax Animations", "icon": "mdi-animation-outline"}
     ]
   },
@@ -41,16 +37,15 @@
     "key": "Server",
     "skills": [
       {"label": "Golang", "icon": "mdi-language-go"},
+      {"label": "Dart", "icon": "mdi-console-line"},
       {"label": "Node JS", "icon": "mdi-nodejs"},
       {"label": "Express JS", "icon": "mdi-cloud"},
       {"label": "Adonis 5", "icon": "mdi-cloud"},
+      {"label": "CLI App", "icon": "mdi-console-line"},
       {"label": "AWS (S3, SES, EC2, RDS)", "icon": "mdi-aws"},
       {"label": "MYSQL", "icon": "mdi-database"},
       {"label": "Mongo DB", "icon": "mdi-database"},
-      {"label": "Socket.IO", "icon": "mdi-flash-circle"},
-      {"label": "WebRTC Based Audio Streaming", "icon": "mdi-webrtc"},
-      {"label": "SPA Server Side Rendering", "icon": "mdi-cloud"},
-      {"label": "Dart Scripting", "icon": "mdi-console-line"}
+      {"label": "SPA SSR", "icon": "mdi-cloud"}
     ]
   }
 ]
