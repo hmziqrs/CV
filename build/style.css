@@ -1905,6 +1905,13 @@ body {
 #projects .projects-holder .project-card .body {
   padding: 8px;
 }
+#projects .projects-holder .project-card .body .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 #projects .projects-holder .project-card .type {
   top: 8px;
   right: 8px;

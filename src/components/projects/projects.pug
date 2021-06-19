@@ -1,8 +1,8 @@
-- var data = [{"name":"Flutter UI Designs","contribution":"Mobile App","type":"Open Source","skills":[]},{"name":"Flutter movie concept","contribution":"Mobile App","type":"Open Source","skills":[]},{"name":"React Native Loop","contribution":"Mobile App","type":"Open Source","skills":[]},{"name":"Golang minesweeper","contribution":"CLI App","type":"Open Source","skills":[]},{"name":"My CV","contribution":"Web App","type":"Open Source","skills":[]},{"name":"Peekaboo Guru","contribution":"Full Stack","type":"Product","skills":[]},{"name":"Sastaticket.pk","contribution":"Mobile App","type":"Product","skills":[]},{"name":"WheelBees","contribution":"Full Stack","type":"Product","skills":[]},{"name":"Grow youth ministry","contribution":"Mobile App","type":"Product","skills":[]}];
+- var data = [{"name":"Flutter UI Designs","contribution":"Mobile App","type":"Open Source","description":["Features complex parallax animations. ","Desktop & web app support. ","Responsive UI. ","Basic internationalization. ","Light and Dark theme support."],"skills":[]},{"name":"Flutter movie concept","contribution":"Mobile App","type":"Open Source","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"React Native Loop","contribution":"Mobile App","type":"Open Source","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"Golang minesweeper","contribution":"CLI App","type":"Open Source","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"My CV","contribution":"Web App","type":"Open Source","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"Peekaboo Guru","contribution":"Full Stack","type":"Product","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"Sastaticket.pk","contribution":"Mobile App","type":"Product","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"WheelBees","contribution":"Full Stack","type":"Product","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]},{"name":"Grow youth ministry","contribution":"Mobile App","type":"Product","description":["Features complex parallax animations.","Scales on desktop, tablets & browser."],"skills":[]}];
 
 #projects.white-card.float-fix
   .container
-    .card.col-lg-10.push-lg-1.float-fix
+    .card.col-10.push-1.float-fix
       .content
         h1.heading.ah1.afw6 Projects
         .projects-holder.container.zer0.float-fix
@@ -13,5 +13,7 @@
                   .gradient
                   h3.ab1.afw6.title= project.name
                 .body
-                  p.ab1.desc= project.name
+                  p.ab2.afw5.desc
+                    for desc in project.description
+                      =desc
                 .type.al1.afw6= project.type

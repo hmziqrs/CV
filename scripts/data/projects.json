@@ -3,54 +3,93 @@
     "name": "Flutter UI Designs",
     "contribution": "Mobile App",
     "type": "Open Source",
+    "description": [
+      "Features complex parallax animations. ",
+      "Desktop & web app support. ",
+      "Responsive UI. ",
+      "Basic internationalization. ",
+      "Light and Dark theme support."
+    ],
     "skills": []
   },
   {
     "name": "Flutter movie concept",
     "contribution": "Mobile App",
     "type": "Open Source",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "React Native Loop",
     "contribution": "Mobile App",
     "type": "Open Source",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "Golang minesweeper",
     "contribution": "CLI App",
     "type": "Open Source",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "My CV",
     "contribution": "Web App",
     "type": "Open Source",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "Peekaboo Guru",
     "contribution": "Full Stack",
     "type": "Product",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "Sastaticket.pk",
     "contribution": "Mobile App",
     "type": "Product",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "WheelBees",
     "contribution": "Full Stack",
     "type": "Product",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   },
   {
     "name": "Grow youth ministry",
     "contribution": "Mobile App",
     "type": "Product",
+        "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
     "skills": []
   }
 ]
