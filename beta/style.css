@@ -1890,11 +1890,11 @@ body {
   right: 0;
   bottom: 0;
   position: absolute;
-  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
-  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
-  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
-  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 40%);
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
 }
 #projects .projects-holder .project-card .header .title {
   left: 8px;
@@ -1904,6 +1904,32 @@ body {
 }
 #projects .projects-holder .project-card .body {
   padding: 8px;
+}
+#projects .projects-holder .project-card .body .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+#projects .projects-holder .project-card .body .buttons-holder {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#projects .projects-holder .project-card .body .buttons-holder .button {
+  margin: 0px 4px;
+  padding: 4px 7px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+#projects .projects-holder .project-card .body .buttons-holder .button i.mdi {
+  margin-right: 4px;
+}
+#projects .projects-holder .project-card .body .buttons-holder .button:first-child {
+  margin-left: 0px;
+}
+#projects .projects-holder .project-card .body .buttons-holder .button:last-child {
+  margin-right: 0px;
 }
 #projects .projects-holder .project-card .type {
   top: 8px;
