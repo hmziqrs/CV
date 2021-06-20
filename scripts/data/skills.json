@@ -27,6 +27,7 @@
       {"label": "Firebase", "icon": "mdi-firebase"},
       {"label": "Rest API", "icon": "mdi-api"},
       {"label": "WebRTC", "icon": "mdi-webrtc"},
+      {"label": "e2e testing", "icon": "mdi-test-tube"},
       {"label": "Internationalization", "icon": "mdi-translate"},
       {"label": "Multi Threaded Apps", "icon": "mdi-cogs"},
       {"label": "Pixel Perfect UI", "icon": "mdi-monitor-cellphone-star"},
