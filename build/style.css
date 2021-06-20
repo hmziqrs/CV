@@ -2024,22 +2024,20 @@ body {
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
 #experience-card .container-content {
-  padding: 32px 0;
+  padding: 32px 10px;
   text-align: left;
 }
 #experience-card .heading {
-  margin: auto;
   margin-bottom: 8px;
-  text-align: center;
 }
 #experience-card .experience {
-  margin-top: 30px;
+  margin-top: 24px;
 }
 #experience-card .experience .br {
   height: 1px;
   width: 100%;
+  margin-top: 20px;
   background: rgba(255, 255, 255, 0.1);
-  margin-top: 30px;
 }
 #experience-card .experience .header .circle {
   float: left;
@@ -2064,20 +2062,17 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#experience-card .experience .header .position {
+#experience-card .experience .header .company {
   float: left;
+  margin-top: 0px;
+}
+#experience-card .experience .header .company .contract {
+  margin-left: 8px;
+  color: #e53935;
 }
 #experience-card .experience .date {
   margin-top: 6px;
   margin-left: 32px;
-}
-#experience-card .experience .company {
-  margin-top: 8px;
-  margin-left: 32px;
-}
-#experience-card .experience .company .contract {
-  margin-left: 8px;
-  color: #e53935;
 }
 #experience-card .experience .points-holder {
   padding: 0 32px;
