@@ -50,24 +50,6 @@ html {
     padding-left: 10px;
   }
 }
-@media (min-width: 576px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: 900px;
-    max-width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 920px;
-    max-width: 100%;
-  }
-}
 @media (min-width: 1200px) {
   .container {
     width: 1160px;
