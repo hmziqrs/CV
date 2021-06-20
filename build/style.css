@@ -1989,25 +1989,25 @@ body {
   background-image: -o-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
-#experience-card .card .content {
+#experience-card .container-content {
   padding: 32px 0;
   text-align: left;
 }
-#experience-card .card .heading {
+#experience-card .heading {
   margin: auto;
   margin-bottom: 8px;
   text-align: center;
 }
-#experience-card .card .experience {
+#experience-card .experience {
   margin-top: 30px;
 }
-#experience-card .card .experience .br {
+#experience-card .experience .br {
   height: 1px;
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   margin-top: 30px;
 }
-#experience-card .card .experience .header .circle {
+#experience-card .experience .header .circle {
   float: left;
   position: relative;
   border-radius: 15px;
@@ -2016,7 +2016,7 @@ body {
   height: 20px;
   width: 20px;
 }
-#experience-card .card .experience .header .circle .inner {
+#experience-card .experience .header .circle .inner {
   background: #e53935;
   position: absolute;
   top: 50%;
@@ -2030,46 +2030,46 @@ body {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-#experience-card .card .experience .header .position {
+#experience-card .experience .header .position {
   float: left;
 }
-#experience-card .card .experience .date {
+#experience-card .experience .date {
   margin-top: 6px;
   margin-left: 32px;
 }
-#experience-card .card .experience .company {
+#experience-card .experience .company {
   margin-top: 8px;
   margin-left: 32px;
 }
-#experience-card .card .experience .company .contract {
+#experience-card .experience .company .contract {
   margin-left: 8px;
   color: #e53935;
 }
-#experience-card .card .experience .points-holder {
+#experience-card .experience .points-holder {
   padding: 0 32px;
   margin-top: 8px;
 }
-#experience-card .card .experience .points-holder .point {
+#experience-card .experience .points-holder .point {
   margin: 12px 0;
 }
-#experience-card .card .experience .points-holder .point:first-child {
+#experience-card .experience .points-holder .point:first-child {
   margin-top: 0;
 }
-#experience-card .card .experience .points-holder .point:last-child {
+#experience-card .experience .points-holder .point:last-child {
   margin-bottom: 0;
 }
-#experience-card .card .experience:last-child .br {
+#experience-card .experience:last-child .br {
   display: none;
 }
 
 @media (max-width: 767px) {
-  #experience-card .card .experience .header .circle {
+  #experience-card .experience .header .circle {
     margin-top: 4px;
   }
-  #experience-card .card .experience .date {
+  #experience-card .experience .date {
     margin-top: 4px;
   }
-  #experience-card .card .experience .company {
+  #experience-card .experience .company {
     margin-top: 4px;
   }
 }
