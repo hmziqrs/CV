@@ -1,0 +1,72 @@
+#projects
+  .heading
+    color: $primary1
+    margin-bottom: 8px
+  .projects-holder
+    .project-card
+      margin: 10px 0
+      cursor: pointer
+      background: white
+      position: relative
+      border-radius: 8px
+      border: 1px solid rgba(0,0,0,0.12)
+      .header
+        height: 160px
+        position: relative
+        .gradient
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          position: absolute
+          @include linear-background(0deg, rgba(0,0,0,0.75), transparent 35%)
+        .title
+          left: 8px
+          bottom: 8px
+          position: absolute
+          color: white
+      .body
+        padding: 8px
+        .desc
+          overflow: hidden
+          text-overflow: ellipsis
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
+        .buttons-holder
+          margin-top: 10px
+          margin-bottom: 5px
+          .button
+            margin: 0px 4px
+            padding: 4px 7px
+            border-radius: 6px
+            border: 1px solid rgba(0,0,0,0.12)
+            i.mdi
+              // color: $primary1
+              margin-right: 4px
+            &:first-child
+              margin-left: 0px
+            &:last-child
+              margin-right: 0px
+      .type
+        top: 8px
+        right: 8px
+        color: white
+        padding: 4px 9px
+        position: absolute
+        border-radius: 5px
+        background: $primary
+
+@media (max-width: 980px)
+  #projects
+    .projects-holder
+      .project-card
+        .header
+          height: 120px
+
+@media (max-width: 501px)
+  #projects
+    .projects-holder
+      .project-card
+        .header
+          height: 140px

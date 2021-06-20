@@ -1481,6 +1481,10 @@ a {
   font-size: 14px;
 }
 
+.al1 {
+  font-size: 12px;
+}
+
 .afw4 {
   font-weight: 400;
 }
@@ -1517,6 +1521,10 @@ a {
   .ab2 {
     font-size: 13px;
   }
+
+  .al1 {
+    font-size: 11px;
+  }
 }
 @media (max-width: 767px) {
   .ah1 {
@@ -1537,6 +1545,10 @@ a {
 
   .ab2 {
     font-size: 12px;
+  }
+
+  .al1 {
+    font-size: 10px;
   }
 }
 @media (max-width: 551px) {
@@ -1559,6 +1571,10 @@ a {
   .ab2 {
     font-size: 11px;
   }
+
+  .al1 {
+    font-size: 9px;
+  }
 }
 @media (max-width: 361px) {
   .ah1 {
@@ -1579,6 +1595,10 @@ a {
 
   .ab2 {
     font-size: 11px;
+  }
+
+  .al1 {
+    font-size: 9px;
   }
 }
 * {
@@ -1848,6 +1868,89 @@ body {
   margin-right: 12px;
 }
 
+#projects .heading {
+  color: #E31C25;
+  margin-bottom: 8px;
+}
+#projects .projects-holder .project-card {
+  margin: 10px 0;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+#projects .projects-holder .project-card .header {
+  height: 160px;
+  position: relative;
+}
+#projects .projects-holder .project-card .header .gradient {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+}
+#projects .projects-holder .project-card .header .title {
+  left: 8px;
+  bottom: 8px;
+  position: absolute;
+  color: white;
+}
+#projects .projects-holder .project-card .body {
+  padding: 8px;
+}
+#projects .projects-holder .project-card .body .desc {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+#projects .projects-holder .project-card .body .buttons-holder {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#projects .projects-holder .project-card .body .buttons-holder .button {
+  margin: 0px 4px;
+  padding: 4px 7px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+#projects .projects-holder .project-card .body .buttons-holder .button i.mdi {
+  margin-right: 4px;
+}
+#projects .projects-holder .project-card .body .buttons-holder .button:first-child {
+  margin-left: 0px;
+}
+#projects .projects-holder .project-card .body .buttons-holder .button:last-child {
+  margin-right: 0px;
+}
+#projects .projects-holder .project-card .type {
+  top: 8px;
+  right: 8px;
+  color: white;
+  padding: 4px 9px;
+  position: absolute;
+  border-radius: 5px;
+  background: #BB000E;
+}
+
+@media (max-width: 980px) {
+  #projects .projects-holder .project-card .header {
+    height: 120px;
+  }
+}
+@media (max-width: 501px) {
+  #projects .projects-holder .project-card .header {
+    height: 140px;
+  }
+}
 #summary-card {
   color: #fff;
   margin-top: 32px;
