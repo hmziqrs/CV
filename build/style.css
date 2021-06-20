@@ -1870,8 +1870,14 @@ body {
   color: #E31C25;
   margin-bottom: 8px;
 }
+#projects .projects-holder {
+  margin: 0 -8px;
+}
+#projects .projects-holder .base {
+  padding: 0px 8px;
+}
 #projects .projects-holder .project-card {
-  margin: 10px 0;
+  margin: 8px 0;
   cursor: pointer;
   background: white;
   position: relative;
@@ -1905,29 +1911,29 @@ body {
 }
 #projects .projects-holder .project-card .body .desc {
   overflow: hidden;
-  text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
   -webkit-box-orient: vertical;
 }
 #projects .projects-holder .project-card .body .buttons-holder {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 12px;
+  margin-bottom: 6px;
 }
 #projects .projects-holder .project-card .body .buttons-holder .button {
-  margin: 0px 4px;
+  margin: 0px 3px;
   padding: 4px 7px;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 #projects .projects-holder .project-card .body .buttons-holder .button i.mdi {
-  margin-right: 4px;
+  margin-right: 3px;
 }
 #projects .projects-holder .project-card .body .buttons-holder .button:first-child {
   margin-left: 0px;
 }
 #projects .projects-holder .project-card .body .buttons-holder .button:last-child {
-  margin-right: 0px;
+  margin-right: 4px;
 }
 #projects .projects-holder .project-card .type {
   top: 8px;
@@ -1945,6 +1951,9 @@ body {
   }
 }
 @media (max-width: 501px) {
+  #projects .projects-holder .project-card {
+    margin: 10px 0;
+  }
   #projects .projects-holder .project-card .header {
     height: 140px;
   }
