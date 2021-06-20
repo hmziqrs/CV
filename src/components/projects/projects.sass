@@ -19,7 +19,7 @@
           right: 0
           bottom: 0
           position: absolute
-          @include linear-background(0deg, rgba(0,0,0,0.75), transparent 40%)
+          @include linear-background(0deg, rgba(0,0,0,0.75), transparent 35%)
         .title
           left: 8px
           bottom: 8px
@@ -33,7 +33,21 @@
           display: -webkit-box
           -webkit-line-clamp: 3
           -webkit-box-orient: vertical
-
+        .buttons-holder
+          margin-top: 10px
+          margin-bottom: 5px
+          .button
+            margin: 0px 4px
+            padding: 4px 7px
+            border-radius: 6px
+            border: 1px solid rgba(0,0,0,0.12)
+            i.mdi
+              // color: $primary1
+              margin-right: 4px
+            &:first-child
+              margin-left: 0px
+            &:last-child
+              margin-right: 0px
       .type
         top: 8px
         right: 8px
