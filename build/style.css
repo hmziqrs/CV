@@ -1998,10 +1998,6 @@ body {
   background-image: -o-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
-#experience-card .card {
-  padding: 0;
-  border-radius: 6px;
-}
 #experience-card .card .content {
   padding: 32px 0;
   text-align: left;
