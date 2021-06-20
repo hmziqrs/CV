@@ -1,14 +1,13 @@
 - var data = ["Hi, I am Hamza Iqbal self learned full stack developer with more than 4 years of experience.","My knowledge and experience is the result of my hard work and my desire for polishing my skills to absolute perfection.","I can confidently say I have absolute mastery in Flutter, React JS and React Native.","I enjoy tech a lot and also like to showcase my skills to the world. I have also published several open source projects on github,","Project links can be found right after skills section if you wish to check out my work.","","Aside from development I'm a computer enthusiast and gamer.","I own a custom built 4th gen i7 computer with dual boot setup for Hackintosh (A way to run MacOS on custom hardware) for development and Windows for gaming.","I mostly play CS:GO and Age of empires: DE. I've also finished Detroit: Become human, CyberPunk 2077, GTA 4 and GTA 5."];
 
 #story.white-card
-  .container.float-fix
-    .card.col-sm-10.push-sm-1
-      .content
-        h1.heading.ah1.afw6 Introduction
-        each text in data
-          if (text != "")
-            span.ab1.afw6= text
-            span.space
-          else
-            br
-            br
+  .container
+    .container-content
+      h1.heading.ah1.afw6 Introduction
+      each text in data
+        if (text != "")
+          span.ab1.afw6= text
+          span.space
+        else
+          br
+          br

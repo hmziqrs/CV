@@ -13,10 +13,18 @@ html
 
 $padding-right: 10px
 $padding-left: 10px
-$desktop-width: 1160px
-$notebook-width: 920px
+
+$desktop-width: 1200px
+$notebook-width: 1020px
 $tablet-width: 900px
 $mobile-width: 100%
+
+.container-content
+  width: 100%
+  margin: auto
+  display: block
+  padding-right: $padding-right
+  padding-left: $padding-left
 
 .container, .container-fluid
   position: relative
@@ -25,40 +33,26 @@ $mobile-width: 100%
   padding-right: $padding-right
   padding-left: $padding-left
 
-@media (min-width: 576px)
-  .container
-    padding-right: $padding-right
-    padding-left: $padding-left
+// @media (min-width: 576px)
+//   .container
+//     width: $mobile-width
+//     max-width: 100%
 
-@media (min-width: 768px)
-  .container
-    padding-right: $padding-right
-    padding-left: $padding-left
+// @media (min-width: 768px)
+//   .container
+//     width: $tablet-width
+//     max-width: 100%
 
-@media (min-width: 992px)
-  .container
-    padding-right: $padding-right
-    padding-left: $padding-left
+// @media (min-width: 992px)
+//   .container
+//     width: 100%
+//     max-width: 100%
 
 @media (min-width: 1200px)
-  .container
-    padding-right: $padding-right
-    padding-left: $padding-left
-
-@media (min-width: 576px)
-  .container
-    width: $mobile-width
-    max-width: 100%
-
-@media (min-width: 768px)
-  .container
-    width: $tablet-width
-    max-width: 100%
-
-@media (min-width: 992px)
-  .container
-    width: $notebook-width
-    max-width: 100%
+  .container-content
+    padding-left: 0
+    padding-right: 0
+    width: calc((100%/16)*14)
 
 @media (min-width: 1200px)
   .container

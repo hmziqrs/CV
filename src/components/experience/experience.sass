@@ -3,76 +3,70 @@
   margin-top: 32px
   @include linear-background(-60deg, $bgradients, $bgradiente)
   // box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3)
-  .card
-    padding: 0
-    border-radius: 6px
-    // background: white
-    .content
-      padding: 32px 0
-      text-align: left
-    .heading
-      margin: auto
-      margin-bottom: 8px
-      text-align: center
-    .experience
+  .container-content
+    padding: 32px 0
+    text-align: left
+  .heading
+    margin: auto
+    margin-bottom: 8px
+    text-align: center
+  .experience
+    margin-top: 30px
+    .br
+      height: 1px
+      width: 100%
+      background: rgba(255, 255, 255, 0.1)
       margin-top: 30px
-      .br
-        height: 1px
-        width: 100%
-        background: rgba(255, 255, 255, 0.1)
-        margin-top: 30px
-      .header
-        .circle
-          float: left
-          position: relative
+    .header
+      .circle
+        float: left
+        position: relative
+        border-radius: 15px
+        margin: 4px 10px 0 0
+        border: 2px solid $gradients
+        @include size(20px)
+        .inner
+          background: $gradients
+          position: absolute
+          top: 50%
+          left: 50%
           border-radius: 15px
-          margin: 4px 10px 0 0
-          border: 2px solid $gradients
-          @include size(20px)
-          .inner
-            background: $gradients
-            position: absolute
-            top: 50%
-            left: 50%
-            border-radius: 15px
-            @include size(10px)
-            @include transform(translate(-50%, -50%))
-        .position
-          float: left
-      .date
-        margin-top: 6px
-        margin-left: 32px
-      .company
-        margin-top: 8px
-        margin-left: 32px
-        .contract
-          margin-left: 8px
-          color: $gradients
-      .points-holder
-        padding: 0 32px
-        margin-top: 8px
-        .point
-          margin: 12px 0
-          &:first-child
-            margin-top: 0
-          &:last-child
-            margin-bottom: 0
-      &:last-child
-        .br
-          display: none
+          @include size(10px)
+          @include transform(translate(-50%, -50%))
+      .position
+        float: left
+    .date
+      margin-top: 6px
+      margin-left: 32px
+    .company
+      margin-top: 8px
+      margin-left: 32px
+      .contract
+        margin-left: 8px
+        color: $gradients
+    .points-holder
+      padding: 0 32px
+      margin-top: 8px
+      .point
+        margin: 12px 0
+        &:first-child
+          margin-top: 0
+        &:last-child
+          margin-bottom: 0
+    &:last-child
+      .br
+        display: none
 @media (max-width: 767px)
   #experience-card
-    .card
-      // background: blue
-      .experience
-        .header
-          .circle
-            margin-top: 4px
-        .date
+    .experience
+      .header
+        .circle
           margin-top: 4px
-        .company
-          margin-top: 4px
-        .points-holder
+      .date
+        margin-top: 4px
+      .company
+        margin-top: 4px
+      .points-holder
 
 // @media (max-width: 651px)
 //   #experience-card
