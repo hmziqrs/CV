@@ -10,11 +10,11 @@
             .project-card
               .header
                 .gradient
-                h3.ab1.afw6.title= project.name
               .body
-                p.ab2.afw6.desc
-                  for desc in project.description
-                    =desc
+                h3.ab1.afw6.title= project.name
+                //- p.ab2.afw6.desc
+                //-   for desc in project.description
+                //-     =desc
                 .buttons-holder
                   for button in project.buttons
                     a.button(href=button.link,target="_blank")

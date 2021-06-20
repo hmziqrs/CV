@@ -3,8 +3,11 @@
     color: $primary1
     margin-bottom: 8px
   .projects-holder
+    margin: 0 -8px
+    .base
+      padding: 0px 8px
     .project-card
-      margin: 10px 0
+      margin: 8px 0
       cursor: pointer
       background: white
       position: relative
@@ -29,25 +32,24 @@
         padding: 8px
         .desc
           overflow: hidden
-          text-overflow: ellipsis
           display: -webkit-box
-          -webkit-line-clamp: 3
+          -webkit-line-clamp: 2
+          text-overflow: ellipsis
           -webkit-box-orient: vertical
         .buttons-holder
-          margin-top: 10px
-          margin-bottom: 5px
+          margin-top: 12px
+          margin-bottom: 6px
           .button
-            margin: 0px 4px
+            margin: 0px 3px
             padding: 4px 7px
-            border-radius: 6px
+            border-radius: 4px
             border: 1px solid rgba(0,0,0,0.12)
             i.mdi
-              // color: $primary1
-              margin-right: 4px
+              margin-right: 3px
             &:first-child
               margin-left: 0px
             &:last-child
-              margin-right: 0px
+              margin-right: 4px
       .type
         top: 8px
         right: 8px
@@ -64,9 +66,28 @@
         .header
           height: 120px
 
+// @media (max-width: 767px)
+//   #projects
+//     .projects-holder
+//       .base
+//         &:nth-child(3n+3)
+//           padding-right: 10px
+//           padding-left: 10px
+//         &:nth-child(3n+1)
+//           padding-right: 10px
+//           padding-left: 10px
+
+//         &:nth-child(2n+2)
+//           padding-right: 0px
+//           padding-left: 20px
+//         &:nth-child(2n+1)
+//           padding-right: 20px
+//           padding-left: 0px
 @media (max-width: 501px)
   #projects
     .projects-holder
+      .base
       .project-card
+        margin: 10px 0
         .header
           height: 140px
