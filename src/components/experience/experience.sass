@@ -4,19 +4,17 @@
   @include linear-background(-60deg, $bgradients, $bgradiente)
   // box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3)
   .container-content
-    padding: 32px 0
+    padding: 32px 10px
     text-align: left
   .heading
-    margin: auto
     margin-bottom: 8px
-    text-align: center
   .experience
-    margin-top: 30px
+    margin-top: 24px
     .br
       height: 1px
       width: 100%
+      margin-top: 20px
       background: rgba(255, 255, 255, 0.1)
-      margin-top: 30px
     .header
       .circle
         float: left
@@ -33,17 +31,30 @@
           border-radius: 15px
           @include size(10px)
           @include transform(translate(-50%, -50%))
-      .position
+      .company
         float: left
-    .date
-      margin-top: 6px
+        margin-top: 0px
+        .contract
+          margin-left: 8px
+          color: $gradients
+    .journey-holder
       margin-left: 32px
-    .company
-      margin-top: 8px
-      margin-left: 32px
-      .contract
-        margin-left: 8px
-        color: $gradients
+      .journey
+        margin-top: 12px
+        .position
+          display: block
+          color: rgba(255,255,255, 0.75)
+        .date
+          margin-top: 6px
+          display: block
+        .break
+          width: 40%
+          height: 1px
+          margin-top: 12px
+          margin-bottom: 12px
+          // background: $primary
+          @include linear-background(to left,transparent,rgba(255,255,255, 0.55))
+          // background: rgba(255,255,255, 0.12)
     .points-holder
       padding: 0 32px
       margin-top: 8px
@@ -56,17 +67,32 @@
     &:last-child
       .br
         display: none
-@media (max-width: 767px)
+
+@media (max-width: 576px)
   #experience-card
     .experience
       .header
         .circle
-          margin-top: 4px
-      .date
-        margin-top: 4px
-      .company
-        margin-top: 4px
-      .points-holder
+          .inner
+      .journey-holder
+        .journey
+          .position
+            display: block
+          .date
+            display: block
+          .break
+            width: 60%
+// @media (max-width: 767px)
+//   #experience-card
+//     .experience
+//       .header
+//         .circle
+//           margin-top: 4px
+//       .date
+//         margin-top: 4px
+//       .company
+//         margin-top: 4px
+//       .points-holder
 
 // @media (max-width: 651px)
 //   #experience-card
