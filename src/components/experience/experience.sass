@@ -37,9 +37,24 @@
         .contract
           margin-left: 8px
           color: $gradients
-    .date
-      margin-top: 6px
+    .journey-holder
       margin-left: 32px
+      .journey
+        margin-top: 12px
+        .position
+          display: block
+          color: rgba(255,255,255, 0.75)
+        .date
+          margin-top: 6px
+          display: block
+        .break
+          width: 40%
+          height: 1px
+          margin-top: 12px
+          margin-bottom: 12px
+          // background: $primary
+          @include linear-background(to left,transparent,rgba(255,255,255, 0.55))
+          // background: rgba(255,255,255, 0.12)
     .points-holder
       padding: 0 32px
       margin-top: 8px
@@ -53,17 +68,31 @@
       .br
         display: none
 
-@media (max-width: 767px)
+@media (max-width: 576px)
   #experience-card
     .experience
       .header
         .circle
-          margin-top: 4px
-      .date
-        margin-top: 4px
-      .company
-        margin-top: 4px
-      .points-holder
+          .inner
+      .journey-holder
+        .journey
+          .position
+            display: block
+          .date
+            display: block
+          .break
+            width: 60%
+// @media (max-width: 767px)
+//   #experience-card
+//     .experience
+//       .header
+//         .circle
+//           margin-top: 4px
+//       .date
+//         margin-top: 4px
+//       .company
+//         margin-top: 4px
+//       .points-holder
 
 // @media (max-width: 651px)
 //   #experience-card

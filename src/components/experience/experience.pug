@@ -13,7 +13,15 @@
               p.company
                 span.ah3.afw6= exp.company
                 span.contract.ab1= exp.contract
-            .points-holder
-              each point in exp.points
-                .point.ab1= point
+            .journey-holder
+              each journey in exp.journey
+                .journey.float-fix
+                  p.position.ab1.afw5= journey.position
+                  p.ab1.afw4.date= journey.date
+                  if exp.points.length > 0
+                    .break
+            if exp.points.length > 0
+              .points-holder
+                each point in exp.points
+                  .point.ab1= point
             div.br
