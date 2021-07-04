@@ -46,10 +46,9 @@
       }
     ],
     "points": [
-      "In beginning of my career I worked on product \"Peekaboo Guru\". Peekaboo Guru is a location based platform which acts as your complete lifestyle guide and shows all the deals and discounts offered in the market.",
-      "I started working on front-end and back-end of peekaboo's admin panel. Front-end is built with Angular JS (1.5) with ES6 standards and Angular Material as UI framework. Node JS is used as back-end runtime environment and Express JS as Framework with ES6 standards. MYSQL as primary database. I worked on complex dynamic CRUD forms, Data tables with server side filtering and Sorting, REST API end points and Created a light weight module which auto crop, Scale, Resize and Optimize the image.",
-      "After promotion I was switched to client web, Moblie App & Mobile SDK development.",
-      "Client web is built React JS. Mobile App is built with React Native, while Mobile SDK is extracted version of Mobile App for third parties. In React development HOC pattern is followed, So all business logic can be shared in any React ecosystem."
+      "At beginning I worked on Peekaboo Guru's admin panel, It is built with Angular JS 1.5. Admin panel is used by internal data team to sync data with latest offering & It is also use for updating server configurations on the runtime. I contributed in admin panel by working on complex data table to list, create, update & delete data. Also Integrated a light weight image crop and resizing module.",
+      "I also contributed on main backend server in the same time. Backend server is written in NodeJS & MariaDB (MYSQL). I wrote CRUD API calls for modules & built a light weight image cropping module via \"node-canvas\".",
+      "After a while I worked on client web app which is used by end user to explore deals & discounts offered by brands."
     ]
   }
 ]
