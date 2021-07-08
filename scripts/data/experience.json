@@ -9,11 +9,6 @@
     "company": "Sastaticket.pk",
     "points": [
       [
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
         "Leading flutter mobile (iOS, Android) development project of sastaticket.pk."
       ]
     ]
@@ -27,7 +22,13 @@
     ],
     "company": "Fiverr",
     "contract": "Freelance",
-    "points": []
+    "points": [
+      [
+        "I mostly took small gigs like build MVPs mobile apps using React Native & Flutter for different clients.",
+        "I also made small scale custom CMS to manage data with nodeJS & React JS",
+        "Also did Fixed bugs, Tunned performance, Updated apps to new flutter version by solving native dependency conflicts & Made very unstable apps to stable stage."
+      ]
+    ]
   },
   {
     "journey": [
@@ -38,7 +39,11 @@
     ],
     "company": "Upwork",
     "contract": "Freelance",
-    "points": []
+    "points": [
+      [
+        "In Upwork, I primarily worked on worked on React JS & React Native small projects with long term clients."
+      ]
+    ]
   },
   {
     "company": "Fetch Sky",

@@ -172,6 +172,33 @@
     "skills": []
   },
   {
+    "name": "WheelBees",
+    "contribution": "Full Stack",
+    "type": "Product",
+    "description": [
+      "Features complex parallax animations.",
+      "Scales on desktop, tablets & browser."
+    ],
+    "buttons": [
+      {
+        "label": "Store",
+        "icon": "mdi-google-play",
+        "link": ""
+      },
+      {
+        "label": "Github",
+        "icon": "mdi-github",
+        "link": ""
+      },
+      {
+        "label": "Web",
+        "icon": "mdi-web",
+        "link": ""
+      }
+    ],
+    "skills": []
+  },
+  {
     "name": "Grow youth ministry",
     "contribution": "Mobile App",
     "type": "Product",
