@@ -8,13 +8,20 @@
     ],
     "company": "Sastaticket.pk",
     "points": [
-      "Leading flutter mobile (iOS, Android) development project of sastaticket.pk."
+      [
+        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
+        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
+        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
+        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
+        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk.",
+        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk."
+      ]
     ]
   },
   {
     "journey": [
       {
-        "position": "Full Stack, Flutter & React Native",
+        "position": "Full Stack, Flutter and React Native",
         "date": "Sep 2018 - Present"
       }
     ],
@@ -25,7 +32,7 @@
   {
     "journey": [
       {
-        "position": "Full Stack, Flutter & React Native",
+        "position": "Full Stack, Flutter and React Native",
         "date": "May 2018 - Present"
       }
     ],
@@ -46,9 +53,25 @@
       }
     ],
     "points": [
-      "At beginning I worked on Peekaboo Guru's admin panel, It is built with Angular JS 1.5. Admin panel is used by internal data team to sync data with latest offering & It is also use for updating server configurations on the runtime. I contributed in admin panel by working on complex data table to list, create, update & delete data. Also Integrated a light weight image crop and resizing module.",
-      "I also contributed on main backend server in the same time. Backend server is written in NodeJS & MariaDB (MYSQL). I wrote CRUD API calls for modules & built a light weight image cropping module via \"node-canvas\".",
-      "After a while I worked on client web app which is used by end user to explore deals & discounts offered by brands."
+      [
+        "Peekaboo Guru is the product of Fetch Sky which is a location based platform.",
+        "that acts as your complete lifestyle guide and shows all the deals and discounts offered in the market.",
+        "I contributed technically on consumer mobile app and website, enterprise mobile sdk, internal admin panel and backend server."
+      ],
+      [
+        "In consumer web and mobile app development I got to work with React Native, React JS, styled-components, Redux, Webpack and Redux Saga.",
+        "I built reusable components while making sure it scale well on multiple screen sizes.",
+        "I also learned a great deal of react eco system like best practices, proper use of lints, configuring webpack and firebase."
+      ],
+      [
+        "In admin panel I got to work on AngularJS(1.5).",
+        "I built complex data tables to show, create, update and delete data.",
+        "Also integrated a custom built light weight image cropping and resizing module."
+      ],
+      [
+        "In backend I got to work on AWS (S3, SES), puppeteer, NodeJS and MariaDB.",
+        "I wrote CRUD API calls for modules and & built a light weight image cropping module via \"node-canvas\"."
+      ]
     ]
   }
 ]
