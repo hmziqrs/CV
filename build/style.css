@@ -1736,6 +1736,9 @@ body {
     width: 70%;
   }
 }
+#skills {
+  page-break-after: always;
+}
 #skills .heading {
   color: #E31C25;
   margin-bottom: 16px;
@@ -2011,6 +2014,9 @@ body {
   #summary-card .card .points.x {
     padding: 8px 30px;
   }
+}
+#development {
+  page-break-after: always;
 }
 #development .heading {
   color: #E31C25;
