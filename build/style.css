@@ -1736,6 +1736,9 @@ body {
     width: 70%;
   }
 }
+#skills {
+  page-break-after: always;
+}
 #skills .heading {
   color: #E31C25;
   margin-bottom: 16px;
@@ -1882,11 +1885,20 @@ body {
   background: white;
   position: relative;
   border-radius: 8px;
+  overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 #projects .projects-holder .project-card .header {
   height: 160px;
+  background: #BB000E;
   position: relative;
+}
+#projects .projects-holder .project-card .header .placeholder {
+  top: 50%;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 #projects .projects-holder .project-card .header .gradient {
   top: 0;
@@ -1942,7 +1954,8 @@ body {
   padding: 4px 9px;
   position: absolute;
   border-radius: 5px;
-  background: #BB000E;
+  color: #BB000E;
+  background: white;
 }
 
 @media (max-width: 980px) {
@@ -2001,6 +2014,9 @@ body {
   #summary-card .card .points.x {
     padding: 8px 30px;
   }
+}
+#development {
+  page-break-after: always;
 }
 #development .heading {
   color: #E31C25;
@@ -2087,20 +2103,22 @@ body {
 #experience-card .experience .journey-holder .journey .break {
   width: 40%;
   height: 1px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  background-image: -webkit-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.55));
-  background-image: -moz-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.55));
-  background-image: -ms-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.55));
-  background-image: -o-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.55));
-  background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.55));
+  margin: 18px 0;
+  background-image: -webkit-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
+  background-image: -moz-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
+  background-image: -ms-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
+  background-image: -o-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
+  background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
 }
 #experience-card .experience .points-holder {
   padding: 0 32px;
   margin-top: 8px;
 }
+#experience-card .experience .points-holder .point-break {
+  margin-top: 12px;
+}
 #experience-card .experience .points-holder .point {
-  margin: 12px 0;
+  margin-right: 6px;
 }
 #experience-card .experience .points-holder .point:first-child {
   margin-top: 0;

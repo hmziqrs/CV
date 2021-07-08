@@ -12,10 +12,19 @@
       background: white
       position: relative
       border-radius: 8px
+      overflow: hidden
       border: 1px solid rgba(0,0,0,0.12)
       .header
         height: 160px
+        background: $primary
         position: relative
+        .placeholder
+          top: 50%
+          left: 50%
+          color: white
+          position: absolute
+          transform: translate(-50%,-50%)
+          // color: $primary
         .gradient
           top: 0
           left: 0
@@ -57,7 +66,8 @@
         padding: 4px 9px
         position: absolute
         border-radius: 5px
-        background: $primary
+        color: $primary
+        background: white
 
 @media (max-width: 980px)
   #projects
