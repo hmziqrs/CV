@@ -16,15 +16,19 @@
     border-radius: 6px
 
     background: rgba(0,0,0,0.09)
-    box-shadow: 0 2px 6px rgb(0, 0, 0, 20%)
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.20)
 
     position: relative
     display: inline-block
+    @include transition(all 400ms ease)
     &:hover
-      .mdi
+      background: rgba(0,0,0,0.12)
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25)
 
+      .mdi
+        @include transform(scale(1.2))
     .mdi
-      @include transition(all)
+      @include transition(all 400ms ease)
       text-align: start
       display: inline-block
     .label
