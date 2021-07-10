@@ -1828,10 +1828,6 @@ body {
   color: #E31C25;
   margin-bottom: 8px;
 }
-#story span.space {
-  width: 6px;
-  display: inline-block;
-}
 
 #download-card {
   padding: 24px 0;
