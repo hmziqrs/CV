@@ -9,7 +9,12 @@
     "company": "Sastaticket.pk",
     "points": [
       [
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk."
+        "I am leading Flutter mobile app development project at sastaticket.pk.",
+        "I structured the codebase with flexible architecture with the bloc pattern.",
+        "I am Responsible for maintaining high quality and stable codebase.",
+        "I wrote a custom Github action script that creates flavored APK builds,",
+        "Then the builds are uploaded to google drive and The google drive link is sent by email.",
+        "I also published the new sastaticket flutter mobile App to App Store."
       ]
     ]
   },
@@ -24,9 +29,10 @@
     "contract": "Freelance",
     "points": [
       [
-        "I mostly took small gigs like build MVPs mobile apps using React Native & Flutter for different clients.",
-        "I also made small scale custom CMS to manage data with nodeJS & React JS",
-        "Also did Fixed bugs, Tunned performance, Updated apps to new flutter version by solving native dependency conflicts & Made very unstable apps to stable stage."
+        "I mostly took small gigs like build MVP mobile apps using React Native & Flutter for different clients.",
+        "I built a small-scale custom CMS for managing data with MYSQL, Node JS, and React JS.",
+        "Also did Fixed bugs, tunned performance, Updated apps to new flutter version by solving native dependency conflicts,",
+        "Made unstable apps to stable stage."
       ]
     ]
   },
@@ -41,7 +47,9 @@
     "contract": "Freelance",
     "points": [
       [
-        "In Upwork, I primarily worked on worked on React JS & React Native small projects with long term clients."
+        "During my Upwork journey, I worked two short term jobs where I fixed bugs and improved user experience,",
+        "and worked with a long term client where I built small scale MVP apps with React Native and React JS,",
+        "Also built `Grow youth app` with React Native and published it on App Store and Play Store"
       ]
     ]
   },
@@ -59,23 +67,24 @@
     ],
     "points": [
       [
-        "Peekaboo Guru is the product of Fetch Sky which is a location based platform.",
+        "Peekaboo Guru is the product of Fetch Sky which is a location-based platform.",
         "that acts as your complete lifestyle guide and shows all the deals and discounts offered in the market.",
-        "I contributed technically on consumer mobile app and website, enterprise mobile sdk, internal admin panel and backend server."
+        "I contributed technically to the consumer mobile app and website, enterprise mobile SDK, internal admin panel, and backend server.",
+        "I had great a experience working with technically advanced seniors which helped me a lot in my career growth."
       ],
       [
-        "In consumer web and mobile app development I got to work with React Native, React JS, styled-components, Redux, Webpack and Redux Saga.",
-        "I built reusable components while making sure it scale well on multiple screen sizes.",
-        "I also learned a great deal of react eco system like best practices, proper use of lints, configuring webpack and firebase."
+        "In consumer web and mobile app development, I got to work on React Native, React JS, styled-components, Redux, Webpack, and Redux-Saga.",
+        "I built reusable components while making sure they scale well on multiple screen sizes.",
+        "I also learned a great deal about react ecosystem like best practices, proper use of lint, configuring webpack, and firebase."
       ],
       [
-        "In admin panel I got to work on AngularJS(1.5).",
+        "In the admin panel, I got to work on AngularJS(1.5).",
         "I built complex data tables to show, create, update and delete data.",
-        "Also integrated a custom built light weight image cropping and resizing module."
+        "Also integrated a custom-built lightweight image cropping and resizing module."
       ],
       [
-        "In backend I got to work on AWS (S3, SES), puppeteer, NodeJS and MariaDB.",
-        "I wrote CRUD API calls for modules and & built a light weight image cropping module via \"node-canvas\"."
+        "In the backend, I got to work on AWS (S3, SES), puppeteer, NodeJS, and MariaDB.",
+        "I wrote CRUD API calls for modules and & built a lightweight image cropping module via \"node-canvas\"."
       ]
     ]
   }
