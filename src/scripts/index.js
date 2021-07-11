@@ -1,4 +1,3 @@
-import SmoothScroll from "./smoothScroll.js";
 import "./header.js";
 import "./download.js";
 
@@ -7,5 +6,5 @@ window.onload = function () {
   // c.width = window.innerWidth;
   // c.height = 450;
 
-  SmoothScroll(document, 120, 12);
+  // SmoothScroll(document, 120, 12);
 };
