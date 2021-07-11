@@ -21,3 +21,16 @@
     background-position: 0
   100%
     background-position: 300%
+
+@include keyframes(scale)
+  0%
+    opacity: 0
+    @include transform(scale(0.0))
+  40%
+    opacity: 0.6
+    // @include transform(scale(0.50))
+  94%
+    opacity: 0.0
+  100%
+    opacity: 0.0
+    @include transform(scale(1.25))
