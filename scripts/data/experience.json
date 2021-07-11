@@ -59,23 +59,24 @@
     ],
     "points": [
       [
-        "Peekaboo Guru is the product of Fetch Sky which is a location based platform.",
+        "Peekaboo Guru is the product of Fetch Sky which is a location-based platform.",
         "that acts as your complete lifestyle guide and shows all the deals and discounts offered in the market.",
-        "I contributed technically on consumer mobile app and website, enterprise mobile sdk, internal admin panel and backend server."
+        "I contributed technically to the consumer mobile app and website, enterprise mobile SDK, internal admin panel, and backend server.",
+        "I had great a experience working with technically advanced seniors which helped me a lot in my career growth."
       ],
       [
-        "In consumer web and mobile app development I got to work with React Native, React JS, styled-components, Redux, Webpack and Redux Saga.",
-        "I built reusable components while making sure it scale well on multiple screen sizes.",
-        "I also learned a great deal of react eco system like best practices, proper use of lints, configuring webpack and firebase."
+        "In consumer web and mobile app development, I got to work on React Native, React JS, styled-components, Redux, Webpack, and Redux-Saga.",
+        "I built reusable components while making sure they scale well on multiple screen sizes.",
+        "I also learned a great deal about react ecosystem like best practices, proper use of lint, configuring webpack, and firebase."
       ],
       [
-        "In admin panel I got to work on AngularJS(1.5).",
+        "In the admin panel, I got to work on AngularJS(1.5).",
         "I built complex data tables to show, create, update and delete data.",
-        "Also integrated a custom built light weight image cropping and resizing module."
+        "Also integrated a custom-built lightweight image cropping and resizing module."
       ],
       [
-        "In backend I got to work on AWS (S3, SES), puppeteer, NodeJS and MariaDB.",
-        "I wrote CRUD API calls for modules and & built a light weight image cropping module via \"node-canvas\"."
+        "In the backend, I got to work on AWS (S3, SES), puppeteer, NodeJS, and MariaDB.",
+        "I wrote CRUD API calls for modules and & built a lightweight image cropping module via \"node-canvas\"."
       ]
     ]
   }
