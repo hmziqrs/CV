@@ -1,11 +1,11 @@
 [
-  "Writes clean, flexible, scalable and readable code.",
-  "Writes code generator templates for boilerplate code.",
-  "Use latest SDKs and APIs for long term support.",
-  "Writes scripts to automated project setup and release builds.",
-  "Integrates proper lints and code formatters to enforce a general standard & code consistency.",
-  "Writes end to end and unit tests to ensure high quality safe and stable code.",
-  "Use git version management with proper detailed documentation of updates.",
-  "Use best coding practices which enhances development experience for other developers.",
+  "Write clean, flexible, scalable, and readable code.",
+  "Set up code generator templates for boilerplate code.",
+  "Use latest SDKs and APIs for long-term support.",
+  "Write custom scripts for automating the project setup process.",
+  "Integrates proper lints and code formatters, Which ensures a general standard & code consistency.",
+  "Write end-to-end and unit tests, Which ensure high-quality, safe, and stable codebase.",
+  "Use git with proper detailed documentation of updates and changes.",
+  "Use best coding practices that enhance the development experience for other developers.",
   "Integrate pipelines for automated deployment."
 ]
