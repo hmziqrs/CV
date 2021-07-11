@@ -2106,9 +2106,6 @@ body {
 #experience-card .experience .points-holder .point-break {
   margin-top: 12px;
 }
-#experience-card .experience .points-holder .point {
-  margin-right: 6px;
-}
 #experience-card .experience .points-holder .point:first-child {
   margin-top: 0;
 }
