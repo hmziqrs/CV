@@ -25,8 +25,9 @@
     "points": [
       [
         "I mostly took small gigs like build MVP mobile apps using React Native & Flutter for different clients.",
-        "I also made small scale custom CMS to manage data with nodeJS & React JS",
-        "Also did Fixed bugs, Tunned performance, Updated apps to new flutter version by solving native dependency conflicts & Made very unstable apps to stable stage."
+        "I built a small-scale custom CMS for managing data with MYSQL, Node JS, and React JS.",
+        "Also did Fixed bugs, tunned performance, Updated apps to new flutter version by solving native dependency conflicts,",
+        "Made unstable apps to stable stage."
       ]
     ]
   },
