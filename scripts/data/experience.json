@@ -24,7 +24,7 @@
     "contract": "Freelance",
     "points": [
       [
-        "I mostly took small gigs like build MVPs mobile apps using React Native & Flutter for different clients.",
+        "I mostly took small gigs like build MVP mobile apps using React Native & Flutter for different clients.",
         "I also made small scale custom CMS to manage data with nodeJS & React JS",
         "Also did Fixed bugs, Tunned performance, Updated apps to new flutter version by solving native dependency conflicts & Made very unstable apps to stable stage."
       ]
@@ -41,7 +41,9 @@
     "contract": "Freelance",
     "points": [
       [
-        "In Upwork, I primarily worked on worked on React JS & React Native small projects with long term clients."
+        "During my Upwork journey, I worked two short term jobs where I fixed bugs and improved user experience,",
+        "and worked with a long term client where I built small scale MVP apps with React Native and React JS,",
+        "Also built `Grow youth app` with React Native and published it on App Store and Play Store"
       ]
     ]
   },
