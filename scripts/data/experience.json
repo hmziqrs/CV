@@ -9,12 +9,12 @@
     "company": "Sastaticket.pk",
     "points": [
       [
-        "I am leading flutter mobile app development project in sastaticket.pk.",
-        "I setup the base code architecht",
-        "I am Responsible for maintaining high quality, and stable codebase.",
-        "I wrote custom github action script which creates flavored release APK,",
-        "Which are uploaded to google drive and email is sent to relevant persons with drive shared link",
-        "Published new sastaticket flutter mobile app to App Store."
+        "I am leading Flutter mobile app development project at sastaticket.pk.",
+        "I structured the codebase with flexible architecture with the bloc pattern.",
+        "I am Responsible for maintaining high quality and stable codebase.",
+        "I wrote a custom Github action script that creates flavored APK builds,",
+        "Then the builds are uploaded to google drive and The google drive link is sent by email.",
+        "I also published the new sastaticket flutter mobile App to App Store."
       ]
     ]
   },
