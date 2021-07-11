@@ -2,6 +2,7 @@ import * as engine from "./particles";
 
 let animationNo = undefined;
 const header = document.getElementById("header");
+let grid;
 
 (function () {
   const c = engine.canvas();
@@ -21,9 +22,8 @@ const header = document.getElementById("header");
     const c = engine.canvas();
     const ctx = canvas.getContext("2d");
     ctx.translate(c.width / 2, c.height / 2);
-    const dimensions = engine.getDimensions();
-    const grid = engine.grid3d(c);
-    loop(grid, ctx, c, dimensions);
+    grid = engine.grid3d(c);
+    loop(ctx, c);
 
     window.addEventListener("mousemove", function mouseMove(e) {
       const c = engine.canvas();
@@ -35,13 +35,13 @@ const header = document.getElementById("header");
   }
 })();
 
-function loop(grid, ctx, c, d) {
+function loop(ctx, c) {
   ctx.clearRect(-c.width * 0.5, -c.height * 0.5, c.width * 2, c.height * 2);
   grid.forEach((particle) => {
-    particle.update(c, ctx, d);
+    particle.update(c, ctx);
   });
 
-  animationNo = requestAnimationFrame(() => loop(grid, ctx, c, d));
+  animationNo = requestAnimationFrame(() => loop(ctx, c));
 }
 
 function getScrollbarWidth() {
@@ -113,4 +113,17 @@ window.onscroll = function () {
   }
 
   engine.setVelocity(speed);
+
+  const threshold = document.getElementById('contact').offsetTop;
+  // const scroll = h.clientHeight + parallax;
+  if (window.scrollY >=  threshold && animationNo != null) {
+    cancelAnimationFrame(animationNo);
+    animationNo = null;
+  }
+  if (window.scrollY <  threshold && animationNo == null) {
+    const c = engine.canvas();
+    const ctx = c.getContext('2d');
+    loop(ctx, c);
+  }
+
 };
