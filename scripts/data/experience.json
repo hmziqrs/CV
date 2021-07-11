@@ -9,7 +9,12 @@
     "company": "Sastaticket.pk",
     "points": [
       [
-        "Leading flutter mobile (iOS, Android) development project of sastaticket.pk."
+        "I am leading flutter mobile app development project in sastaticket.pk.",
+        "I setup the base code architecht",
+        "I am Responsible for maintaining high quality, and stable codebase.",
+        "I wrote custom github action script which creates flavored release APK,",
+        "Which are uploaded to google drive and email is sent to relevant persons with drive shared link",
+        "Published new sastaticket flutter mobile app to App Store."
       ]
     ]
   },
