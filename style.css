@@ -1348,6 +1348,126 @@ html {
     background-position: 300%;
   }
 }
+@-webkit-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
+@-moz-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
+@-ms-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
+@-o-keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
+@keyframes scale {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
 html, body {
   height: 100%;
   font-family: "Muli", sans-serif;
@@ -1639,11 +1759,73 @@ body {
   z-index: 1;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   color: white;
+  position: relative;
+  overflow: hidden;
   background-image: -webkit-linear-gradient(40deg, #e53935, #b62525 100%);
   background-image: -moz-linear-gradient(40deg, #e53935, #b62525 100%);
   background-image: -ms-linear-gradient(40deg, #e53935, #b62525 100%);
   background-image: -o-linear-gradient(40deg, #e53935, #b62525 100%);
   background-image: linear-gradient(40deg, #e53935, #b62525 100%);
+}
+#contact .animation-base {
+  right: 0px;
+  bottom: 0px;
+  width: 45vh;
+  height: 45vh;
+  -webkit-transform: translate(50%, 50%);
+  -moz-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  -o-transform: translate(50%, 50%);
+  transform: translate(50%, 50%);
+  position: absolute;
+}
+#contact .animation-base .animation-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  background: radial-gradient(rgba(255, 255, 255, 0) 44%, rgba(255, 255, 255, 0.55));
+}
+#contact .animation-base .animation-circle:nth-child(1) {
+  -webkit-animation: scale 8000ms linear 1600ms infinite;
+  -moz-animation: scale 8000ms linear 1600ms infinite;
+  -ms-animation: scale 8000ms linear 1600ms infinite;
+  -o-animation: scale 8000ms linear 1600ms infinite;
+  animation: scale 8000ms linear 1600ms infinite;
+}
+#contact .animation-base .animation-circle:nth-child(2) {
+  -webkit-animation: scale 8000ms linear 3200ms infinite;
+  -moz-animation: scale 8000ms linear 3200ms infinite;
+  -ms-animation: scale 8000ms linear 3200ms infinite;
+  -o-animation: scale 8000ms linear 3200ms infinite;
+  animation: scale 8000ms linear 3200ms infinite;
+}
+#contact .animation-base .animation-circle:nth-child(3) {
+  -webkit-animation: scale 8000ms linear 4800ms infinite;
+  -moz-animation: scale 8000ms linear 4800ms infinite;
+  -ms-animation: scale 8000ms linear 4800ms infinite;
+  -o-animation: scale 8000ms linear 4800ms infinite;
+  animation: scale 8000ms linear 4800ms infinite;
+}
+#contact .animation-base .animation-circle:nth-child(4) {
+  -webkit-animation: scale 8000ms linear 6400ms infinite;
+  -moz-animation: scale 8000ms linear 6400ms infinite;
+  -ms-animation: scale 8000ms linear 6400ms infinite;
+  -o-animation: scale 8000ms linear 6400ms infinite;
+  animation: scale 8000ms linear 6400ms infinite;
+}
+#contact .animation-base .animation-circle:nth-child(5) {
+  -webkit-animation: scale 8000ms linear 8000ms infinite;
+  -moz-animation: scale 8000ms linear 8000ms infinite;
+  -ms-animation: scale 8000ms linear 8000ms infinite;
+  -o-animation: scale 8000ms linear 8000ms infinite;
+  animation: scale 8000ms linear 8000ms infinite;
 }
 #contact .contact {
   margin: 16px 0 4px 0;
