@@ -56,13 +56,18 @@
       visibility: hidden
       text-align: right
       @include transform(scale(0.0) translate(-150px))
-      @include transition(all 1200ms ease)
       &.active
+        @include transition(all 1200ms ease)
         opacity: 1
         @include transform(scale(1.2) translate(0px))
         visibility: visible
+      &.remove
+        @include transition(all 1200ms ease)
+        opacity: 0
+        @include transform(scale(0.0) translate(150px))
+        visibility: visible
       .mdi
-        font-size: 120px
+        font-size: 8rem
         opacity: 0.6
         color: $primary1
 
