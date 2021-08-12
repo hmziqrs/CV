@@ -2,19 +2,17 @@
   {
     "key": "Web",
     "skills": [
+      { "label": "React JS", "icon": "mdi-react" },
+      { "label": "Typescript", "icon": "mdi-language-typescript" },
+      { "label": "Javascript", "icon": "mdi-language-javascript" },
       { "label": "HTML5", "icon": "mdi-language-html5" },
       { "label": "CSS3", "icon": "mdi-language-css3" },
       { "label": "PUG(Jade)", "icon": "mdi-web" },
       { "label": "SASS", "icon": "mdi-sass" },
       { "label": "Bootstrap", "icon": "mdi-bootstrap" },
-      { "label": "Javascript", "icon": "mdi-language-javascript" },
-      { "label": "Typescript", "icon": "mdi-language-typescript" },
       { "label": "JQuery", "icon": "mdi-jquery" },
-      { "label": "React JS", "icon": "mdi-react" },
       { "label": "Material UI", "icon": "mdi-material-ui" },
-      { "label": "React SSR", "icon": "mdi-react" },
       { "label": "Firebase", "icon": "mdi-firebase" },
-      { "label": "Socket.IO", "icon": "mdi-flash-circle" },
       { "label": "Webpack", "icon": "mdi-webpack" }
     ]
   },
@@ -23,14 +21,9 @@
     "skills": [
       { "label": "React Native", "icon": "mdi-react" },
       { "label": "Flutter", "icon": "mdi-cellphone" },
-      {
-        "label": "Flutter Desktop/Tablet Apps",
-        "icon": "mdi-desktop-mac-dashboard"
-      },
-      { "label": "Firebase", "icon": "mdi-firebase" },
-      { "label": "Rest API", "icon": "mdi-api" },
       { "label": "WebRTC", "icon": "mdi-webrtc" },
-      { "label": "e2e testing", "icon": "mdi-test-tube" },
+      { "label": "Socket.IO", "icon": "mdi-flash-circle" },
+      { "label": "E2E Testing", "icon": "mdi-test-tube" },
       { "label": "Internationalization", "icon": "mdi-translate" },
       { "label": "Multi Threaded Apps", "icon": "mdi-cogs" },
       { "label": "Pixel Perfect UI", "icon": "mdi-monitor-cellphone-star" },
@@ -40,12 +33,13 @@
   {
     "key": "Server",
     "skills": [
+      { "label": "Node JS", "icon": "mdi-nodejs" },
+      { "label": "Adonis 5", "icon": "mdi-cloud" },
+      { "label": "Express JS", "icon": "mdi-cloud" },
       { "label": "Golang", "icon": "mdi-language-go" },
       { "label": "Dart", "icon": "mdi-console-line" },
-      { "label": "Node JS", "icon": "mdi-nodejs" },
-      { "label": "Express JS", "icon": "mdi-cloud" },
-      { "label": "Adonis 5", "icon": "mdi-cloud" },
       { "label": "CLI App", "icon": "mdi-console-line" },
+      { "label": "Github Actions", "icon": "mdi-github" },
       { "label": "AWS (S3, SES, EC2, RDS)", "icon": "mdi-aws" },
       { "label": "MYSQL", "icon": "mdi-database" },
       { "label": "Mongo DB", "icon": "mdi-database" },

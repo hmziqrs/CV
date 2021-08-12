@@ -2010,6 +2010,9 @@ body {
   color: #E31C25;
   margin-bottom: 8px;
 }
+#story span.ab1 {
+  line-height: 1.5;
+}
 
 #download-card {
   padding: 24px 0;
