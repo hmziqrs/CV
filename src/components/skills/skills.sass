@@ -1,5 +1,11 @@
 #skills
+  position: relative
   page-break-after: always
+  .container:
+    position: relative
+  .container-content
+    position: relative
+    z-index: 2
   .heading
     color: $primary1
     margin-bottom: 16px
@@ -41,6 +47,17 @@
         box-shadow: 0 0 0 0 rgba(0,0,0,0.14)
         .mdi
           transform: scale(1.0)
+  .animation-container
+    .base
+      right: 8px
+      bottom: -24px
+      position: absolute
+      visibility: hidden
+      text-align: right
+      &:first-child
+        visibility: visible
+      .mdi
+        font-size: 90px
 
 @media (max-width: 767px)
   #skills

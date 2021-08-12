@@ -1912,7 +1912,13 @@ body {
   }
 }
 #skills {
+  position: relative;
   page-break-after: always;
+  .container-position: relative;
+}
+#skills .container-content {
+  position: relative;
+  z-index: 2;
 }
 #skills .heading {
   color: #E31C25;
@@ -1977,6 +1983,19 @@ body {
 }
 #skills.toggled .skills-holder .skill .mdi {
   transform: scale(1);
+}
+#skills .animation-container .base {
+  right: 8px;
+  bottom: -24px;
+  position: absolute;
+  visibility: hidden;
+  text-align: right;
+}
+#skills .animation-container .base:first-child {
+  visibility: visible;
+}
+#skills .animation-container .base .mdi {
+  font-size: 90px;
 }
 
 @media (max-width: 767px) {
