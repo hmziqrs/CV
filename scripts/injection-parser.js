@@ -1,5 +1,14 @@
 
-export function projects(array) {
-  const skills = require(`./data/skills.json`);
-  return array;
+
+function skills(data) {
+  const json = require(`./data/skills.json`);
+  const array = [];
+  for (value of json) {
+    for (element of value.skills) {
+      array.push(element);
+    }
+  }
+  return `${data}\n- var skills = ${JSON.stringify(array)};`;
 }
+
+module.exports = {skills}

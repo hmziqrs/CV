@@ -1,4 +1,5 @@
 const fs = require("fs");
+const parserFunctions = require('./injection-parser');
 
 const BASE = "./src/components/";
 
@@ -15,12 +16,14 @@ async function run() {
 
     for (const component of components) {
       const json = require(`./data/${component}.json`);
+      const parser = parserFunctions[component];
       const newFile = fs
         .readFileSync(getFilePath(component), "utf8")
         .split("\n")
         .map((v, i) => {
           if (i === 0) {
-            return `- var data = ${JSON.stringify(json)};`;
+            const data = `- var data = ${JSON.stringify(json)};`
+            return parser ? parser(data):data;
           }
           return v;
         })
