@@ -1986,16 +1986,35 @@ body {
 }
 #skills .animation-container .base {
   right: 8px;
+  opacity: 0;
   bottom: -24px;
   position: absolute;
   visibility: hidden;
   text-align: right;
+  -webkit-transform: scale(0) translate(-150px);
+  -moz-transform: scale(0) translate(-150px);
+  -ms-transform: scale(0) translate(-150px);
+  -o-transform: scale(0) translate(-150px);
+  transform: scale(0) translate(-150px);
+  -webkit-transition: all 1200ms ease;
+  -moz-transition: all 1200ms ease;
+  -ms-transition: all 1200ms ease;
+  -o-transition: all 1200ms ease;
+  transition: all 1200ms ease;
 }
-#skills .animation-container .base:first-child {
+#skills .animation-container .base.active {
+  opacity: 1;
+  -webkit-transform: scale(1.2) translate(0px);
+  -moz-transform: scale(1.2) translate(0px);
+  -ms-transform: scale(1.2) translate(0px);
+  -o-transform: scale(1.2) translate(0px);
+  transform: scale(1.2) translate(0px);
   visibility: visible;
 }
 #skills .animation-container .base .mdi {
-  font-size: 90px;
+  font-size: 120px;
+  opacity: 0.6;
+  color: #E31C25;
 }
 
 @media (max-width: 767px) {

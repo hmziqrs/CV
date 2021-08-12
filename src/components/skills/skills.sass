@@ -50,14 +50,21 @@
   .animation-container
     .base
       right: 8px
+      opacity: 0
       bottom: -24px
       position: absolute
       visibility: hidden
       text-align: right
-      &:first-child
+      @include transform(scale(0.0) translate(-150px))
+      @include transition(all 1200ms ease)
+      &.active
+        opacity: 1
+        @include transform(scale(1.2) translate(0px))
         visibility: visible
       .mdi
-        font-size: 90px
+        font-size: 120px
+        opacity: 0.6
+        color: $primary1
 
 @media (max-width: 767px)
   #skills
