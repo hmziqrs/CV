@@ -54,22 +54,37 @@
       bottom: -24px
       position: absolute
       visibility: hidden
-      text-align: right
+      text-align: center
       @include transform(scale(0.0) translate(-150px))
       &.active
-        @include transition(all 1200ms ease)
         opacity: 1
-        @include transform(scale(1.2) translate(0px))
         visibility: visible
-      &.remove
         @include transition(all 1200ms ease)
+        @include transform(scale(1.2) translate(0px))
+        .text
+          opacity: 0.6
+          @include transform(scale(1.0) translate(0, 0))
+
+      &.remove
         opacity: 0
-        @include transform(scale(0.0) translate(150px))
         visibility: visible
+        @include transition(all 1200ms ease)
+        @include transform(scale(0.0) translate(150px))
+        .text
+          opacity: 0.0
+          @include transition(all 800ms ease)
+          @include transform(scale(0.0) translate(0, 45px))
+
       .mdi
         font-size: 8rem
         opacity: 0.6
         color: $primary1
+      .text
+        top: -16px
+        opacity: 0.6
+        position: relative
+        @include transition(all 800ms ease 400ms)
+        @include transform(scale(0.8) translate(0, 45px))
 
 @media (max-width: 767px)
   #skills

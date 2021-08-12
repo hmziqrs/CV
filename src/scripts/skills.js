@@ -17,6 +17,9 @@ function init() {
       clearTimeout(timeout);
     }, 2000);
     active++;
+    if (active >= elements.length) {
+      active = 0;
+    }
     elements[active].classList.add(ACTIVE);
   }, 4000);
 }
