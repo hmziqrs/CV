@@ -1915,6 +1915,7 @@ body {
   position: relative;
   page-break-after: always;
   .container-position: relative;
+  .container-overflow: hidden;
 }
 #skills .container-content {
   position: relative;
@@ -1985,7 +1986,7 @@ body {
   transform: scale(1);
 }
 #skills .animation-container .base {
-  right: 8px;
+  right: 28px;
   opacity: 0;
   bottom: -24px;
   position: absolute;
