@@ -11,6 +11,10 @@
               .header
                 .gradient
                   .placeholder.afw6= project.name
+                  .skills-holder
+                    for button in project.buttons
+                      .sk-icon-base
+                        i.mdi(class=button.icon)
               .body
                 h3.ab1.afw6.title= project.name
                 //- p.ab2.afw6.desc

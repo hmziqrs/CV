@@ -15,7 +15,7 @@ function init() {
     setTimeout(() => {
       elements[prev()].classList.remove(REMOVE);
     }, 1200);
-      active = next();
+    active = next();
     elements[active].classList.add(ACTIVE);
   }, 4000);
 }
