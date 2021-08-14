@@ -1567,7 +1567,7 @@ a {
 }
 
 .ab1 {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .ab2 {
@@ -1608,7 +1608,7 @@ a {
   }
 
   .ab1 {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .ab2 {
@@ -1633,7 +1633,7 @@ a {
   }
 
   .ab1 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .ab2 {
@@ -1658,7 +1658,7 @@ a {
   }
 
   .ab1 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .ab2 {
@@ -1683,7 +1683,7 @@ a {
   }
 
   .ab1 {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .ab2 {
@@ -2447,6 +2447,9 @@ body {
 }
 #experience-card .experience .points-holder .point-break {
   margin-top: 12px;
+}
+#experience-card .experience .points-holder .point {
+  list-style: circle;
 }
 #experience-card .experience .points-holder .point:first-child {
   margin-top: 0;
