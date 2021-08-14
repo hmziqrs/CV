@@ -20,9 +20,17 @@
     ],
     "tech": [
       "Flutter",
+      "Bloc",
+      "Hygen.io",
       "Firebase",
+      "Analytics",
+      "Node JS",
+      "Javascript",
       "Github Actions",
-      {"label": "Google Drive API", "icon": "mdi-google"}
+      {"label": "Google Drive API", "icon": "mdi-google-drive"},
+      {"label": "CI/CD", "icon": "mdi-infinity"},
+      {"label": "SMTP", "icon": "mdi-email-send-outline"},
+      {"label": "Java", "icon": "mdi-language-java"}
     ]
   },
   {

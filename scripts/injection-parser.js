@@ -19,6 +19,7 @@ function strToSkill(str) {
       }
     }
   }
+  return {label: str}
 }
 
 function experience(_) {

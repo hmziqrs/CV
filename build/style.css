@@ -1578,6 +1578,10 @@ a {
   font-size: 12px;
 }
 
+.al2 {
+  font-size: 11px;
+}
+
 .afw4 {
   font-weight: 400;
 }
@@ -2345,6 +2349,15 @@ body {
   background-image: -ms-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
   background-image: -o-linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
   background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
+}
+#experience-card .experience .technology-heading {
+  margin-top: 8px;
+}
+#experience-card .experience .technologies-holder .technology-item {
+  display: inline-block;
+}
+#experience-card .experience .technologies-holder .technology-item .mdi {
+  margin-right: 4px;
 }
 #experience-card .experience .points-holder .point {
   line-height: 1.6;
