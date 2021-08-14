@@ -3,26 +3,27 @@
 #experience-card
   .container
     .container-content
-      h1.heading.ah1.afw6 Experience
+      h1.heading.ah3.afw6 Experience
       .experience-holder
         each exp in data
           .experience
-            .header.float-fix
-              .circle
-                .inner
-              p.company
-                span.ah3.afw6= exp.company
-                span.contract.ab1= exp.contract
-            .journey-holder
-              each journey in exp.journey
-                .journey.float-fix
-                  p.position.ab1.afw5= journey.position
-                  p.ab1.afw4.date= journey.date
-                  if exp.points.length > 0
-                    .break
-            if exp.points.length > 0
-              ul.points-holder
-                each array in exp.points
-                  each point in array
-                    li.point.ab1= point
+            //- .header.float-fix
+            //-   .circle
+            //-     .inner
+            .container.float-fix
+              .col-md-4
+                p.company
+                  span.ab1.afw5= exp.company
+                  span.contract.ab1= exp.contract
+                .journey-holder
+                  each journey, key in exp.journey
+                    .journey.float-fix
+                      p.position.ab2= journey.position
+                      p.al1.afw5.date= journey.date
+              .col-md-8
+                if exp.points.length > 0
+                  ul.points-holder
+                    each array in exp.points
+                      each point in array
+                        li.point.ab2= point
             div.br
