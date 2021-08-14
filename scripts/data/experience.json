@@ -3,13 +3,13 @@
     "journey": [
       {
         "position": "Software engineer",
-        "date": "Jan 2021 - Present"
+        "date": "Jan 2021 - Aug 2021"
       }
     ],
     "company": "Sastaticket.pk",
     "points": [
       [
-        "I am leading Flutter mobile app development project at sastaticket.pk.",
+        "I was leading Flutter mobile app development project at sastaticket.pk.",
         "I structured the codebase with flexible architecture with the bloc pattern.",
         "I am Responsible for maintaining high quality and stable codebase.",
         "I wrote a custom Github action script that creates flavored APK builds,",
