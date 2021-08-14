@@ -9,14 +9,14 @@
     "company": "Sastaticket.pk",
     "points": [
       [
-        "Constructed Pakistan's top ranked and trending airline travelling app.",
+        "Constructed Pakistan's top-ranked and trending airline traveling app.",
         "Architected the code structure with the Bloc design pattern.",
-        "Configured app flavors to maintain qa, stage, development, and production environment.",
-        "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share that directory link via email.",
-        "Used flutter event channel to communicate between dart and native code.",
-        "Integrated Webengage, Mixpanel, AppsFlyer, Facebook and Firebase analytics according to marketing requirements.",
-        "Integrated push notifications via Webengage & Firebase messaging.",
-        "Developed and maintained scripts for automating intl json generation, boilerplate code generation, assets generation, and pre deployment setup.",
+        "Configured app flavors to maintain QA, Stage, Development, and Production environments.",
+        "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share the directory's link via email.",
+        "Used flutter's event channel to share data between the dart and native code.",
+        "Integrated Webengage, Mixpanel, AppsFlyer, Facebook, and Firebase analytics according to marketing requirements.",
+        "Integrated push notifications via Webengage and Firebase messaging.",
+        "Developed and maintained scripts for automating intl JSON generation, boilerplate code generation, assets generation, and pre-deployment setup.",
         "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store."
       ]
     ]
