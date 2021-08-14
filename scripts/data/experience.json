@@ -17,6 +17,12 @@
         "Integrated push notifications via Webengage and Firebase messaging.",
         "Developed and maintained scripts for automating intl JSON generation, boilerplate code generation, assets generation, and pre-deployment setup.",
         "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store."
+    ],
+    "tech": [
+      "Flutter",
+      "Firebase",
+      "Github Actions",
+      {"label": "Google Drive API", "icon": "mdi-google"}
     ]
   },
   {
