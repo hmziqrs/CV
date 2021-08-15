@@ -1579,7 +1579,7 @@ a {
 }
 
 .al2 {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .afw4 {
@@ -2352,6 +2352,9 @@ body {
 }
 #experience-card .experience .technology-heading {
   margin-top: 8px;
+}
+#experience-card .experience .technologies-holder {
+  padding-right: 24px;
 }
 #experience-card .experience .technologies-holder .technology-item {
   display: inline-block;

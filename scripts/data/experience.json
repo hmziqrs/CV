@@ -11,26 +11,31 @@
         "Constructed Pakistan's top-ranked and trending airline traveling app.",
         "Architected the code structure with the Bloc design pattern.",
         "Configured app flavors to maintain QA, Stage, Development, and Production environments.",
-        "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share the directory's link via email.",
-        "Used flutter's event channel to share data between the dart and native code.",
         "Integrated Webengage, Mixpanel, AppsFlyer, Facebook, and Firebase analytics according to marketing requirements.",
+        "Integrated multiple payment providers also integrated 3D secured credit/debit card payment method.",
+        "Used flutter's event channel to share data between the dart and native code.",
         "Integrated push notifications via Webengage and Firebase messaging.",
         "Developed and maintained scripts for automating intl JSON generation, boilerplate code generation, assets generation, and pre-deployment setup.",
+        "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share the directory's link via email.",
         "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store."
     ],
     "tech": [
       "Flutter",
       "Bloc",
+      "Provider",
       "Hygen.io",
       "Firebase",
       "Analytics",
-      "Node JS",
-      "Javascript",
-      "Github Actions",
+      {"label": "Animations", "icon": "mdi-animation-outline"},
+      {"label": "Notifications", "icon": "mdi-bell-outline"},
+      {"label": "Social Authentication", "icon": "mdi-login-variant"},
+      {"label": "Payments", "icon": "mdi-credit-card-outline"},
       {"label": "Google Drive API", "icon": "mdi-google-drive"},
       {"label": "CI/CD", "icon": "mdi-infinity"},
-      {"label": "SMTP", "icon": "mdi-email-send-outline"},
-      {"label": "Java", "icon": "mdi-language-java"}
+      "Node JS",
+      "Github Actions",
+      "Javascript",
+      {"label": "SMTP", "icon": "mdi-email-send-outline"}
     ]
   },
   {
