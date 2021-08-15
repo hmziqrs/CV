@@ -17,7 +17,8 @@
         "Integrated push notifications via Webengage and Firebase messaging.",
         "Developed and maintained scripts for automating intl JSON generation, boilerplate code generation, assets generation, and pre-deployment setup.",
         "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share the directory's link via email.",
-        "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store."
+        "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store.",
+        "Interviewed junior and senior candidates and actively contributed to the hiring process and decisions."
     ],
     "tech": [
       "Flutter",
@@ -82,16 +83,13 @@
       }
     ],
     "points": [
-        "At Fetch Sky, I worked on Peekaboo Guru, Which is a location-based platform.",
-        "In consumer web and mobile app development, I got to work on React Native, React JS, styled-components, Redux, Webpack, and Redux-Saga.",
-        "I built reusable components while making sure they scale well on multiple screen sizes.",
-        "I also learned a great deal about react ecosystem like best practices, proper use of lint, configuring webpack, and firebase analytics, monitoring.",
-        "In the admin panel, I got to work on AngularJS(1.5).",
-        "I built complex data tables for managing data.",
-        "Wrote CRUD API calls on NodeJS and MYSQL.",
-        "Took PDF snapshot of Analytics dashboard and send via email ",
-        "In the backend, I got to work on AWS (S3, SES), puppeteer snapshots, NodeJS, and MYSQL.",
-        "I wrote CRUD API calls and built a lightweight image cropping module via \"node-canvas\".",
+        "Worked on Peekaboo Guru, Which is a location-based and lifestyle platform.",
+        "Worked on NodeJS and MYSQL backend. Wrote CRUD API calls and built a custom lightweight image cropping and sizing module with \"node-canvas\".",
+        "Rendered ReactJS based analytics dashboard at server side and took PDF snapshot then sent the PDF to business via email.",
+        "Worked on Angular JS internal admin panel. Built CRUD data tables and fixed bugs.",
+        "Worked on React Native Redux mobile app. Built reusable UI components, stateb based HOC and API calls with Redux Redux-Saga.",
+        "Integrated firebase analytics, One signal push notifications, and push notification deep linking.",
+        "Worked on React JS Redux web app. Built responsive UI components and Built custom autocomplete component.",
         "Had a chance to work with technically advanced seniors, which helped me in my career growth."
     ]
   }

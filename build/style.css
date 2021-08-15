@@ -2351,7 +2351,7 @@ body {
   background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.07));
 }
 #experience-card .experience .technology-heading {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 #experience-card .experience .technologies-holder {
   padding-right: 24px;
