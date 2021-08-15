@@ -85,12 +85,29 @@
     "points": [
         "Worked on Peekaboo Guru, Which is a location-based and lifestyle platform.",
         "Worked on NodeJS and MYSQL backend. Wrote CRUD API calls and built a custom lightweight image cropping and sizing module with \"node-canvas\".",
-        "Rendered ReactJS based analytics dashboard at server side and took PDF snapshot then sent the PDF to business via email.",
+        "Rendered ReactJS based analytics dashboard at server side and took PDF snapshot via puppeteer then sent the PDF to business via email.",
         "Worked on Angular JS internal admin panel. Built CRUD data tables and fixed bugs.",
         "Worked on React Native Redux mobile app. Built reusable UI components, stateb based HOC and API calls with Redux Redux-Saga.",
         "Integrated firebase analytics, One signal push notifications, and push notification deep linking.",
         "Worked on React JS Redux web app. Built responsive UI components and Built custom autocomplete component.",
         "Had a chance to work with technically advanced seniors, which helped me in my career growth."
+    ],
+    "tech": [
+      "React JS",
+      "React Native",
+      "Redux",
+      "Redux Saga",
+      "Javascript",
+      "Firebase",
+      "Analytics",
+      "Node JS",
+      {"label": "Angular JS", "icon": "mdi-angular"},
+      {"label": "Notifications", "icon": "mdi-bell-outline"},
+      {"label": "Puppeteer", "icon": "mdi-google-chrome"},
+      {"label": "AWS (S3, SES)", "icon": "mdi-aws"},
+      {"label": "Social Authentication", "icon": "mdi-login-variant"},
+      {"label": "Node Canvas", "icon": "mdi-image-size-select-large"},
+      {"label": "SMTP", "icon": "mdi-email-send-outline"}
     ]
   }
 ]
