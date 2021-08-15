@@ -2214,7 +2214,7 @@ body {
 }
 #development .heading {
   color: #E31C25;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 #development ul {
   padding: 0 22px;
@@ -2227,6 +2227,7 @@ body {
 #experience-card {
   color: #fff;
   margin-top: 32px;
+  padding: 30px 0 !important;
   background-image: -webkit-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -moz-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -ms-linear-gradient(-60deg, #333333, #1b1b1a);
@@ -2234,7 +2235,7 @@ body {
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
 #experience-card .heading {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 #experience-card .experience {
   margin-top: 12px;
