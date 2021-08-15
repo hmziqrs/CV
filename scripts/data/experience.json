@@ -13,8 +13,8 @@
         "Configured app flavors to maintain QA, Stage, Development, and Production environments.",
         "Integrated Webengage, Mixpanel, AppsFlyer, Facebook, and Firebase analytics according to marketing requirements.",
         "Integrated multiple payment providers also integrated 3D secured credit/debit card payment method.",
-        "Used flutter's event channel to share data between the dart and native code.",
         "Integrated push notifications via Webengage and Firebase messaging.",
+        "Used flutter's event channel to share data between the dart and native code.",
         "Developed and maintained scripts for automating intl JSON generation, boilerplate code generation, assets generation, and pre-deployment setup.",
         "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share the directory's link via email.",
         "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store.",
@@ -54,7 +54,19 @@
         "Fixed bugs, optimized implementations and tuned performance.",
         "Constructed a small micro CMS with NodeJS, MYSQL and React Native.",
         "Constructed full stack app with Flutter, MYSQL, Socket.IO, AWS, Firebase ml vision, Speech to text and Adonis 5. Featuring Authentication, Real time chat with voice notes/images, and push notifications.",
-        "Constructed a React Native app with NodeJS, MYSQL and Firebase ML Vision to extract text from documents."
+        "Constructed full stack app with React Native, with NodeJS, AWS, SendGrid, MYSQL and Firebase ML Vision to extract text from documents."
+    ],
+    "tech": [
+      "React JS",
+      "React Native",
+      "Flutter",
+      "Node JS",
+      "Redux",
+      "Adonis 5",
+      "MYSQL",
+      "Firebase",
+      {"label": "AWS (S3, SES, RDS, EC2)", "icon": "mdi-aws"},
+      {"label": "Notifications", "icon": "mdi-bell-outline"}
     ]
   },
   {
@@ -103,6 +115,7 @@
       "Firebase",
       "Analytics",
       "Node JS",
+      "MYSQL",
       {"label": "Angular JS", "icon": "mdi-angular"},
       {"label": "Notifications", "icon": "mdi-bell-outline"},
       {"label": "Puppeteer", "icon": "mdi-google-chrome"},

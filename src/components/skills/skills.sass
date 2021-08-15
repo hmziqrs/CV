@@ -9,35 +9,41 @@
     z-index: 2
   .heading
     color: $primary1
-    margin-bottom: 16px
-  .skills-holder
-    margin: 12px -3px
-    .skill
-      margin: 7px 5px
-      color: black
-      line-height: 8px
-      padding: 14px 18px
-      border-radius: 4px
-      display: inline-block
-      background-color: white
-      border: 1px solid rgba(0,0,0,0.12)
-      box-shadow: 0 0 6px rgba(0,0,0,0.02)
-      @include user-select()
-      @include transition(all 400ms ease)
-      span
-        position: relative
-      .mdi
-        top: 1px
-        color: $primary2
-        margin-right: 12px
-        position: relative
+    margin-bottom: 8px
+  .skills-holder-base
+    .skills-holder
+      margin: 8px -4px
+      &:first-child
+        // margin-top: 0px
+      &:last-child
+        margin-bottom: 0px
+      .skill
+        color: black
+        padding: 12px 12px
+        margin: 6px 4px
+        line-height: 8px
+        border-radius: 4px
         display: inline-block
-        transform: scale(1.2)
+        background-color: white
+        border: 1px solid rgba(0,0,0,0.12)
+        box-shadow: 0 0 6px rgba(0,0,0,0.02)
+        @include user-select()
         @include transition(all 400ms ease)
-      &:hover
-        box-shadow: 0 0 9px rgba(0,0,0,0.08)
+        span
+          position: relative
         .mdi
-          transform: scale(1.7)
+          top: 1px
+          color: $primary2
+          margin-right: 8px
+          position: relative
+          display: inline-block
+          transform: scale(1.2)
+          @include transition(all 400ms ease)
+        &:hover
+          box-shadow: 0 0 9px rgba(0,0,0,0.08)
+          .mdi
+            transform: scale(1.7)
+
   &.toggled
     border-top: 1px solid
     border-bottom: 1px solid
