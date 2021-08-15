@@ -1617,7 +1617,7 @@ a {
 }
 
 .sec-card {
-  padding: 16px 10px !important;
+  padding: 20px 10px !important;
 }
 
 .white-card {
@@ -1958,6 +1958,25 @@ body {
   transform: scale(0.8) translate(0, 45px);
 }
 
+#community {
+  page-break-after: always;
+}
+#community .heading {
+  color: #E31C25;
+}
+#community .point {
+  margin-top: 12px;
+}
+#community .point a {
+  text-decoration: underline;
+}
+#community .point .footer {
+  margin-top: 4px;
+}
+#community .point .footer span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 #story .heading {
   color: #E31C25;
   margin-bottom: 8px;
@@ -2208,9 +2227,6 @@ body {
   #summary-card .card .points.x {
     padding: 8px 30px;
   }
-}
-#development {
-  page-break-after: always;
 }
 #development .heading {
   color: #E31C25;
