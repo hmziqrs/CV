@@ -1616,6 +1616,10 @@ a {
   box-sizing: border-box;
 }
 
+.sec-card {
+  padding: 16px 10px;
+}
+
 .white-card {
   margin-top: 32px;
   background: white;
@@ -2274,10 +2278,6 @@ body {
   background-image: -o-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
-#experience-card .container-content {
-  padding: 16px 10px;
-  text-align: left;
-}
 #experience-card .heading {
   margin-bottom: 8px;
 }
@@ -2391,7 +2391,7 @@ body {
   color: #fff;
   margin-top: 32px;
   text-align: center;
-  padding: 60px 0;
+  padding: 40px 0;
   background-image: -webkit-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -moz-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -ms-linear-gradient(-60deg, #333333, #1b1b1a);
