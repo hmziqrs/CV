@@ -1617,7 +1617,7 @@ a {
 }
 
 .sec-card {
-  padding: 16px 10px !important;
+  padding: 20px 10px !important;
 }
 
 .white-card {
@@ -1958,12 +1958,34 @@ body {
   transform: scale(0.8) translate(0, 45px);
 }
 
+#community {
+  page-break-after: always;
+}
+#community .heading {
+  color: #E31C25;
+}
+#community .point {
+  margin-top: 12px;
+}
+#community .point a {
+  text-decoration: underline;
+}
+#community .point .footer {
+  margin-top: 4px;
+}
+#community .point .footer span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
 #story .heading {
   color: #E31C25;
   margin-bottom: 8px;
 }
 #story span.ab2 {
   line-height: 1.5;
+}
+#story .br {
+  height: 10px;
 }
 
 #download-card {
@@ -2209,12 +2231,9 @@ body {
     padding: 8px 30px;
   }
 }
-#development {
-  page-break-after: always;
-}
 #development .heading {
   color: #E31C25;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 #development ul {
   padding: 0 22px;
@@ -2227,6 +2246,7 @@ body {
 #experience-card {
   color: #fff;
   margin-top: 32px;
+  padding: 30px 0 !important;
   background-image: -webkit-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -moz-linear-gradient(-60deg, #333333, #1b1b1a);
   background-image: -ms-linear-gradient(-60deg, #333333, #1b1b1a);
@@ -2234,7 +2254,7 @@ body {
   background-image: linear-gradient(-60deg, #333333, #1b1b1a);
 }
 #experience-card .heading {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 #experience-card .experience {
   margin-top: 12px;
