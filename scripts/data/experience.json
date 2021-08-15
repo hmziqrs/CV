@@ -49,10 +49,12 @@
     "company": "Fiverr",
     "contract": "Freelance",
     "points": [
-        "I mostly took small gigs like build MVP mobile apps using React Native & Flutter for different clients.",
-        "I built a small-scale custom CMS for managing data with MYSQL, Node JS, and React JS.",
-        "Also did Fixed bugs, tunned performance, Updated apps to new flutter version by solving native dependency conflicts,",
-        "Made unstable apps to stable stage."
+        "Provided gig based service for React JS, React Native, Flutter and Node JS.",
+        "Developed ideas and wireframes into prototype apps.",
+        "Fixed bugs, optimized implementations and tuned performance.",
+        "Constructed a small micro CMS with NodeJS, MYSQL and React Native.",
+        "Constructed full stack app with Flutter, MYSQL, Socket.IO, AWS, Firebase ml vision, Speech to text and Adonis 5. Featuring Authentication, Real time chat with voice notes/images, and push notifications.",
+        "Constructed a React Native app with NodeJS, MYSQL and Firebase ML Vision to extract text from documents."
     ]
   },
   {
