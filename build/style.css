@@ -1984,6 +1984,9 @@ body {
 #story span.ab2 {
   line-height: 1.5;
 }
+#story .br {
+  height: 10px;
+}
 
 #download-card {
   padding: 24px 0;
