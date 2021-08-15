@@ -56,9 +56,9 @@
           transform: scale(1.0)
   .animation-container
     .base
-      right: 28px
       opacity: 0
-      bottom: -24px
+      right: 16px
+      bottom: -4px
       position: absolute
       visibility: hidden
       text-align: center
@@ -70,7 +70,7 @@
         @include transform(scale(1.2) translate(0px))
         .text
           opacity: 0.6
-          @include transform(scale(1.0) translate(0, 0))
+          @include transform(scale(0.9) translate(0, 0))
 
       &.remove
         opacity: 0
@@ -83,35 +83,35 @@
           @include transform(scale(0.0) translate(0, 45px))
 
       .mdi
-        font-size: 8rem
+        font-size: 6rem
         opacity: 0.6
         color: $primary1
       .text
-        top: -16px
+        top: -10px
         opacity: 0.6
         position: relative
         @include transition(all 800ms ease 400ms)
         @include transform(scale(0.8) translate(0, 45px))
 
-@media (max-width: 767px)
-  #skills
-    .skills-holder
-      margin: 10px -2px
-      .skill
-        margin: 6px 4px
-        padding: 11px 14px
-        .mdi
-          margin-right: 10px
+// @media (max-width: 767px)
+//   #skills
+//     .skills-holder
+//       margin: 10px -2px
+//       .skill
+//         margin: 6px 4px
+//         padding: 11px 14px
+//         .mdi
+//           margin-right: 10px
 
-@media (max-width: 361px)
-  #skills
-    .skills-holder
-      margin: 8px -1px
-      .skill
-        margin: 5px 3px
-        padding: 9px 12px
-        span
-          top: -1px
-        .mdi
-          top: 0px
+// @media (max-width: 361px)
+//   #skills
+//     .skills-holder
+//       margin: 8px -1px
+//       .skill
+//         margin: 5px 3px
+//         padding: 9px 12px
+//         span
+//           top: -1px
+//         .mdi
+//           top: 0px
           // margin-right: 8px
