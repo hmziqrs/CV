@@ -2048,17 +2048,21 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
 }
+#projects .projects-holder .project-card .header img {
+  width: 100%;
+  display: block;
+}
 #projects .projects-holder .project-card .header .gradient {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
-  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
-  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
-  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
-  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent 35%);
+  background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 35%);
+  background-image: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 35%);
+  background-image: -ms-linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 35%);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 35%);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1) 35%);
 }
 #projects .projects-holder .project-card .header .skills-holder {
   bottom: 0;
@@ -2104,7 +2108,7 @@ body {
 }
 #projects .projects-holder .project-card .header .skills-holder .sk-icon-base i.mdi {
   color: white;
-  opacity: 0.44;
+  opacity: 1;
   font-size: 40px;
   margin-left: 8px;
 }
