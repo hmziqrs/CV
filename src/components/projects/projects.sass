@@ -25,13 +25,16 @@
           position: absolute
           transform: translate(-50%,-50%)
           // color: $primary
+        img
+          width: 100%
+          display: block
         .gradient
           top: 0
           left: 0
           right: 0
           bottom: 0
           position: absolute
-          @include linear-background(0deg, rgba(0,0,0,0.75), transparent 35%)
+          @include linear-background(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.1) 35%)
         .skills-holder
           bottom: 0
           right: 8px
@@ -45,7 +48,7 @@
                 @include transition(all 320ms ease #{$i * 80}ms)
             i.mdi
               color: white
-              opacity: 0.44
+              opacity: 1.0
               font-size: 40px
               margin-left: 8px
         .title

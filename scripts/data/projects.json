@@ -33,6 +33,7 @@
     "name": "Flutter movie concept",
     "contribution": "Mobile App",
     "type": "Open Source",
+    "thumbnail": "assets/projects/movie-concept.jpg",
     "description": [
       "Features complex parallax animations.",
       "Scales on desktop, tablets & browser."
