@@ -16,6 +16,7 @@
       border: 1px solid rgba(0,0,0,0.12)
       .header
         height: 160px
+        overflow: hidden
         background: $primary
         position: relative
         .placeholder
@@ -29,11 +30,10 @@
           width: 100%
           height: 160px
           display: block
+          position: absolute
+          @include position(0px)
         .gradient
-          top: 0
-          left: 0
-          right: 0
-          bottom: 0
+          @include position(0px)
           position: absolute
           @include linear-background(0deg, rgba(0,0,0,0.75), rgba(0,0,0,0.1) 35%)
         .skills-holder
@@ -102,7 +102,6 @@
     .projects-holder
       .project-card
         .header
-          height: 120px
 
 // @media (max-width: 767px)
 //   #projects
@@ -128,4 +127,3 @@
       .project-card
         margin: 10px 0
         .header
-          height: 140px

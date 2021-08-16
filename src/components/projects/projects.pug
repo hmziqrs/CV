@@ -9,11 +9,11 @@
           .base.col-md-4.col-sm-6
             .project-card
               .header
-                .gradient
                 if project.thumbnail == null
                   .placeholder.afw6= project.name
                 if project.thumbnail != null
                   img(src=project.thumbnail, alt=project.name)
+                .gradient
                   .skills-holder
                     for button in project.buttons
                       .sk-icon-base
