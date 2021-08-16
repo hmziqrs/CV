@@ -62,6 +62,7 @@
     "name": "React Native Loop",
     "contribution": "Mobile App",
     "type": "Open Source",
+    "thumbnail": "assets/projects/react-native-loop.jpg",
     "description": [
       "Features complex parallax animations.",
       "Scales on desktop, tablets & browser."
