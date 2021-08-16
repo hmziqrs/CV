@@ -107,6 +107,7 @@
       "Features complex parallax animations.",
       "Scales on desktop, tablets & browser."
     ],
+    "thumbnail": "assets/projects/my-cv.jpg",
     "buttons": [
       {
         "label": "Github",
