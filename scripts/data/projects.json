@@ -10,6 +10,7 @@
       "Basic internationalization. ",
       "Light and Dark theme support."
     ],
+    "thumbnail": "assets/projects/flutter-ui-designs.jpg",
     "buttons": [
       {
         "label": "Store",
