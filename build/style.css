@@ -2050,6 +2050,7 @@ body {
 }
 #projects .projects-holder .project-card .header img {
   width: 100%;
+  height: 160px;
   display: block;
 }
 #projects .projects-holder .project-card .header .gradient {

@@ -85,6 +85,7 @@
     "name": "Golang minesweeper",
     "contribution": "CLI App",
     "type": "Open Source",
+    "thumbnail": "assets/projects/golang-minesweeper.gif",
     "description": [
       "Features complex parallax animations.",
       "Scales on desktop, tablets & browser."
