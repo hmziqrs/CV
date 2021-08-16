@@ -125,6 +125,7 @@
     "name": "Peekaboo Guru",
     "contribution": "Full Stack",
     "type": "Product",
+    "thumbnail": "assets/projects/peekaboo-guru.webp",
     "description": [
       "Features complex parallax animations.",
       "Scales on desktop, tablets & browser."
@@ -183,6 +184,7 @@
       "Features complex parallax animations.",
       "Scales on desktop, tablets & browser."
     ],
+    "thumbnail": "assets/projects/grow-more.jpg",
     "buttons": [
       {
         "label": "Store",
