@@ -4,6 +4,10 @@
       {
         "position": "Software engineer",
         "date": "Jan 2021 - Aug 2021"
+      },
+      {
+        "position": "Senior software engineer",
+        "date": "Aug 2021 - Present"
       }
     ],
     "company": "Sastaticket.pk",
@@ -12,7 +16,7 @@
         "Architected the code structure with the Bloc design pattern.",
         "Configured app flavors to maintain QA, Stage, Development, and Production environments.",
         "Integrated Webengage, Mixpanel, AppsFlyer, Facebook, and Firebase analytics according to marketing requirements.",
-        "Integrated multiple payment providers also integrated 3D secured credit/debit card payment method.",
+        "Integrated payment methods such as Easypaisa, Jazzcash, Paypro, Credit/Debit card pay and 3D secured Credit/Debit card pay.",
         "Developed and maintained scripts for automating intl JSON generation, boilerplate code generation, assets generation, and pre-deployment setup.",
         "Developed custom Github Actions & NodeJS script to upload APK on Google Drive directory and share the directory's link via email.",
         "Published Sastaticket.pk's new flutter mobile app with enhanced UI/UX to the app store and the play store.",
