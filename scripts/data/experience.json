@@ -2,12 +2,46 @@
   {
     "journey": [
       {
+        "position": "Senior Full-Stack Developer",
+        "date": "Sep 2021 - Present"
+      }
+    ],
+    "company": "Toptal",
+    "points": [
+        "Currently working for a new york based fintech startup as a mobile development lead."
+    ],
+    "tech": [
+      "Flutter",
+      "Golang"
+    ]
+  },
+  {
+    "journey": [
+      {
+        "position": "Project software engineer",
+        "date": "Aug 2021 - Oct 2021"
+      }
+    ],
+    "company": "Voxlabs",
+    "points": [
+        "Maintained an on going flutter mobile app development project.",
+        "Developed a JavaScript plugin that works as a paywall for websites. Integrated dynamic CSS classes to bypass ad-block detection.",
+        "Constructed an admin panel for paywall plugin with React, TypeScript, Zustand, Material-UI, and Firebase suite.",
+        "Conducted code reviews for junior developers via merge requests."
+    ],
+    "tech": [
+      "Flutter",
+      "Firebase",
+      "Typescript",
+      "React JS",
+      "Material UI"
+    ]
+  },
+  {
+    "journey": [
+      {
         "position": "Software engineer",
         "date": "Jan 2021 - Aug 2021"
-      },
-      {
-        "position": "Senior software engineer",
-        "date": "Aug 2021 - Present"
       }
     ],
     "company": "Sastaticket.pk",
@@ -102,11 +136,11 @@
     "company": "Fetch Sky",
     "journey": [
       {
-        "position": "Associate Software Engineer",
+        "position": "Associate software engineer",
         "date": "Nov 2017 - Jan 2018"
       },
       {
-        "position": "Junior Software Engineer",
+        "position": "Junior software engineer",
         "date": "Dec 2016 - Oct 2017"
       }
     ],
