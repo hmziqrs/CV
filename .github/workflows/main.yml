@@ -18,13 +18,6 @@ jobs:
         with:
           node-version: "12.19.1"
 
-      - name: Deploy to Firebase
-        uses: w9jds/firebase-action@v1.3.0
-        with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
       - name: Setup git configs
         run: |
           git checkout master
@@ -39,7 +32,7 @@ jobs:
 
       - name: Run puppeteer & commit screenshots
         run: |
-          npm run prod
+          npm run local
           git add .
           git commit -m "Automated jpg & pdf generation"
           git push origin master
@@ -50,6 +43,13 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
+
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@v1.3.0
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
       - name: Windows release build for github
         uses: ncipollo/release-action@v1

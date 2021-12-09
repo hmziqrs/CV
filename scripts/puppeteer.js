@@ -1,13 +1,20 @@
 const puppeteer = require("puppeteer");
 const args = require("args-parser")(process.argv);
+const server = require('http-server');
 
 const links = {
-  production: "https://hackerhgl-cv.web.app",
+  production: "https://hackerhgl.com/CV/",
   dev: "http://localhost:8848/build/",
+  local: "http://127.0.0.1:8080/",
 };
 
 async function run() {
   try {
+    if (args.env === 'local') {
+      server.createServer({
+        root: 'build'
+      }).listen(8080);
+    }
     const browser = await puppeteer.launch({
       headless: true,
       args: ["--no-sandbox"],
