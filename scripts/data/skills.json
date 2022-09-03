@@ -42,6 +42,7 @@
       { "label": "Github Actions", "icon": "mdi-github" },
       { "label": "AWS (S3, SES, EC2, RDS)", "icon": "mdi-aws" },
       { "label": "MYSQL", "icon": "mdi-database" },
+      { "label": "Postgres", "icon": "mdi-database" },
       { "label": "Mongo DB", "icon": "mdi-database" },
       { "label": "SPA SSR", "icon": "mdi-cloud" }
     ]

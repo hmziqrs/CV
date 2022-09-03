@@ -8,11 +8,20 @@
     ],
     "company": "Toptal",
     "points": [
-        "Currently working for a new york based fintech startup as a mobile development lead."
+        "Built and lead Flutter mobile app development for Kalshi, A New York based fintech startup.",
+        "Setup the advanced code architecture of ReactJS web app for a Nigeria based power startup.",
+        "Currently leading Full Stack development US based social network startup."
     ],
     "tech": [
       "Flutter",
-      "Golang"
+      "Golang",
+      "React JS",
+      "React Native",
+      "Typescript",
+      "Firebase",
+      "Node JS",
+      "Adonis 5",
+      "Postgres"
     ]
   },
   {
