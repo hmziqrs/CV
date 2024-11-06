@@ -27,7 +27,7 @@ const COLORS = [
 const STAR_COUNT = 200;
 const SPAWN_AREA_RATIO = 0.15;
 const BASE_STAR_SIZE = { min: 0.5, max: 3 };
-const BASE_STAR_SPEED = { min: 0.2, max: 0.8 };
+const BASE_STAR_SPEED = { min: 0.5, max: 0.8 };
 
 class StarFactory {
   static createStar(x: number, y: number, dimensions: Dimensions): Star {
@@ -152,10 +152,10 @@ export const StarField = () => {
     // Set speed based on scroll direction
     if (scrollDelta > 0) {
       // Scrolling down - increase speed by 20%
-      speedMultiplier.current = 3;
+      speedMultiplier.current = 5;
     } else if (scrollDelta < 0) {
       // Scrolling up - decrease speed by 20%
-      speedMultiplier.current = 0.5;
+      speedMultiplier.current = 0.8;
     }
 
     // Update last scroll position
@@ -258,6 +258,7 @@ export const StarField = () => {
         left: 0,
         width: "100%",
         height: "100%",
+        zIndex: -1,
       }}
     />
   );
