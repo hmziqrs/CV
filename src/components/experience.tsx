@@ -38,7 +38,6 @@ export function Experience() {
                     className="flex items-center cursor-pointer
                     sm:gap-2 gap-1.5 text-xs
                     sm:px-3 sm:py-1 py-0.5 px-2.5
-
                     bg-zinc-200 dark:bg-zinc-800
                     text-zinc-800 dark:text-zinc-200
                     rounded-full font-medium font-mono

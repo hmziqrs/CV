@@ -177,14 +177,9 @@ export const experience = [
       },
     ],
     points: [
-      "Worked on Peekaboo Guru, Which is a location-based and lifestyle platform.",
-      'Worked on NodeJS and MYSQL backend. Wrote CRUD API calls and built a custom lightweight image cropping and sizing module with "node-canvas".',
-      "Rendered ReactJS based analytics dashboard at server side and took PDF snapshot via puppeteer then sent the PDF to business via email.",
-      "Worked on Angular JS internal admin panel. Built CRUD data tables and fixed bugs.",
-      "Worked on React Native mobile app. Built reusable UI components. Integrated API calls with Redux, ImmutableJS and Redux-Saga.",
-      "Integrated firebase analytics, One signal push notifications, and push notification deep linking.",
-      "Worked on React JS web app. Built reusable and responsive UI components. Integrated API calls with Redux, ImmutableJS and Redux-Saga.",
-      "Had a chance to work with technically advanced seniors, which helped me in my career growth.",
+      "Worked on Peekaboo Guru, a location-based and lifestyle platform, developing its NodeJS/MySQL backend, ReactJS web app, and React Native mobile app",
+      "Built custom modules including a lightweight image cropping and sizing module using node-canvas, integrated Redux ecosystem (Redux-Saga, ImmutableJS) for state management, and implemented third-party services like Firebase analytics and OneSignal notifications",
+      "Developed internal tools including an AngularJS admin panel and a server-side rendered analytics dashboard with PDF reporting capabilities",
     ],
     tech: [
       { label: "React JS", icon: SiReact },
