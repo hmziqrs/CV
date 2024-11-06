@@ -57,10 +57,8 @@ export const experience = [
     contract: "Contract",
     company: "Voxlabs",
     points: [
-      "Maintained an on going flutter mobile app development project.",
-      "Developed a JavaScript plugin that works as a paywall for websites. Integrated dynamic CSS classes to bypass ad-block detection.",
-      "Constructed an admin panel for paywall plugin with React, TypeScript, Zustand, Material-UI, and Firebase suite.",
-      "Conducted code reviews for junior developers via merge requests.",
+      "Developed a vanilla JavaScript paywall plugin with ad-block bypass capabilities through dynamic CSS implementation, along with a admin panel built using React, TypeScript, Zustand, and Firebase.",
+      "Maintained an existing Flutter mobile application and did code reviews of junior developers' work.",
     ],
     tech: [
       { label: "Flutter", icon: SiFlutter },
