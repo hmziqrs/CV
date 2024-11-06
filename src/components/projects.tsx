@@ -42,7 +42,7 @@ export function Projects() {
                   {project.contribution}
                 </p>
 
-                <ul className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                <ul className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 flex-grow sr-only">
                   {project.description.map((desc, index) => (
                     <li key={index} className="mb-1">
                       • {desc}

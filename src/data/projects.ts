@@ -1,3 +1,6 @@
+import { SiGithub, SiGoogleplay } from "@icons-pack/react-simple-icons";
+import { Globe } from "lucide-react";
+
 export const projects = [
   {
     name: "Flutter UI Designs",
@@ -13,18 +16,18 @@ export const projects = [
     thumbnail: "/projects/flutter-ui-designs.jpg",
     buttons: [
       {
-        label: "Store",
-        icon: "mdi-google-play",
+        label: "Google Play",
+        icon: SiGoogleplay,
         link: "https://play.google.com/store/apps/details?id=com.onemdev.flutter_ui_challenges",
       },
       {
         label: "Github",
-        icon: "mdi-github",
+        icon: SiGithub,
         link: "https://github.com/hackerhgl/flutter-ui-designs",
       },
       {
         label: "Web",
-        icon: "mdi-web",
+        icon: Globe,
         link: "https://flutter-ui-challenges-hgl.web.app/",
       },
     ],
@@ -41,18 +44,18 @@ export const projects = [
     ],
     buttons: [
       {
-        label: "Store",
-        icon: "mdi-google-play",
+        label: "Google Play",
+        icon: SiGoogleplay,
         link: "https://play.google.com/store/apps/details?id=com.onemdev.invmovieconcept1",
       },
       {
         label: "Github",
-        icon: "mdi-github",
+        icon: SiGithub,
         link: "https://github.com/hackerhgl/invmovieconcept1",
       },
       {
         label: "Web",
-        icon: "mdi-web",
+        icon: Globe,
         link: "https://invmovieconcept1.web.app/",
       },
     ],
@@ -69,13 +72,13 @@ export const projects = [
     ],
     buttons: [
       {
-        label: "Store",
-        icon: "mdi-google-play",
+        label: "Google Play",
+        icon: SiGoogleplay,
         link: "https://play.google.com/store/apps/details?id=com.onemdev.rnloop",
       },
       {
         label: "Github",
-        icon: "mdi-github",
+        icon: SiGithub,
         link: "https://github.com/hackerhgl/react-native-loop-game",
       },
     ],
@@ -93,7 +96,7 @@ export const projects = [
     buttons: [
       {
         label: "Github",
-        icon: "mdi-github",
+        icon: SiGithub,
         link: "https://github.com/hackerhgl/go-minesweeper",
       },
     ],
@@ -111,12 +114,12 @@ export const projects = [
     buttons: [
       {
         label: "Github",
-        icon: "mdi-github",
+        icon: SiGithub,
         link: "https://github.com/hackerhgl/CV",
       },
       {
         label: "Web",
-        icon: "mdi-web",
+        icon: Globe,
         link: "https://hackerhgl-cv.web.app/",
       },
     ],
@@ -133,18 +136,18 @@ export const projects = [
     ],
     buttons: [
       {
-        label: "Store",
-        icon: "mdi-google-play",
+        label: "Google Play",
+        icon: SiGoogleplay,
         link: "https://play.google.com/store/search?q=peekaboo%20guru&c=apps",
       },
       {
-        label: "Store",
+        label: "Google Play",
         icon: "mdi-apple",
         link: "https://apps.apple.com/pk/app/peekaboo-guru/id1114129707",
       },
       {
         label: "Web",
-        icon: "mdi-web",
+        icon: Globe,
         link: "https://peekaboo.guru/",
       },
     ],
@@ -161,18 +164,18 @@ export const projects = [
     thumbnail: "/projects/sasta-ticket.jpg",
     buttons: [
       {
-        label: "Store",
-        icon: "mdi-google-play",
+        label: "Google Play",
+        icon: SiGoogleplay,
         link: "https://play.google.com/store/apps/details?id=com.pk.sastaticket",
       },
       {
-        label: "Store",
+        label: "Google Play",
         icon: "mdi-apple",
         link: "https://apps.apple.com/by/app/sastaticket-flight-hotels/id1564441908",
       },
       {
         label: "Web",
-        icon: "mdi-web",
+        icon: Globe,
         link: "https://www.sastaticket.pk/",
       },
     ],
@@ -189,12 +192,12 @@ export const projects = [
     thumbnail: "/projects/grow-more.jpg",
     buttons: [
       {
-        label: "Store",
-        icon: "mdi-google-play",
+        label: "Google Play",
+        icon: SiGoogleplay,
         link: "https://play.google.com/store/apps/details?id=com.growappv2",
       },
       {
-        label: "Store",
+        label: "Google Play",
         icon: "mdi-apple",
         link: "https://apps.apple.com/us/app/grow-youth-kids-ministry/id1260816727",
       },
