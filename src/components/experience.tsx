@@ -1,20 +1,5 @@
 import { experience } from "@/data/experience";
 
-const ExperienceBadge = ({ label }: { label: string }) => {
-  return (
-    <div
-      className="flex items-center gap-1.5 text-xs px-2 py-0.5
-      bg-zinc-200 dark:bg-zinc-800
-      text-zinc-800 dark:text-zinc-200
-      rounded-full font-medium font-mono
-      hover:bg-zinc-300 dark:hover:bg-zinc-700
-      transition-colors duration-200"
-    >
-      {label}
-    </div>
-  );
-};
-
 export function Experience() {
   return (
     <div className="flex bg-zinc-100 dark:bg-zinc-900">
@@ -46,12 +31,23 @@ export function Experience() {
               </div>
 
               {/* Tech Stack */}
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap sm:gap-3 gap-1.5 mb-6">
                 {exp.tech.map((tech, idx) => (
-                  <ExperienceBadge
+                  <div
                     key={idx}
-                    label={typeof tech === "string" ? tech : tech.label}
-                  />
+                    className="flex items-center cursor-pointer
+                    sm:gap-2 gap-1.5 text-xs
+                    sm:px-3 sm:py-1 py-0.5 px-2.5
+
+                    bg-zinc-200 dark:bg-zinc-800
+                    text-zinc-800 dark:text-zinc-200
+                    rounded-full font-medium font-mono
+                    hover:bg-zinc-300 dark:hover:bg-zinc-700
+                    transition-colors duration-200"
+                  >
+                    <tech.icon className="sm:w-3.5 w-3" />
+                    {tech.label}
+                  </div>
                 ))}
               </div>
 
