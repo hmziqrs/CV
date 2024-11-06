@@ -112,12 +112,10 @@ export const experience = [
     company: "Fiverr",
     contract: "Freelance",
     points: [
-      "Provided gig based service for React JS, React Native, Flutter and Node JS.",
-      "Developed ideas and wireframes into real life apps.",
-      "Fixed bugs, optimized implementations and tuned performance.",
-      "Constructed full stack micro CMS for managing repository of business information via mobile app.",
-      "Constructed full stack chat application. Featuring Social authentication, Real time chat with voice notes & images, ability to search by text, Speech to text & from text from images, and Push notifications.",
-      "Constructed full stack app to save documents and highlight price on document via machine learning.",
+      "Provided gig-based development services across ReactJS, React Native, Flutter, and NodeJS, transforming client wireframes into production-ready applications while optimizing performance and fixing critical bugs.",
+      "Constructed a full-stack micro CMS system with mobile app interface for efficient management of business information repositories.",
+      "Developed a full-stack document management application with machine learning integration for automated price detection and highlighting capabilities.",
+      "Built Wheelbees, a comprehensive chat application for drivers featuring social authentication, real-time messaging with voice notes and images, advanced search capabilities (text/speech/image recognition), and push notifications.",
     ],
     tech: [
       { label: "React JS", icon: SiReact },
