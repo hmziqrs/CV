@@ -23,13 +23,22 @@ export const StarField = () => {
       "#F2E6FF", // light purple
     ];
 
+    // Calculate spawn area (10% of canvas size)
+    const spawnAreaWidth = width * 0.1;
+    const spawnAreaHeight = height * 0.1;
+
+    // Random position within spawn area
+    const x = width / 2 + (Math.random() * spawnAreaWidth - spawnAreaWidth / 2);
+    const y =
+      height / 2 + (Math.random() * spawnAreaHeight - spawnAreaHeight / 2);
+
     return {
-      x: width / 2,
-      y: height / 2,
+      x,
+      y,
       size: Math.random() * 2 + 1, // 1 to 3 pixels
       speed: Math.random() * 2 + 1, // base speed
       color: colors[Math.floor(Math.random() * colors.length)],
-      angle: Math.random() * Math.PI * 2, // Random angle in radians
+      angle: Math.atan2(y - height / 2, x - width / 2), // Angle based on position relative to center
     };
   };
 
@@ -55,10 +64,14 @@ export const StarField = () => {
         star.y < -10 ||
         star.y > height + 10
       ) {
-        // Reset star to center with new random angle
-        star.x = width / 2;
-        star.y = height / 2;
-        star.angle = Math.random() * Math.PI * 2;
+        // Reset star to a random position in the spawn area
+        const spawnAreaWidth = width * 0.1;
+        const spawnAreaHeight = height * 0.1;
+        star.x =
+          width / 2 + (Math.random() * spawnAreaWidth - spawnAreaWidth / 2);
+        star.y =
+          height / 2 + (Math.random() * spawnAreaHeight - spawnAreaHeight / 2);
+        star.angle = Math.atan2(star.y - height / 2, star.x - width / 2);
       }
     });
   };
