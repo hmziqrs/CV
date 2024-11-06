@@ -81,7 +81,7 @@ export const experience = [
       "Architected and developed Pakistan's top-ranked airline travel app using Flutter and Bloc design pattern, successfully publishing on App Store and Play Store.",
       "Implemented robust development infrastructure including multi-environment configuration and automated workflows for internationalization, boilerplate code, assets generation, and deployment processes.",
       "Integrated analytics suite (Webengage, Mixpanel, AppsFlyer, Facebook, Firebase) and multiple payment gateways (Easypaisa, Jazzcash, Paypro, 3D-secured Credit/Debit cards).",
-      "Hacked a zero cost CI/CD solutions using Github Actions and NodeJS for automated APK distribution to Google Drive with email notifications.",
+      "Hacked a zero cost CI/CD solution using Github Actions and NodeJS for automated APK distribution to Google Drive with email notifications.",
     ],
     tech: [
       { label: "Flutter", icon: SiFlutter },
