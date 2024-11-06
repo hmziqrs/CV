@@ -15,7 +15,8 @@ export const StarField = () => {
   const starsRef = useRef<Star[]>([]);
   const animationFrameRef = useRef<number>();
 
-  const createStar = (width: number, height: number): Star => {
+  // Function to create a star in the center spawn area (used for respawning)
+  const createCenterStar = (width: number, height: number): Star => {
     const colors = [
       "#FFFFFF", // white
       "#E6E6FF", // light blue
@@ -23,11 +24,9 @@ export const StarField = () => {
       "#F2E6FF", // light purple
     ];
 
-    // Calculate spawn area (10% of canvas size)
     const spawnAreaWidth = width * 0.1;
     const spawnAreaHeight = height * 0.1;
 
-    // Random position within spawn area
     const x = width / 2 + (Math.random() * spawnAreaWidth - spawnAreaWidth / 2);
     const y =
       height / 2 + (Math.random() * spawnAreaHeight - spawnAreaHeight / 2);
@@ -35,8 +34,30 @@ export const StarField = () => {
     return {
       x,
       y,
-      size: Math.random() * 2 + 1, // 1 to 3 pixels
-      speed: (Math.random() * 2 + 1) * 0.5, // Reduced speed by 50%
+      size: Math.random() * 2 + 1,
+      speed: (Math.random() * 2 + 1) * 0.5,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      angle: Math.atan2(y - height / 2, x - width / 2),
+    };
+  };
+
+  // Function to create a star anywhere on the canvas (used for initial setup)
+  const createRandomStar = (width: number, height: number): Star => {
+    const colors = [
+      "#FFFFFF", // white
+      "#E6E6FF", // light blue
+      "#FFE6E6", // light red
+      "#F2E6FF", // light purple
+    ];
+
+    const x = Math.random() * width;
+    const y = Math.random() * height;
+
+    return {
+      x,
+      y,
+      size: Math.random() * 2 + 1,
+      speed: (Math.random() * 2 + 1) * 0.2,
       color: colors[Math.floor(Math.random() * colors.length)],
       angle: Math.atan2(y - height / 2, x - width / 2),
     };
@@ -45,7 +66,7 @@ export const StarField = () => {
   const initStars = (width: number, height: number) => {
     const stars: Star[] = [];
     for (let i = 0; i < 200; i++) {
-      stars.push(createStar(width, height));
+      stars.push(createRandomStar(width, height)); // Use random position for initial stars
     }
     starsRef.current = stars;
   };
@@ -57,21 +78,17 @@ export const StarField = () => {
       star.y += Math.sin(star.angle) * (star.speed * (star.size / 2));
 
       // Check if star is off screen
-      const maxDist = Math.max(width, height);
       if (
         star.x < -10 ||
         star.x > width + 10 ||
         star.y < -10 ||
         star.y > height + 10
       ) {
-        // Reset star to a random position in the spawn area
-        const spawnAreaWidth = width * 0.1;
-        const spawnAreaHeight = height * 0.1;
-        star.x =
-          width / 2 + (Math.random() * spawnAreaWidth - spawnAreaWidth / 2);
-        star.y =
-          height / 2 + (Math.random() * spawnAreaHeight - spawnAreaHeight / 2);
-        star.angle = Math.atan2(star.y - height / 2, star.x - width / 2);
+        // Reset star using center spawn function
+        const newStar = createCenterStar(width, height);
+        star.x = newStar.x;
+        star.y = newStar.y;
+        star.angle = newStar.angle;
       }
     });
   };
@@ -90,7 +107,7 @@ export const StarField = () => {
       height / 2,
       Math.max(width, height) / 2,
     );
-    gradient.addColorStop(0, "#160022"); // Dark purple
+    gradient.addColorStop(0, "#1a0033"); // Dark purple
     gradient.addColorStop(1, "#000000"); // Black
 
     // Fill background
