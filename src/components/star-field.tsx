@@ -109,6 +109,38 @@ export const StarField = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const starsRef = useRef<Star[]>([]);
   const animationFrameRef = useRef<number>();
+  // Add refs for tracking scroll
+  const lastScrollY = useRef(0);
+  const speedMultiplier = useRef(1); // 1 is the default speed (100%)
+  const scrollTimeout = useRef<NodeJS.Timeout>();
+
+  // Add scroll handler
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    const scrollDelta = currentScrollY - lastScrollY.current;
+
+    // Set speed based on scroll direction
+    if (scrollDelta > 0) {
+      // Scrolling down - increase speed by 20%
+      speedMultiplier.current = 3;
+    } else if (scrollDelta < 0) {
+      // Scrolling up - decrease speed by 20%
+      speedMultiplier.current = 0.1;
+    }
+
+    // Update last scroll position
+    lastScrollY.current = currentScrollY;
+
+    // Clear existing timeout
+    if (scrollTimeout.current) {
+      clearTimeout(scrollTimeout.current);
+    }
+
+    // Reset speed to normal after 50ms of no scrolling
+    scrollTimeout.current = setTimeout(() => {
+      speedMultiplier.current = 1;
+    }, 50);
+  };
 
   const initStars = (dimensions: Dimensions) => {
     starsRef.current = Array.from({ length: STAR_COUNT }, () =>
@@ -118,11 +150,14 @@ export const StarField = () => {
 
   const updateStars = (dimensions: Dimensions) => {
     starsRef.current.forEach((star) => {
-      // Move star outward based on its angle
-      star.x += Math.cos(star.angle) * (star.speed * (star.size / 2));
-      star.y += Math.sin(star.angle) * (star.speed * (star.size / 2));
+      // Apply speedMultiplier to the movement
+      star.x +=
+        Math.cos(star.angle) *
+        (star.speed * (star.size / 2) * speedMultiplier.current);
+      star.y +=
+        Math.sin(star.angle) *
+        (star.speed * (star.size / 2) * speedMultiplier.current);
 
-      // Check if star is off screen and reset if necessary
       if (isOffScreen(star, dimensions)) {
         const newStar = StarFactory.createCenterStar(dimensions);
         Object.assign(star, newStar);
@@ -167,11 +202,17 @@ export const StarField = () => {
 
   useEffect(() => {
     handleResize();
+    lastScrollY.current = window.scrollY; // Initialize lastScrollY
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
     animationFrameRef.current = requestAnimationFrame(animate);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimeout.current) {
+        clearTimeout(scrollTimeout.current);
+      }
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
       }
