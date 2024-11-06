@@ -10,6 +10,13 @@ interface Star {
   angle: number; // Added angle property
 }
 
+const colors = [
+  "#FFFFFF", // pure white
+  "#B3E0FF", // soft light blue
+  "#FFD7E6", // soft light pink
+  "#E6D0FF", // soft light purple
+];
+
 export const StarField = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const starsRef = useRef<Star[]>([]);
@@ -17,13 +24,6 @@ export const StarField = () => {
 
   // Function to create a star in the center spawn area (used for respawning)
   const createCenterStar = (width: number, height: number): Star => {
-    const colors = [
-      "#FFFFFF", // white
-      "#E6E6FF", // light blue
-      "#FFE6E6", // light red
-      "#F2E6FF", // light purple
-    ];
-
     const spawnAreaWidth = width * 0.1;
     const spawnAreaHeight = height * 0.1;
 
@@ -43,13 +43,6 @@ export const StarField = () => {
 
   // Function to create a star anywhere on the canvas (used for initial setup)
   const createRandomStar = (width: number, height: number): Star => {
-    const colors = [
-      "#FFFFFF", // white
-      "#E6E6FF", // light blue
-      "#FFE6E6", // light red
-      "#F2E6FF", // light purple
-    ];
-
     const x = Math.random() * width;
     const y = Math.random() * height;
 
