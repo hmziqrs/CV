@@ -27,7 +27,7 @@ export const experience = [
   {
     journey: [
       {
-        position: "Senior Full-Stack Developer",
+        position: "Freelance software engineer",
         date: "Sep 2021 - Present",
       },
     ],
@@ -36,7 +36,7 @@ export const experience = [
     points: [
       "Built a React Native app prototype for BasedApp (fintech startup) integrating Web3, SafeWallet, Magic Link, and various blockchain functionalities.",
       "Developed Quest Social's real-time backend (AdonisJS, MySQL, Socket.io) and React Native mobile app with improved state management, revamped designs and new features, successfully publishing to App Store and Play Store.",
-      "Prototyped a Flutter mobile York-based trading startup.",
+      "Prototyped a Flutter mobile app for New York based trading startup.",
     ],
     tech: [
       { label: "Flutter", icon: SiFlutter },
@@ -105,7 +105,7 @@ export const experience = [
   {
     journey: [
       {
-        position: "Full Stack, Flutter and React Native",
+        position: "Freelance software engineer",
         date: "Sep 2018 - Oct 2021",
       },
     ],
@@ -135,7 +135,7 @@ export const experience = [
   {
     journey: [
       {
-        position: "Full Stack, Flutter and React Native",
+        position: "Freelance software engineer",
         date: "May 2018 - Oct 2021",
       },
     ],
@@ -163,12 +163,8 @@ export const experience = [
     contract: "Full time",
     journey: [
       {
-        position: "Associate software engineer",
-        date: "Nov 2017 - Jan 2018",
-      },
-      {
-        position: "Junior software engineer",
-        date: "Dec 2016 - Oct 2017",
+        position: "Software engineer",
+        date: "Dec 2016 - Oct 2018",
       },
     ],
     points: [
