@@ -30,6 +30,7 @@ export const experience = [
       },
     ],
     company: "Toptal",
+    contract: "Freelance",
     points: [
       "Built and lead Flutter mobile app development for Kalshi, A New York based fintech startup.",
       "Setup the advanced code architecture of ReactJS web app for a Nigeria based power startup.",
