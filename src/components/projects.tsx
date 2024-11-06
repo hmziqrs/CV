@@ -70,7 +70,7 @@ export function Projects() {
                   {project.contribution}
                 </p>
 
-                <ul className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 flex-grow">
+                <ul className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 flex-grow sr-only">
                   {project.description.map((desc, index) => (
                     <li key={index} className="mb-1">
                       • {desc}
@@ -79,7 +79,7 @@ export function Projects() {
                 </ul>
 
                 {/* Project Links */}
-                <div className="flex flex-wrap gap-2 mt-auto">
+                <div className="flex flex-wrap gap-2 mb-auto">
                   {project.buttons.map((button) => (
                     <Link
                       key={button.link}

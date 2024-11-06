@@ -1,4 +1,8 @@
-import { SiGithub, SiGoogleplay } from "@icons-pack/react-simple-icons";
+import {
+  SiAppstore,
+  SiGithub,
+  SiGoogleplay,
+} from "@icons-pack/react-simple-icons";
 import { Globe } from "lucide-react";
 
 export const projects = [
@@ -141,8 +145,8 @@ export const projects = [
         link: "https://play.google.com/store/search?q=peekaboo%20guru&c=apps",
       },
       {
-        label: "Google Play",
-        icon: "mdi-apple",
+        label: "App Store",
+        icon: SiAppstore,
         link: "https://apps.apple.com/pk/app/peekaboo-guru/id1114129707",
       },
       {
@@ -169,8 +173,8 @@ export const projects = [
         link: "https://play.google.com/store/apps/details?id=com.pk.sastaticket",
       },
       {
-        label: "Google Play",
-        icon: "mdi-apple",
+        label: "App Store",
+        icon: SiAppstore,
         link: "https://apps.apple.com/by/app/sastaticket-flight-hotels/id1564441908",
       },
       {
@@ -197,8 +201,8 @@ export const projects = [
         link: "https://play.google.com/store/apps/details?id=com.growappv2",
       },
       {
-        label: "Google Play",
-        icon: "mdi-apple",
+        label: "App Store",
+        icon: SiAppstore,
         link: "https://apps.apple.com/us/app/grow-youth-kids-ministry/id1260816727",
       },
     ],
