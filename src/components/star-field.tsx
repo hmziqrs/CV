@@ -26,7 +26,7 @@ const COLORS = [
 
 const STAR_COUNT = 200;
 const SPAWN_AREA_RATIO = 0.15;
-const BASE_STAR_SIZE = { min: 0.5, max: 3 };
+const BASE_STAR_SIZE = { min: 0.8, max: 3 };
 const BASE_STAR_SPEED = { min: 0.5, max: 0.8 };
 
 class StarFactory {
@@ -73,12 +73,95 @@ class StarFieldRenderer {
     ctx: CanvasRenderingContext2D,
     stars: Star[],
     dimensions: Dimensions,
+    time: number,
   ) {
-    this.drawBackground(ctx, dimensions);
+    this.drawBackground(ctx, dimensions, time);
     this.drawStars(ctx, stars);
   }
 
   private static drawBackground(
+    ctx: CanvasRenderingContext2D,
+    dimensions: Dimensions,
+    time: number,
+  ) {
+    // Clear the canvas
+    ctx.fillStyle = "#000000";
+    ctx.fillRect(0, 0, dimensions.width, dimensions.height);
+
+    // Draw animated nebula effects
+    this.drawNebula(ctx, dimensions, time);
+
+    // Add space dust
+    this.addSpaceDust(ctx, dimensions, time);
+
+    // Add subtle glow effect
+    this.addGlow(ctx, dimensions);
+  }
+
+  private static drawNebula(
+    ctx: CanvasRenderingContext2D,
+    dimensions: Dimensions,
+    time: number,
+  ) {
+    const nebulaColors = [
+      "rgba(63, 0, 95, 0.5)", // Deep purple
+      "rgba(0, 20, 40, 0.5)", // Deep blue
+      "rgba(25, 0, 50, 0.5)", // Medium purple
+    ];
+
+    const movementRange = Math.min(dimensions.width, dimensions.height) * 0.2;
+    const nebulaSize = Math.min(dimensions.width, dimensions.height) * 1.2;
+
+    // Create multiple animated nebula clouds
+    for (let i = 0; i < 3; i++) {
+      const x =
+        dimensions.width / 2 + Math.cos(time * 0.0005 + i) * movementRange;
+      const y =
+        dimensions.height / 2 + Math.sin(time * 0.0004 + i) * movementRange;
+
+      const gradient = ctx.createRadialGradient(x, y, 0, x, y, nebulaSize);
+
+      gradient.addColorStop(0, nebulaColors[i]);
+      gradient.addColorStop(0.5, "rgba(0, 0, 0, 0.1)");
+      gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
+
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, dimensions.width, dimensions.height);
+    }
+  }
+
+  private static addSpaceDust(
+    ctx: CanvasRenderingContext2D,
+    dimensions: Dimensions,
+    time: number,
+  ) {
+    const imageData = ctx.getImageData(
+      0,
+      0,
+      dimensions.width,
+      dimensions.height,
+    );
+    const data = imageData.data;
+
+    for (let i = 0; i < data.length; i += 4) {
+      const x = (i / 4) % dimensions.width;
+      const y = Math.floor(i / 4 / dimensions.width);
+
+      // Create animated noise pattern
+      const noise =
+        Math.sin(x * 0.01 + time * 0.0001) *
+        Math.cos(y * 0.01 + time * 0.0001) *
+        3;
+
+      data[i] = Math.min(data[i] + noise, 255); // R
+      data[i + 1] = Math.min(data[i + 1] + noise, 255); // G
+      data[i + 2] = Math.min(data[i + 2] + noise, 255); // B
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }
+
+  private static addGlow(
     ctx: CanvasRenderingContext2D,
     dimensions: Dimensions,
   ) {
@@ -88,19 +171,15 @@ class StarFieldRenderer {
       0,
       dimensions.width / 2,
       dimensions.height / 2,
-      Math.max(dimensions.width, dimensions.height) / 1.5,
+      Math.max(dimensions.width, dimensions.height) / 2,
     );
 
-    gradient.addColorStop(0, "#0B0B1A");
-    gradient.addColorStop(0.4, "#070714");
-    gradient.addColorStop(0.7, "#030306");
-    gradient.addColorStop(1, "#000000");
+    gradient.addColorStop(0, "rgba(25, 0, 50, 0.2)");
+    gradient.addColorStop(0.5, "rgba(10, 0, 20, 0.1)");
+    gradient.addColorStop(1, "rgba(0, 0, 0, 0)");
 
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, dimensions.width, dimensions.height);
-
-    // Add subtle noise texture
-    this.addSpaceNoise(ctx, dimensions);
   }
 
   private static addSpaceNoise(
@@ -212,7 +291,12 @@ export const StarField = () => {
     if (canvas && ctx) {
       const dimensions = { width: canvas.width, height: canvas.height };
       updateStars(dimensions);
-      StarFieldRenderer.draw(ctx, starsRef.current, dimensions);
+      StarFieldRenderer.draw(
+        ctx,
+        starsRef.current,
+        dimensions,
+        performance.now(),
+      );
     }
 
     animationFrameRef.current = requestAnimationFrame(animate);
