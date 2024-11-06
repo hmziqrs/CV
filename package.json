@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "injection-debug": "nodemon scripts/injection",
     "injection": "node scripts/injection",
     "setup": "npm i http-server nodemon -g",
@@ -28,5 +31,11 @@
     "lodash": "4.17.21",
     "node-cmd": "5.0.0",
     "puppeteer": "23.7.0"
+  },
+  "devDependencies": {
+    "@vituum/vite-plugin-pug": "^1.1.0",
+    "sass": "^1.80.6",
+    "vite": "^5.4.10",
+    "vite-plugin-pug": "^0.4.1"
   }
 }
