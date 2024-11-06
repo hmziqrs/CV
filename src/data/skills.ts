@@ -8,18 +8,11 @@ import {
   SiNodedotjs,
   SiAdonisjs,
   SiExpress,
-  SiGo,
-  SiDart,
   SiGithubactions,
-  SiAmazon,
-  SiMysql,
   SiPostgresql,
-  SiMongodb,
   SiNextdotjs,
   SiTailwindcss,
   SiWebassembly,
-  SiGoogletranslate,
-  SiFlask,
   SiRust,
 } from "@icons-pack/react-simple-icons";
 import {
@@ -28,6 +21,7 @@ import {
   FileTerminal,
   FlaskConical,
   Globe,
+  Play,
 } from "lucide-react";
 
 export const skills = [
@@ -53,7 +47,7 @@ export const skills = [
       { label: "Multi Threaded Apps", icon: Cpu }, // Replace with appropriate threading icon
       { label: "E2E Testing", icon: FlaskConical }, // Replace with appropriate testing icon
       { label: "Pixel Perfect UI", icon: ChevronsLeftRightEllipsis }, // Replace with appropriate UI icon
-      { label: "Parallax Animations", icon: SiReact }, // Replace with appropriate animation icon
+      { label: "Parallax Animations", icon: Play }, // Replace with appropriate animation icon
     ],
   },
   {
