@@ -13,21 +13,18 @@ export function Skills() {
             <div key={section.key}>
               {/* Hidden section label that can help with semantic HTML */}
               <span className="sr-only">{section.key}</span>
-
               <div className="flex flex-wrap gap-3">
                 {section.skills.map((skill) => (
                   <div
                     key={skill.label}
-                    className="flex items-center gap-3 px-4 py-3
+                    className="flex items-center sm:gap-3 gap-2 cursor-pointer
+                    sm:px-4 px-4 py-3
                     bg-zinc-200 dark:bg-zinc-800
                     hover:bg-zinc-300 dark:hover:bg-zinc-700
                     rounded-full duration-300"
                   >
-                    <skill.icon
-                      size={18}
-                      className="text-zinc-700 dark:text-zinc-300"
-                    />
-                    <p className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+                    <skill.icon className="text-zinc-700 dark:text-zinc-300 sm:h-5 h-4" />
+                    <p className="text-xs sm:text-sm font-medium font-mono text-zinc-800 dark:text-zinc-200">
                       {skill.label}
                     </p>
                   </div>
