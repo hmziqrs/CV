@@ -18,6 +18,9 @@ import {
   SiGoogledrive,
   SiAsana,
   SiDropbox,
+  SiWeb3dotjs,
+  SiEthereum,
+  SiEthers,
 } from "@icons-pack/react-simple-icons";
 import { Bell, PieChart, CreditCard, FileCode, Play } from "lucide-react";
 
@@ -32,9 +35,10 @@ export const experience = [
     company: "Toptal",
     contract: "Freelance",
     points: [
-      "Built and lead Flutter mobile app development for Kalshi, A New York based fintech startup.",
-      "Setup the advanced code architecture of ReactJS web app for a Nigeria based power startup.",
-      "Currently leading Full Stack development US based social network startup.",
+      "Prototyped a flutter mobile app development for Kalshi, A New York based fintech startup.",
+      "For quest social Built a backend with AdonisJS, MYSQL and socket.io for a real-time chat and event updates.",
+      "For quest social Improved the react native mobile, revamped the state managment structure, implemented new designs and features. Published it on the app store and play store.",
+      "Prototyped a React Native app for BasedApp, a crypto based fintech startup. Worked on Web3, SafeWallet, Magic link and many third party integrations.",
     ],
     tech: [
       { label: "Flutter", icon: SiFlutter },
@@ -44,8 +48,10 @@ export const experience = [
       { label: "Typescript", icon: SiTypescript },
       { label: "Firebase", icon: SiFirebase },
       { label: "Node JS", icon: SiNodedotjs },
-      { label: "Adonis 5", icon: SiAdonisjs },
+      { label: "Adonis JS", icon: SiAdonisjs },
       { label: "Postgres", icon: SiPostgresql },
+      { label: "Ethereum", icon: SiEthereum },
+      { label: "Ethers", icon: SiEthers },
     ],
   },
   {
@@ -121,7 +127,7 @@ export const experience = [
       { label: "Node JS", icon: SiNodedotjs },
       { label: "Redux", icon: SiRedux },
       { label: "Redux Saga", icon: SiRedux },
-      { label: "Adonis 5", icon: SiAdonisjs },
+      { label: "Adonis JS", icon: SiAdonisjs },
       { label: "MYSQL", icon: SiMysql },
       { label: "Firebase", icon: SiFirebase },
       { label: "Notifications", icon: Bell },
