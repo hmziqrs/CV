@@ -147,13 +147,6 @@ export const experience = [
       "Provided contract-based development services across multiple technologies including ReactJS, React Native, Flutter, and NodeJS, delivering both short-term bug fixes and long-term prototype applications",
       "Built and published multiple mobile applications including 'Grow Youth App' using React Native with Redux and WordPress API integration, successfully launching on both App Store and Play Store.",
       "Developed innovative prototypes including a background video processing app using React Native threads and NodeJS/Dropbox integration, and a products catalog app with dynamic navigation and WordPress API integration.",
-      // "Provided contract based service for React JS, React Native, Flutter and Node JS.",
-      // "Worked two short term jobs for ReactJS and React Native, I fixed bugs and improved UI/UX.",
-      // "Worked with a long term client where I built small scale prototype apps with React Native and React JS.",
-      // "Prototyped a Todo app with React Native and asana API.",
-      // "Prototyped an app with React Native threads to download videos in background queue. Wrote a small NodeJS backed to upload videos on dropbox.",
-      // "Constructed a small products catalog app with React Native and Wordpress API with dynamic navigation.",
-      // "Constructed `Grow youth app` with React Native, Redux, Wordpress API and published it on App Store and Play Store.",
     ],
     tech: [
       { label: "React JS", icon: SiReact },
@@ -169,6 +162,7 @@ export const experience = [
   },
   {
     company: "Fetch Sky",
+    contract: "Full time",
     journey: [
       {
         position: "Associate software engineer",
