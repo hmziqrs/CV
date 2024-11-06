@@ -18,7 +18,6 @@ import {
   SiGoogledrive,
   SiAsana,
   SiDropbox,
-  SiWeb3dotjs,
   SiEthereum,
   SiEthers,
 } from "@icons-pack/react-simple-icons";
@@ -35,10 +34,9 @@ export const experience = [
     company: "Toptal",
     contract: "Freelance",
     points: [
-      "Prototyped a flutter mobile app development for Kalshi, A New York based fintech startup.",
-      "For quest social Built a backend with AdonisJS, MYSQL and socket.io for a real-time chat and event updates.",
-      "For quest social Improved the react native mobile, revamped the state managment structure, implemented new designs and features. Published it on the app store and play store.",
-      "Prototyped a React Native app for BasedApp, a crypto based fintech startup. Worked on Web3, SafeWallet, Magic link and many third party integrations.",
+      "Built a React Native app prototype for BasedApp (fintech startup) integrating Web3, SafeWallet, Magic Link, and various blockchain functionalities.",
+      "Developed Quest Social's real-time backend (AdonisJS, MySQL, Socket.io) and React Native mobile app with improved state management, revamped designs and new features, successfully publishing to App Store and Play Store.",
+      "Prototyped a Flutter mobile York-based trading startup.",
     ],
     tech: [
       { label: "Flutter", icon: SiFlutter },
