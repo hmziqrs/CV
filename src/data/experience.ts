@@ -54,6 +54,7 @@ export const experience = [
         date: "Aug 2021 - Oct 2021",
       },
     ],
+    contract: "Contract",
     company: "Voxlabs",
     points: [
       "Maintained an on going flutter mobile app development project.",
@@ -77,6 +78,7 @@ export const experience = [
       },
     ],
     company: "Sastaticket.pk",
+    contract: "Full time",
     points: [
       "Architected and developed Pakistan's top-ranked airline travel app using Flutter and Bloc design pattern, successfully publishing on App Store and Play Store.",
       "Implemented robust development infrastructure including multi-environment configuration and automated workflows for internationalization, boilerplate code, assets generation, and deployment processes.",
