@@ -1,33 +1,98 @@
 import Image from "next/image";
 import { projects } from "@/data/projects";
 import Link from "next/link";
-import { Box, Globe } from "lucide-react";
+import {
+  Box,
+  Globe,
+  Smartphone,
+  Terminal,
+  Layout,
+  MonitorSmartphone,
+} from "lucide-react";
 
 const ProjectTypeBadge = ({ type }: { type: string }) => {
   if (type === "Product") {
     return (
-      <span
-        className="flex items-center gap-1.5 text-xs px-2 py-1
+      <div
+        className="flex items-center gap-1.5 text-xs px-2 py-0.5
         bg-blue-100 dark:bg-blue-950
-        text-blue-700 dark:text-blue-300
-        rounded-full font-medium"
+        text-blue-700 dark:text-blue-200
+        border border-blue-700/30 dark:border-blue-200/30
+        rounded-full font-medium
+        hover:bg-blue-200 dark:hover:bg-blue-900
+        transition-colors duration-200"
       >
-        <Box className="w-3 h-3" />
+        <Box className="w-3.5" />
         {type}
-      </span>
+      </div>
     );
   }
 
   return (
-    <span
-      className="flex items-center gap-1.5 text-xs px-2 py-1
+    <div
+      className="flex items-center gap-1.5 text-xs px-2 py-0.5
       bg-green-100 dark:bg-green-950
-      text-green-700 dark:text-green-300
-      rounded-full font-medium"
+      text-green-700 dark:text-green-200
+      border border-green-700/30 dark:border-green-200/30
+      rounded-full font-medium
+      hover:bg-green-200 dark:hover:bg-green-900
+      transition-colors duration-200"
     >
-      <Globe className="w-3 h-3" />
+      <Globe className="w-3.5" />
       {type}
-    </span>
+    </div>
+  );
+};
+
+const ContributionBadge = ({ role }: { role: string }) => {
+  const getBadgeConfig = (role: string) => {
+    switch (role) {
+      case "Mobile App":
+        return {
+          colors:
+            "bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300 border-purple-700/30 dark:border-purple-300/30 hover:bg-purple-200 dark:hover:bg-purple-900",
+          icon: Smartphone,
+        };
+      case "Full Stack":
+        return {
+          colors:
+            "bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300 border-red-700/30 dark:border-red-300/30 hover:bg-red-200 dark:hover:bg-red-900",
+          icon: MonitorSmartphone,
+        };
+      case "Web App":
+        return {
+          colors:
+            "bg-orange-100 dark:bg-orange-950 text-orange-700 dark:text-orange-300 border-orange-700/30 dark:border-orange-300/30 hover:bg-orange-200 dark:hover:bg-orange-900",
+          icon: Layout,
+        };
+      case "CLI App":
+        return {
+          colors:
+            "bg-teal-100 dark:bg-teal-950 text-teal-700 dark:text-teal-300 border-teal-700/30 dark:border-teal-300/30 hover:bg-teal-200 dark:hover:bg-teal-900",
+          icon: Terminal,
+        };
+      default:
+        return {
+          colors:
+            "bg-gray-100 dark:bg-gray-950 text-gray-700 dark:text-gray-300 border-gray-700/30 dark:border-gray-300/30 hover:bg-gray-200 dark:hover:bg-gray-900",
+          icon: Box,
+        };
+    }
+  };
+
+  const config = getBadgeConfig(role);
+  const Icon = config.icon;
+
+  return (
+    <div
+      className={`flex items-center gap-1.5  text-xs px-2 py-0.5
+      rounded-full font-medium border
+      transition-colors duration-200
+      ${config.colors}`}
+    >
+      <Icon className="w-3.5" />
+      <span className="">{role}</span>
+    </div>
   );
 };
 
@@ -63,12 +128,13 @@ export function Projects() {
                   <h3 className="text-lg font-semibold text-zinc-800 dark:text-zinc-100">
                     {project.name}
                   </h3>
-                  <ProjectTypeBadge type={project.type} />
+                  {/* <ProjectTypeBadge type={project.type} /> */}
                 </div>
 
-                <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-2 font-medium">
-                  {project.contribution}
-                </p>
+                <div className="flex flex-wrap items-center gap-2 mb-4">
+                  <ProjectTypeBadge type={project.type} />
+                  <ContributionBadge role={project.contribution} />
+                </div>
 
                 <ul className="text-sm text-zinc-600 dark:text-zinc-400 mb-4 flex-grow sr-only">
                   {project.description.map((desc, index) => (
