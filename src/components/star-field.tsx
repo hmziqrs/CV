@@ -20,11 +20,13 @@ const COLORS = [
   "#B3E0FF", // soft light blue
   "#FFD7E6", // soft light pink
   "#E6D0FF", // soft light purple
+  "#FFE9C7", // warm white
+  "#8AB4F8", // bright blue
 ] as const;
 
 const STAR_COUNT = 200;
 const SPAWN_AREA_RATIO = 0.15;
-const BASE_STAR_SIZE = { min: 1, max: 3 };
+const BASE_STAR_SIZE = { min: 0.5, max: 3 };
 const BASE_STAR_SPEED = { min: 0.2, max: 0.8 };
 
 class StarFactory {
@@ -86,13 +88,41 @@ class StarFieldRenderer {
       0,
       dimensions.width / 2,
       dimensions.height / 2,
-      Math.max(dimensions.width, dimensions.height) / 2,
+      Math.max(dimensions.width, dimensions.height) / 1.5,
     );
-    gradient.addColorStop(0, "#1a0033");
+
+    gradient.addColorStop(0, "#0B0B1A");
+    gradient.addColorStop(0.4, "#070714");
+    gradient.addColorStop(0.7, "#030306");
     gradient.addColorStop(1, "#000000");
 
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, dimensions.width, dimensions.height);
+
+    // Add subtle noise texture
+    this.addSpaceNoise(ctx, dimensions);
+  }
+
+  private static addSpaceNoise(
+    ctx: CanvasRenderingContext2D,
+    dimensions: Dimensions,
+  ) {
+    const imageData = ctx.getImageData(
+      0,
+      0,
+      dimensions.width,
+      dimensions.height,
+    );
+    const data = imageData.data;
+
+    for (let i = 0; i < data.length; i += 4) {
+      const noise = Math.random() * 5;
+      data[i] = Math.min(data[i] + noise, 255); // R
+      data[i + 1] = Math.min(data[i + 1] + noise, 255); // G
+      data[i + 2] = Math.min(data[i + 2] + noise, 255); // B
+    }
+
+    ctx.putImageData(imageData, 0, 0);
   }
 
   private static drawStars(ctx: CanvasRenderingContext2D, stars: Star[]) {
@@ -125,7 +155,7 @@ export const StarField = () => {
       speedMultiplier.current = 3;
     } else if (scrollDelta < 0) {
       // Scrolling up - decrease speed by 20%
-      speedMultiplier.current = 0.1;
+      speedMultiplier.current = 0.5;
     }
 
     // Update last scroll position
