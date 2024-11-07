@@ -35,7 +35,5 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "wrangler": "^3.85.0"
-  },
-  "module": "index.ts",
-  "type": "module"
+  }
 }
