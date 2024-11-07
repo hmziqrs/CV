@@ -1,4 +1,5 @@
 import { Experience } from "@/components/experience";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Projects } from "@/components/projects";
 import { Skills } from "@/components/skills";
@@ -6,7 +7,6 @@ import { Skills } from "@/components/skills";
 export default function Home() {
   return (
     <main className="h-full ">
-      {/* <StarField /> */}
       <div className="h-16" />
       <Header />
       <div className="h-16" />
@@ -16,6 +16,7 @@ export default function Home() {
       <div className="h-16" />
       <Experience />
       <div className="h-16" />
+      <Footer />
     </main>
   );
 }
