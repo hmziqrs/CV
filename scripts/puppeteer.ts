@@ -66,8 +66,8 @@ async function run() {
     }
     console.log(env, links[env]);
     const browser = await puppeteer.launch({
-      // headless: false,
-      headless: true,
+      headless: false,
+      // headless: true,
       args: ["--no-sandbox"],
       defaultViewport: {
         height: 1080,
