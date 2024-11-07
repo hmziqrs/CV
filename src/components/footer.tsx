@@ -136,7 +136,7 @@ export async function Footer() {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-600 dark:text-zinc-400
+                className="text-zinc-600 dark:text-zinc-100
                 hover:text-zinc-900 dark:hover:text-zinc-100
                 transition-colors duration-300"
                 aria-label={link.label}
@@ -162,10 +162,12 @@ export async function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="text-sm font-mono">
+          <div className="text-sm font-mono text-center">
             © {new Date().getFullYear()} Hamza Iqbal. All rights reserved.
           </div>
-          <div className="text-xs font-mono">Updated on {lastUpdated}</div>
+          <div className="text-xs font-mono text-center">
+            Updated on {lastUpdated}
+          </div>
         </div>
       </div>
     </footer>
