@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { projects } from "@/data/projects";
 import Link from "next/link";
 import {
@@ -114,10 +113,9 @@ export function Projects() {
             >
               {/* Project Image */}
               <div className="relative h-48 w-full overflow-hidden">
-                <Image
+                <img
                   src={project.thumbnail}
                   alt={project.name}
-                  fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
