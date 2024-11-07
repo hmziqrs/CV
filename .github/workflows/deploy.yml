@@ -55,6 +55,17 @@ jobs:
         with:
           name: "hmziqrs-light-cv.pdf"
           path: "public/hmziqrs-light-cv.pdf"
+      # - run: bun i wrangler -g
+      # - name: wrangler publish
+      #   run: $ CLOUDFLARE_ACCOUNT_ID=<ACCOUNT_ID> bunx wrangler pages deploy ./out --project-name=<PROJECT_NAME>
+      - name: Publish
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: "hmziqrs-cv"
+          directory: "out"
+          gitHubToken: ${{ secrets.TOKEN }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
