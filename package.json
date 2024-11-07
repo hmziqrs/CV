@@ -11,7 +11,8 @@
     "serve": "bunx --bun serve ./out -p 3434",
     "export": "next build",
     "cv-dev": "bun ./scripts/puppeteer --env dev",
-    "cv-local": "bun ./scripts/puppeteer --env local"
+    "cv-local": "bun ./scripts/puppeteer --env local",
+    "ebuild": "bun build && bun cv-local && bun build"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^10.1.0",
