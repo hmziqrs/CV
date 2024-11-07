@@ -12,7 +12,7 @@
     "export": "next build",
     "cv-dev": "bun ./scripts/puppeteer --env dev",
     "cv-local": "bun ./scripts/puppeteer --env local",
-    "ebuild": "bun build && bun cv-local && bun build"
+    "ebuild": "next build && bun cv-local && next build"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^10.1.0",
