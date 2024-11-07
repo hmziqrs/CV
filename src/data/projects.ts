@@ -27,7 +27,7 @@ export const projects = [
       {
         label: "Github",
         icon: SiGithub,
-        link: "https://github.com/hackerhgl/flutter-ui-designs",
+        link: "https://github.com/hmziqrs/flutter-ui-designs",
       },
       {
         label: "Web",
@@ -55,7 +55,7 @@ export const projects = [
       {
         label: "Github",
         icon: SiGithub,
-        link: "https://github.com/hackerhgl/invmovieconcept1",
+        link: "https://github.com/hmziqrs/invmovieconcept1",
       },
       {
         label: "Web",
@@ -83,7 +83,7 @@ export const projects = [
       {
         label: "Github",
         icon: SiGithub,
-        link: "https://github.com/hackerhgl/react-native-loop-game",
+        link: "https://github.com/hmziqrs/react-native-loop-game",
       },
     ],
     skills: [],
@@ -101,7 +101,7 @@ export const projects = [
       {
         label: "Github",
         icon: SiGithub,
-        link: "https://github.com/hackerhgl/go-minesweeper",
+        link: "https://github.com/hmziqrs/go-minesweeper",
       },
     ],
     skills: [],
@@ -119,12 +119,12 @@ export const projects = [
       {
         label: "Github",
         icon: SiGithub,
-        link: "https://github.com/hackerhgl/CV",
+        link: "https://github.com/hmziqrs/cv",
       },
       {
         label: "Web",
         icon: Globe,
-        link: "https://hackerhgl-cv.web.app/",
+        link: "https://cv.hmziq.rs",
       },
     ],
     skills: [],
