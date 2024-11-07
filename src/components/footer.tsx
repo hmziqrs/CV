@@ -152,6 +152,14 @@ export function Footer() {
           <div className="text-sm font-mono">
             © {new Date().getFullYear()} Hamza Iqbal. All rights reserved.
           </div>
+          <div className="text-xs font-mono">
+            Updated on{" "}
+            {new Date().toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </div>
         </div>
       </div>
     </footer>
