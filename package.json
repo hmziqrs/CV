@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "serve": "bunx --bun serve ./out -p 3434",
-    "export": "next build"
+    "export": "next build",
+    "cv-local": "bun ./scripts/puppeteer"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^10.1.0",
