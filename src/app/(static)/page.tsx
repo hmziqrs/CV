@@ -8,7 +8,6 @@ import { Skills } from "@/components/skills";
 export default function Home() {
   return (
     <main className="h-full" role="main" aria-label="Portfolio Content">
-      <PuppeteerHelper />
       <Header />
       <section className="h-16 print:h-12" aria-hidden="true" />
       <section

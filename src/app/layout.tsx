@@ -103,6 +103,20 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full flex flex-col dark:text-white text-black dark:bg-zinc-950 bg-white transition-colors duration-500`}
       >
         {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.toggleJpeg = function toggleJpeg() {
+          // Find all elements with class 'jpeg'
+          const jpegElements = document.getElementsByClassName("jpeg");
+
+          // Convert HTMLCollection to Array and iterate through each element
+          Array.from(jpegElements).forEach((element) => {
+            // Toggle the 'hidden' class
+            element.classList.toggle("hidden");
+          });
+        };`,
+          }}
+        />
       </body>
     </html>
   );
