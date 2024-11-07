@@ -11,18 +11,28 @@ function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+declare function toggleJpeg(): void;
+
 async function capture(page: Page, dark = true) {
   const theme = dark ? "dark" : "light";
-  await page.screenshot({
-    path: `public/hmziqrs-${theme}-cv.jpg`,
-    fullPage: true,
-  });
   await page.pdf({
     format: "a2",
     printBackground: true,
     displayHeaderFooter: true,
     path: `public/hmziqrs-${theme}-cv.pdf`,
   });
+  await page.evaluate(() => {
+    toggleJpeg();
+  });
+  await sleep(1000);
+  await page.screenshot({
+    path: `public/hmziqrs-${theme}-cv.jpg`,
+    fullPage: true,
+  });
+  await page.evaluate(() => {
+    toggleJpeg();
+  });
+  await sleep(1000);
 }
 
 async function run() {
