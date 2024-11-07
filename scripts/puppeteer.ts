@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer";
+import puppeteer, { Page } from "puppeteer";
 import { parseArgs } from "util";
 import server from "http-server";
 
@@ -6,6 +6,24 @@ const links: Record<string, string> = {
   prod: "https://cv.hmziq.rs",
   local: "http://127.0.0.1:3000/",
 };
+
+function sleep(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function capture(page: Page, dark = true) {
+  const theme = dark ? "dark" : "light";
+  await page.screenshot({
+    path: `public/hmziqrs-${theme}-cv.jpg`,
+    fullPage: true,
+  });
+  await page.pdf({
+    format: "a2",
+    printBackground: true,
+    displayHeaderFooter: true,
+    path: `public/hmziqrs-${theme}-cv.pdf`,
+  });
+}
 
 async function run() {
   try {
@@ -30,7 +48,8 @@ async function run() {
         .listen(8080);
     }
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: false,
+      // headless: true,
       args: ["--no-sandbox"],
       defaultViewport: {
         height: 1080,
@@ -41,17 +60,16 @@ async function run() {
     const page = await context.newPage();
     await page.setCacheEnabled(false);
     await page.goto(links[env], { waitUntil: "networkidle0" });
-    await page.screenshot({
-      path: "public/hmziqrs-cv.jpg",
-      fullPage: true,
+    await capture(page, true);
+    await page.evaluate(() => {
+      const html = document.querySelector("html");
+      if (html) {
+        html.classList.remove("dark");
+      }
     });
-    await page.pdf({
-      format: "a2",
-      printBackground: true,
-      displayHeaderFooter: true,
-      path: "public/hmziqrs-cv.pdf",
-    });
+    await sleep(1000);
 
+    await capture(page, false);
     await browser.close();
     process.exit();
   } catch (e) {
