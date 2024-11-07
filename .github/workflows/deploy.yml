@@ -37,7 +37,7 @@ jobs:
       - run: ls out
       - name: Take CV snapshots
         run: bun cv-local
-      - name: bun export
+      - name: Next.JS export post cv
         run: bun export
       - uses: actions/upload-artifact@v4
         with:

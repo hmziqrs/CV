@@ -1,4 +1,4 @@
-import { chromium, Page } from "playwright";
+import { chromium, Page } from "playwright-chromium";
 import { parseArgs } from "util";
 import server from "http-server";
 import { log } from "console";
