@@ -73,7 +73,7 @@ async function run() {
 
     // Launch browser
     const browser = await chromium.launch({
-      headless: false, // Set to true for production
+      headless: true, // Set to true for production
     });
     console.log("Browser launched");
 
