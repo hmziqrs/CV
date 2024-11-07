@@ -24,9 +24,9 @@ async function capture(page: Page, dark = true) {
     path: `public/hmziqrs-${theme}-cv.pdf`,
   });
   console.log(`${theme} pdf saved`);
-  await page.evaluate(() => {
+  await page.evaluate(`(() => {
     toggleJpeg();
-  });
+    })()`);
   console.log(`${theme} toggle start`);
   await sleep(1000);
   await page.screenshot({
@@ -34,9 +34,9 @@ async function capture(page: Page, dark = true) {
     fullPage: true,
   });
   console.log(`${theme} jpeg saved`);
-  await page.evaluate(() => {
+  await page.evaluate(`(() => {
     toggleJpeg();
-  });
+    })()`);
   console.log(`${theme} toggle end`);
   await sleep(1000);
 }
