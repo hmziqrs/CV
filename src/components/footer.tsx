@@ -110,7 +110,20 @@ const hiddenSocialLinks = [
   },
 ];
 
-export function Footer() {
+// We made this function asunc so this will only
+// be called on server in a way it's only called
+// on build time giving us persisted last update
+async function getDate(): Promise<string> {
+  const date = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+  return Promise.resolve(date);
+}
+
+export async function Footer() {
+  const lastUpdated = await getDate();
   return (
     <footer className="flex bg-zinc-100 dark:bg-zinc-900 print:hidden jpeg">
       <div className="container max-w-8xl mx-auto px-6 py-8">
@@ -152,14 +165,7 @@ export function Footer() {
           <div className="text-sm font-mono">
             © {new Date().getFullYear()} Hamza Iqbal. All rights reserved.
           </div>
-          <div className="text-xs font-mono">
-            Updated on{" "}
-            {new Date().toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "short",
-              day: "numeric",
-            })}
-          </div>
+          <div className="text-xs font-mono">Updated on {lastUpdated}</div>
         </div>
       </div>
     </footer>
