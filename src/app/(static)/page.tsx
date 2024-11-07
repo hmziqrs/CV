@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <main className="h-full ">
       <Header />
-      <div className="h-16" />
+      <div className="h-16 print:h-12" />
       <Skills />
-      <div className="h-16" />
+      <div className="h-16 print:h-12" />
       <Projects />
-      <div className="h-16" />
+      <div className="h-16 print:h-0" style={{ pageBreakAfter: "always" }} />
       <Experience />
       <div className="h-16 print:hidden" />
       <Footer />
