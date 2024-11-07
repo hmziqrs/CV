@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "href": "mailto:hamza.iqdev@gmail.com",
+      "icon": "mdi mdi-email",
+      "label": "hamza.iqdev@gmail.com"
+    },
+    {
+      "href": "tel:+923148155304",
+      "icon": "mdi mdi-telegram",
+      "label": "hmziqrs"
+    },
+    {
+      "href": "https://www.linkedin.com/in/hackerhgl",
+      "target": "_linkedin",
+      "icon": "mdi mdi-linkedin",
+      "label": "Linkedin profile"
+    },
+    {
+      "href": "https://www.github.com/hackerhgl",
+      "target": "_github",
+      "icon": "mdi mdi-github",
+      "label": "Github profile"
+    }
+  ],
+  "name": "Hamza Iqbal",
+  "title": "Full Stack/ React Native & Flutter Expert",
+  "image": "assets/hamza.jpg"
+}

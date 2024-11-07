@@ -1,9 +1,0 @@
-- var data = [{"label":"Download JPEG","href":"./assets/hackerhgl-cv.jpg","icon":"mdi mdi-file-image"},{"label":"Download PDF","href":"./assets/hackerhgl-cv.pdf","icon":"mdi mdi-file-pdf"}];
-
-#download-card.white-card(data-html2canvas-ignore="true")
-  .container
-    .content
-      each obj in data
-        a.base(href= obj.href, download="")
-          i.ah3.icon(class=obj.icon)
-          span.ah3.afw6= obj.label

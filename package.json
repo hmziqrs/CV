@@ -1,32 +1,39 @@
 {
-  "name": "hackerhgl-cv",
-  "version": "1.1.5",
-  "description": "",
-  "main": "index.js",
+  "name": "cv",
+  "version": "0.1.0",
+  "private": true,
+  "author": "hmziqrs",
   "scripts": {
-    "injection-debug": "nodemon scripts/injection",
-    "injection": "node scripts/injection",
-    "setup": "npm i http-server nodemon -g",
-    "local": "node scripts/puppeteer --env=local",
-    "start": "node scripts/puppeteer --env=dev",
-    "prod": "node scripts/puppeteer --env=production"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "serve": "bunx --bun serve ./out -p 3434",
+    "export": "next build",
+    "cv-dev": "bun ./scripts/puppeteer --env dev",
+    "cv-local": "bun ./scripts/puppeteer --env local",
+    "ebuild": "bun build && bun cv-local && bun build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hackerhgl/CV.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hackerhgl/CV/issues"
-  },
-  "homepage": "https://github.com/hackerhgl/CV#readme",
   "dependencies": {
-    "args-parser": "^1.1.0",
-    "http-server": "^14.0.0",
-    "install": "^0.13.0",
-    "lodash": "^4.17.21",
-    "node-cmd": "^5.0.0",
-    "puppeteer": "^17.1.0"
+    "@icons-pack/react-simple-icons": "^10.1.0",
+    "lucide-react": "^0.454.0",
+    "next": "15.0.2",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
+  },
+  "devDependencies": {
+    "@types/http-server": "^0.12.4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "args-parser": "^1.3.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "http-server": "^14.1.1",
+    "postcss": "^8",
+    "puppeteer": "^23.7.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "wrangler": "^3.85.0"
   }
 }
