@@ -18,6 +18,17 @@ export default function Home() {
       >
         <Skills />
       </section>
+      <section
+        className="h-16 print:h-12 print:hidden jpeg"
+        aria-hidden="true"
+      />
+      <section
+        id="downloads"
+        aria-label="Downloads Section"
+        className="downloads-section print:hidden jpeg"
+      >
+        <DownloadCV />
+      </section>
       <section className="h-16 print:h-12" aria-hidden="true" />
       <section
         id="projects"
@@ -25,14 +36,6 @@ export default function Home() {
         className="projects-section"
       >
         <Projects />
-      </section>
-      <section className="h-16 print:h-12" aria-hidden="true" />
-      <section
-        id="downloads"
-        aria-label="Downloads Section"
-        className="downloads-section"
-      >
-        <DownloadCV />
       </section>
       <section
         className="h-16 print:h-0"
