@@ -5,7 +5,7 @@ export function Header() {
     <div className="flex bg-zinc-100 dark:bg-zinc-900">
       {" "}
       {/* Changed from bg-red-700 */}
-      <div className="container max-w-6xl mx-auto flex flex-col px-6 py-10 gap-6">
+      <div className="container max-w-8xl mx-auto flex flex-col px-6 py-10 gap-6">
         <div>
           <h1 className="text-3xl font-semibold text-zinc-800 dark:text-zinc-100">
             {header.name}

@@ -7,7 +7,6 @@ import { Skills } from "@/components/skills";
 export default function Home() {
   return (
     <main className="h-full ">
-      <div className="h-16" />
       <Header />
       <div className="h-16" />
       <Skills />

@@ -3,7 +3,7 @@ import { experience } from "@/data/experience";
 export function Experience() {
   return (
     <div className="flex bg-zinc-100 dark:bg-zinc-900">
-      <div className="container max-w-6xl mx-auto px-6 py-10">
+      <div className="container max-w-8xl mx-auto px-6 py-10">
         <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100 mb-8">
           Experience
         </h2>
