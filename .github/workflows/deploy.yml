@@ -43,7 +43,7 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           packageManager: "bun"
-          command: pages deploy ./out --project-name=hmziqrs-cv
+          command: pages deploy ./out --project-name=hmziqrs-cv --branch=production
       - uses: actions/upload-artifact@v4
         with:
           name: "hmziqrs-dark-cv.jpg"
