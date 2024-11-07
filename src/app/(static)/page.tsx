@@ -14,7 +14,7 @@ export default function Home() {
       <Projects />
       <div className="h-16" />
       <Experience />
-      <div className="h-16" />
+      <div className="h-16 print:hidden" />
       <Footer />
     </main>
   );

@@ -8,7 +8,7 @@ export function Experience() {
           Experience
         </h2>
 
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-8">
           {experience.map((exp, index) => (
             <div key={index}>
               {/* Company Name */}

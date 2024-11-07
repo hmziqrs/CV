@@ -112,7 +112,7 @@ const hiddenSocialLinks = [
 
 export function Footer() {
   return (
-    <footer className="flex bg-zinc-100 dark:bg-zinc-900">
+    <footer className="flex bg-zinc-100 dark:bg-zinc-900 print:hidden">
       <div className="container max-w-8xl mx-auto px-6 py-8">
         <div className="flex flex-col items-center gap-4">
           {/* Visible Social Links */}
