@@ -2,10 +2,12 @@ import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Projects } from "@/components/projects";
+import { PuppeteerHelper } from "@/components/puppeteer-helper";
 import { Skills } from "@/components/skills";
 export default function Home() {
   return (
     <main className="h-full" role="main" aria-label="Portfolio Content">
+      <PuppeteerHelper />
       <Header />
       <section className="h-16 print:h-12" aria-hidden="true" />
       <section
@@ -35,7 +37,7 @@ export default function Home() {
       >
         <Experience />
       </section>
-      <section className="h-16 print:hidden" aria-hidden="true" />
+      <section className="h-16 print:hidden jpeg" aria-hidden="true" />
       <Footer />
     </main>
   );
