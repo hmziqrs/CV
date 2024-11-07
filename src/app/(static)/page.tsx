@@ -1,3 +1,4 @@
+import { DownloadCV } from "@/components/download-cv";
 import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
@@ -24,6 +25,14 @@ export default function Home() {
         className="projects-section"
       >
         <Projects />
+      </section>
+      <section className="h-16 print:h-12" aria-hidden="true" />
+      <section
+        id="downloads"
+        aria-label="Downloads Section"
+        className="downloads-section"
+      >
+        <DownloadCV />
       </section>
       <section
         className="h-16 print:h-0"
