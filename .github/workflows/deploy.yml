@@ -41,12 +41,20 @@ jobs:
         run: bun run build
       - uses: actions/upload-artifact@v4
         with:
-          name: "CV dark image"
+          name: "hmziqrs-dark-cv.jpg"
           path: "public/hmziqrs-dark-cv.jpg"
       - uses: actions/upload-artifact@v4
         with:
-          name: "CV dark pdf"
+          name: "hmziqrs-dark-cv.pdf"
           path: "public/hmziqrs-dark-cv.pdf"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "hmziqrs-light-cv.jpg"
+          path: "public/hmziqrs-light-cv.jpg"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: "hmziqrs-light-cv.pdf"
+          path: "public/hmziqrs-light-cv.pdf"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
