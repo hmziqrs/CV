@@ -31,20 +31,23 @@ export function DownloadCV() {
           Download CV
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="flex flex-row flex-wrap gap-4">
           {downloads.map((download) => (
             <a
               key={download.filename}
               href={download.filename}
               download
-              className="flex items-center justify-center gap-3 px-6 py-4
+              className="flex items-center justify-center
+                sm:gap-3 gap-2 sm:px-6 px-4 sm:py-3 py-2
                 bg-zinc-200 dark:bg-zinc-800
                 hover:bg-zinc-300 dark:hover:bg-zinc-700
                 text-zinc-800 dark:text-zinc-200
                 rounded-md transition-colors duration-300"
             >
-              <download.icon size={20} />
-              <span className="font-medium">{download.label}</span>
+              <download.icon className="sm:w-4 w-3.5" />
+              <span className="font-medium sm:text-sm text-xs">
+                {download.label}
+              </span>
             </a>
           ))}
         </div>
