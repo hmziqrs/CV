@@ -23,17 +23,21 @@ async function capture(page: Page, dark = true) {
     displayHeaderFooter: true,
     path: `public/hmziqrs-${theme}-cv.pdf`,
   });
+  console.log(`${theme} pdf saved`);
   await page.evaluate(() => {
     toggleJpeg();
   });
+  console.log(`${theme} toggle start`);
   await sleep(1000);
   await page.screenshot({
     path: `public/hmziqrs-${theme}-cv.jpg`,
     fullPage: true,
   });
+  console.log(`${theme} jpeg saved`);
   await page.evaluate(() => {
     toggleJpeg();
   });
+  console.log(`${theme} toggle end`);
   await sleep(1000);
 }
 
