@@ -1,4 +1,5 @@
 import { parseArgs } from "util";
+import server from "http-server";
 
 async function main() {
   try {
@@ -11,6 +12,14 @@ async function main() {
         },
       },
     });
+
+    server
+      .createServer({
+        root: "out",
+      })
+      .listen(8899);
+
+    await new Promise((resolve) => setTimeout(resolve, 20000));
 
     console.log("Hello, World!", values);
     console.log(process.argv);

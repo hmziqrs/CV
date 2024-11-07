@@ -10,7 +10,8 @@
     "lint": "next lint",
     "serve": "bunx --bun serve ./out -p 3434",
     "export": "next build",
-    "cv-local": "bun ./scripts/puppeteer"
+    "cv-dev": "bun ./scripts/puppeteer --env dev",
+    "cv-local": "bun ./scripts/puppeteer --env local"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^10.1.0",
