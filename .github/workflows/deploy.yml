@@ -33,12 +33,12 @@ jobs:
       - name: Install dependencies
         run: bun i
       - name: Next.JS export
-        run: bun export
+        run: bun run build
       - run: ls out
       - name: Take CV snapshots
         run: bun cv-local
       - name: Next.JS export post cv
-        run: bun export
+        run: bun run build
       - uses: actions/upload-artifact@v4
         with:
           name: "CV dark image"

@@ -9,7 +9,6 @@
     "start": "next start",
     "lint": "next lint",
     "serve": "bunx --bun serve ./out -p 3434",
-    "export": "next build",
     "cv-dev": "bun ./scripts/playwright --env dev",
     "cv-local": "bun ./scripts/playwright --env local",
     "ebuild": "next build && bun cv-local && next build"
