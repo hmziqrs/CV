@@ -67,8 +67,9 @@ async function run() {
         html.classList.remove("dark");
       }
     });
-    await sleep(1000);
-
+    // await sleep(3000);
+    await page.locator("html").scroll({ scrollTop: 100 });
+    await sleep(3000);
     await capture(page, false);
     await browser.close();
     process.exit();
