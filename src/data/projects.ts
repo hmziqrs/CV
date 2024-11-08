@@ -155,6 +155,46 @@ export const projects = [
     skills: [],
   },
   {
+    name: "QuestSocial",
+    contribution: "Full Stack",
+    type: "Product",
+    thumbnail: "/projects/quest.jpg",
+    description: [],
+    buttons: [
+      {
+        label: "App Store",
+        icon: SiAppstore,
+        link: "https://apps.apple.com/us/app/questsocial/id1529478932",
+      },
+    ],
+    skills: [],
+  },
+  {
+    name: "Mixfame",
+    contribution: "Mobile App",
+    type: "Product",
+    thumbnail: "/projects/mixfame.jpg",
+    description: [],
+    buttons: [
+      {
+        label: "Google Play",
+        icon: SiAppstore,
+        link: "https://play.google.com/store/apps/details?id=com.mobile.mixfame",
+      },
+      {
+        label: "App Store",
+        icon: SiAppstore,
+        link: "https://apps.apple.com/us/app/mixfame/id1586985916",
+      },
+      {
+        label: "Web",
+        icon: Globe,
+        link: "https://mixfame.com",
+      },
+    ],
+    skills: [],
+  },
+  {
     name: "Peekaboo Guru",
     contribution: "Full Stack",
     type: "Product",
