@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { AnalyticsProvider } from "@/providers/analytics";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -121,7 +122,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full flex flex-col dark:text-white text-black dark:bg-zinc-950 bg-white transition-colors duration-500`}
       >
-        {children}
+        <AnalyticsProvider>{children}</AnalyticsProvider>
         <script
           dangerouslySetInnerHTML={{
             __html: `window.toggleJpeg = function toggleJpeg() {
