@@ -1,5 +1,15 @@
 import { experience } from "@/data/experience";
 
+const contractColors: Record<string, string> = {
+  "Full time": "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300",
+  Freelance:
+    "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300",
+  Contract:
+    "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300",
+  Contracter:
+    "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300",
+};
+
 export function Experience() {
   return (
     <div className="flex bg-zinc-100 dark:bg-zinc-900">
@@ -12,9 +22,16 @@ export function Experience() {
           {experience.map((exp, index) => (
             <div key={index}>
               {/* Company Name */}
-              <h3 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
-                {exp.company}
-              </h3>
+              <div className="flex flex-row items-center gap-3">
+                <h3 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
+                  {exp.company}
+                </h3>
+                <p
+                  className={`text-xs px-2 py-0.5 rounded-full  ${contractColors[exp.contract]}`}
+                >
+                  {exp.contract}
+                </p>
+              </div>
 
               {/* Positions & Dates */}
               <div className="mt-2 mb-4 space-y-1">
