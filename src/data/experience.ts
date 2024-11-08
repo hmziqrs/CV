@@ -27,12 +27,36 @@ export const experience = [
   {
     journey: [
       {
+        position: "Freelance mobile engineer",
+        date: "Dec 2023 - Jun 2024",
+      },
+    ],
+    company: "Mixfame",
+    contract: "Freelance",
+    points: [
+      "Built Flutter mobile app from scratch for Mixfame, a talent management platform, integrating Firebase, and In app purchase.",
+      "Deeplinking via push notifications and dynamic links for user engagement and retention.",
+    ],
+    tech: [
+      { label: "Flutter", icon: SiFlutter },
+      { label: "Bloc", icon: FileCode },
+      { label: "Provider", icon: FileCode },
+      { label: "Firebase", icon: SiFirebase },
+      { label: "Analytics", icon: PieChart },
+      { label: "Animations", icon: Play },
+      { label: "Notifications", icon: Bell },
+      { label: "In-app purchase", icon: CreditCard },
+    ],
+  },
+  {
+    journey: [
+      {
         position: "Freelance software engineer",
         date: "Sep 2021 - Present",
       },
     ],
     company: "Toptal",
-    contract: "Freelance",
+    contract: "Contracter",
     points: [
       "Built a React Native app prototype for BasedApp (fintech startup) integrating Web3, SafeWallet, Magic Link, and various blockchain functionalities.",
       "Developed Quest Social's real-time backend (AdonisJS, MySQL, Socket.io) and React Native mobile app with improved state management, revamped designs and new features, successfully publishing to App Store and Play Store.",
@@ -106,15 +130,16 @@ export const experience = [
     journey: [
       {
         position: "Freelance software engineer",
-        date: "Sep 2018 - Oct 2021",
+        date: "May 2018 - Oct 2021",
       },
     ],
-    company: "Fiverr",
-    contract: "Freelance",
+    company: "Upwork  / Fiverr",
+    contract: "Contracter",
     points: [
-      "Provided gig-based development services across ReactJS, React Native, Flutter, and NodeJS, transforming client wireframes into production-ready applications while optimizing performance and fixing critical bugs.",
-      "Constructed a full-stack micro CMS system with mobile app interface for efficient management of business information repositories.",
-      "Developed a full-stack document management application with machine learning integration for automated price detection and highlighting capabilities.",
+      "Provided full stack development services for ReactJS, React Native, Flutter, and NodeJS, delivering prototypes and production ready applications",
+      "Built and published multiple mobile applications including 'Grow Youth App' using React Native with Redux and WordPress API integration, launching on both App Store and Play Store.",
+      "Prototypes a background video processing app using React Native threads and NodeJS/Dropbox integration.",
+      "Developed a full-stack small CMS with ExpressJS and React Native App for management of business information repositories.",
       "Built Wheelbees, a comprehensive chat application for drivers featuring social authentication, real-time messaging with voice notes and images, advanced search capabilities (text/speech/image recognition), and push notifications.",
     ],
     tech: [
@@ -122,40 +147,16 @@ export const experience = [
       { label: "React Native", icon: SiReact },
       { label: "Flutter", icon: SiFlutter },
       { label: "Bloc", icon: FileCode },
-      { label: "Node JS", icon: SiNodedotjs },
       { label: "Redux", icon: SiRedux },
       { label: "Redux Saga", icon: SiRedux },
+      { label: "Node JS", icon: SiNodedotjs },
       { label: "Adonis JS", icon: SiAdonisjs },
+      { label: "Asana API", icon: SiAsana },
+      { label: "Dropbox API", icon: SiDropbox },
       { label: "MYSQL", icon: SiMysql },
       { label: "Firebase", icon: SiFirebase },
       { label: "Notifications", icon: Bell },
       { label: "AWS (S3, SES, RDS, EC2)", icon: SiAmazon },
-    ],
-  },
-  {
-    journey: [
-      {
-        position: "Freelance software engineer",
-        date: "May 2018 - Oct 2021",
-      },
-    ],
-    company: "Upwork",
-    contract: "Freelance",
-    points: [
-      "Provided contract-based development services across multiple technologies including ReactJS, React Native, Flutter, and NodeJS, delivering both short-term bug fixes and long-term prototype applications",
-      "Built and published multiple mobile applications including 'Grow Youth App' using React Native with Redux and WordPress API integration, successfully launching on both App Store and Play Store.",
-      "Developed innovative prototypes including a background video processing app using React Native threads and NodeJS/Dropbox integration, and a products catalog app with dynamic navigation and WordPress API integration.",
-    ],
-    tech: [
-      { label: "React JS", icon: SiReact },
-      { label: "React Native", icon: SiReact },
-      { label: "Node JS", icon: SiNodedotjs },
-      { label: "Redux", icon: SiRedux },
-      { label: "Redux Saga", icon: SiRedux },
-      { label: "MYSQL", icon: SiMysql },
-      { label: "Firebase", icon: SiFirebase },
-      { label: "Asana API", icon: SiAsana },
-      { label: "Dropbox API", icon: SiDropbox },
     ],
   },
   {
