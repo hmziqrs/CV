@@ -35,7 +35,7 @@ export function DownloadCV() {
           {downloads.map((download) => (
             <a
               key={download.filename}
-              href={`/files/${download.filename}`}
+              href={`/files${download.filename}`}
               download
               className="flex items-center justify-center
                 sm:gap-3 gap-2 sm:px-6 px-4 sm:py-3 py-2
