@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = "https://hmziq.rs";
+  const baseUrl = "https://cv.hmziq.rs";
 
   return [
     {
