@@ -19,7 +19,7 @@ async function capture(page: Page, dark = true) {
     format: "a2",
     printBackground: true,
     displayHeaderFooter: true,
-    path: `public/hmziqrs-${theme}-cv.pdf`,
+    path: `public/files/hmziqrs-${theme}-cv.pdf`,
   });
   console.log(`${theme} pdf saved`);
 
@@ -31,7 +31,7 @@ async function capture(page: Page, dark = true) {
   await sleep(1000);
 
   await page.screenshot({
-    path: `public/hmziqrs-${theme}-cv.jpg`,
+    path: `public/files/hmziqrs-${theme}-cv.jpg`,
     fullPage: true,
   });
   console.log(`${theme} jpeg saved`);

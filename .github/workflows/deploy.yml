@@ -39,10 +39,10 @@ jobs:
         run: bun cv-local
       - name: Copy cv files to out
         run: |
-          cp public/hmziqrs-dark-cv.jpg out/hmziqrs-dark-cv.jpg
-          cp public/hmziqrs-dark-cv.pdf out/hmziqrs-dark-cv.pdf
-          cp public/hmziqrs-light-cv.jpg out/hmziqrs-light-cv.jpg
-          cp public/hmziqrs-light-cv.pdf out/hmziqrs-light-cv.pdf
+          cp public/files/hmziqrs-dark-cv.jpg out/files/hmziqrs-dark-cv.jpg
+          cp public/files/hmziqrs-dark-cv.pdf out/files/hmziqrs-dark-cv.pdf
+          cp public/files/hmziqrs-light-cv.jpg out/files/hmziqrs-light-cv.jpg
+          cp public/files/hmziqrs-light-cv.pdf out/files/hmziqrs-light-cv.pdf
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
