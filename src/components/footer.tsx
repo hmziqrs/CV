@@ -89,7 +89,7 @@ const hiddenSocialLinks = [
     label: "Hashnode",
   },
   {
-    href: "https://stackoverflow.com/users/hmziqrs",
+    href: "https://stackoverflow.com/users/6908566/hmziqrs",
     icon: SiStackoverflow,
     label: "Stack Overflow",
   },
