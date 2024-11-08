@@ -27,7 +27,11 @@ export default function Home() {
       >
         <DownloadCV />
       </section>
-      <section className="h-16 print:h-12" aria-hidden="true" />
+      <section
+        className="h-16 print:h-0"
+        aria-hidden="true"
+        style={{ pageBreakAfter: "always" }}
+      />
       <section
         id="projects"
         aria-label="Projects Section"
