@@ -130,14 +130,36 @@ export const projects = [
     skills: [],
   },
   {
+    name: "Wheelbees",
+    contribution: "Full Stack",
+    type: "Product",
+    thumbnail: "/projects/wheelbees.jpg",
+    description: [],
+    buttons: [
+      {
+        label: "Google Play",
+        icon: SiGoogleplay,
+        link: "https://play.google.com/store/apps/details?id=com.wheelbees",
+      },
+      {
+        label: "App Store",
+        icon: SiAppstore,
+        link: "https://apps.apple.com/nl/app/wheelbees/id1585504248",
+      },
+      {
+        label: "Web",
+        icon: Globe,
+        link: "https://wheelbees.com",
+      },
+    ],
+    skills: [],
+  },
+  {
     name: "Peekaboo Guru",
     contribution: "Full Stack",
     type: "Product",
     thumbnail: "/projects/peekaboo-guru.webp",
-    description: [
-      "Features complex parallax animations.",
-      "Scales on desktop, tablets & browser.",
-    ],
+    description: [],
     buttons: [
       {
         label: "Google Play",
